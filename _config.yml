@@ -98,6 +98,10 @@ author:
   bio              : "Chemical Engineer, Ph.D."
   location         : "Gaithersburg, MD"
   email            : "nathan.mahynski@gmail.com"
+  twitter          : "mahynski"
+  github           : "mahynski"
+  linkedin         : "nathanmahynski"
+  researchgate     : "Nathan_Mahynski"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
