@@ -11,4 +11,3 @@ BorutaShap
 xgboost
 -e git://github.com/hyperopt/hyperopt-sklearn.git#egg=master
 watermark
--e git://github.com/mahynski/ml_utils.git#egg=master
