@@ -11,42 +11,42 @@ header:
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
   caption: ""
   cta_label: "Research Topics"
-  cta_url: "https://mahynski.github.io/research"
+  cta_url: "/research/"
 row1:
   - image_path: /assets/img/splash/soft_matter_cover_2020.png
     title: "Multicomponent Colloidal Self-Assembly"
-    url: ""
+    url: "/research/"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/multi_extrap.png
     title: "Statistical Mechanical Extrapolation"
-    url: ""
+    url: "/research/"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/orbifolds.png
     title: "Orbifold Structure-Directing Agents"
-    url: ""
+    url: "/research/"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
 row2:
   - image_path: /assets/img/splash/seabirds_geo.png
     title: "Wildlife Chemometric Fingerprinting"
-    url: ""
+    url: "/research/"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/brood_cull_stock.png
     title: "Food Fraud Detection"
-    url: ""
+    url: "/research/"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/programming_icons.png
     title: "Code development"
-    url: "/resources/"
+    url: "https://github.com/mahynski"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
