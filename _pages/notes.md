@@ -12,4 +12,6 @@ header:
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
 ---
 
-Collections of notes by topic.  You can also find topics according to different tags, or in the [sitemap](/sitemap/).
+Collections of notes by topic.  You can also find topics according to different tags, or in the [sitemap](/sitemap/).  If you can't find what you are looking for there, try the search bar above.
+
+---

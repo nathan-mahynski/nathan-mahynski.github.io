@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+sklearn
+shap
+nodejs
+baycomp
+BorutaShap
+xgboost
+-e git://github.com/hyperopt/hyperopt-sklearn.git#egg=master
+watermark

@@ -11,11 +11,10 @@ header:
 
 {% include toc icon="gears" title="Table of Contents" %}
 
----
 
 For a complete list of (hyperlinked) publications, refer to my CV below.  PDFs of all peer-reviewed work are available upon [request](mailto: nathan.mahynski@gmail.com), most of which can also be found on [ResearchGate](https://www.researchgate.net/profile/Nathan_Mahynski).
 
-[Curriculum Vitae (publications)](/docs/Curriculum_Vitae.pdf){: .btn .btn--success} [NIST Profile](https://www.nist.gov/people/nathan-mahynski){: .btn .btn--danger}
+[Curriculum Vitae (publications)](/assets/docs/Curriculum_Vitae.pdf){: .btn .btn--success} [NIST Profile](https://www.nist.gov/people/nathan-mahynski){: .btn .btn--danger}
 
 # Current Position 
 ---

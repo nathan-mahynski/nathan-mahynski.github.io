@@ -37,7 +37,7 @@ Any model that returns a "feature importance" can be used with Boruta, not just 
 The authors of [BorutaPy](https://github.com/scikit-learn-contrib/boruta_py) offer some improvements of their own discussed therein.  Notably, the Bonferroni correction is often considered too harsh so alternatives are discussed.
 - "Boruta is an all relevant feature selection method, while most other are minimal optimal; this means it tries to find all features carrying information usable for prediction, rather than finding a possibly compact subset of features on which some classifier has a minimal error."
 
-Here is a brief and insightful explanation from the inventor, [Miron B. Kursa](/docs/boruta_in_a_hurry.pdf).
+Here is a brief and insightful explanation from the inventor, [Miron B. Kursa](/assets/docs/boruta_in_a_hurry.pdf).
 
 # What is BorutaSHAP?
 ---

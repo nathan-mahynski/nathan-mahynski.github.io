@@ -12,4 +12,6 @@ header:
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
 ---
 
-Sample document listing for the collection `_research`.
+Here you can find a longer discussions and posts that accompany ongoing and previous research and peer-reviewed publications.  Discussion is welcome and encouraged.
+
+---
