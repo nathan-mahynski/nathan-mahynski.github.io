@@ -12,8 +12,20 @@ tags:
 
 {% include toc icon="gears" title="Table of Contents" %}
 
-## Summary
+These notes come primarily from Chapter 7 in ["Python Machine Learning," Raschka and Mirjalili, Packt Publishing, 2nd Ed. (2017).](https://www.packtpub.com/product/python-machine-learning-second-edition/9781787125933).
 
-{% include gallery caption="Caption." %}
+# Ensemble Methods
 
-See youtube and medium, python ml book
+# Bagging
+
+## Bag of little bootstraps
+
+# Boosting
+
+## AdaBoost
+
+## Gradient Boosting
+
+xgboost
+
+

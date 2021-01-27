@@ -17,3 +17,5 @@ tags:
 
 See youtube and medium, python ml book
 Jeremy howard
+
+reference baggin vs boosting notes
