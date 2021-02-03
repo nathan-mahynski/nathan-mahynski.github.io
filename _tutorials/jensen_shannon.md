@@ -3,6 +3,7 @@ title: "Jensen-Shannon Divergence as an EDA Tool"
 excerpt: "Using Jensen-Shannon divergence to search for good features and patterns."
 header:
   teaser: /assets/img/divergence.png
+  image: /assets/img/jensen_shannon_header.png
 tags:
   - machine learning
   - eda
