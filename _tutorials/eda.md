@@ -32,3 +32,5 @@ correlation analysis
 try to fit decision trees for classifiers, OLS for regressions; recusively eliminte features from trees to see effects
 spearman rank order correlations, non-parametrics (should be evident in pairplot, but if you have too many to plot, use this to screen)
 
+Jensen-Shannon divergence for initial test of distributions that separates classes
+
