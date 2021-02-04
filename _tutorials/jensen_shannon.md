@@ -117,6 +117,21 @@ Clearly, we see the (A) and (B,C) sets being indicated as potentially easily sep
 
 <img style="float: center" src="js_example8.png" width=600px>
 
+# Binary vs OvA
+
+It is also possible to perform a binary comparison directly between classes.  Refer to [ml_utils.eda.screen.JSBinary](https://github.com/mahynski/ml_utils/blob/main/eda/screen.py) for code.  This disregards the information from the rest of the dataset (classes) and just because A and B are distinguishable from each other in isolation, they may not be when other classes are present since they may be overlapped with those.  Still, it can be helpful to see how different classes really are in terms of their feature distributions.  Below, at left, is the binary JSD for the classes we just looked at.  Clearly B and C are essentially identical, and D is not easily distinguished from any of them.  It can sometimes be helpful to perform feature engineering to amplify hidden correlations that can create differences.  Below, at right, polynomial features to [order 3](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html) were created and re-evaluated; this creates products of columns which can be helpful if correlations exist.  In this case, the improvements to B and C are minimal because the distributions were purposefully sampled from the same distribution.
+
+<img style="float: center" src="js_example13.png" width=600px>
+
+As a counterexample, consider the binary system with 2 features depicted below (left).  The distributions over features 1 and 2 are similar, but there is a correlation (product) that was used to generate the classes for this example.  When polynomial features are added, indeed, the product feature is clearly useful for separating the classes (right).
+
+<img style="float: center" src="js_example14.png" width=300px>
+<img style="float: center" src="js_example15.png" width=300px>
+
+The binary JSD clearly reflect that in the original case (no polynomical feature engineering) the maximum divergence was very low, but afterwards is quite high.  Indeed, the "product" feature is the one that leads to JSD given below (0.97).
+
+<img style="float: center" src="js_example16.png" width=600px>
+
 # Common Pitfalls
 
 There are a few pitfalls to this approach. They essentially boil down to how to discretize the distributions to compute the KL divergence in the first place.  In practice, the distributions for a given feature are histogrammed into discrete bins, from which the KLD and JSD can be easily computed.  As a side note, in practice some small amount added to all bins (~1.0e-12) since numerically, we cannot divide by zero in the KLD calculation.  This is a small affect usually, should be noted.
