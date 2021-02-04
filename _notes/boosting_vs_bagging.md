@@ -3,6 +3,7 @@ title: "Boosting vs. Bagging"
 excerpt: "Ensemble methods for training better ML models."
 header:
   teaser: /assets/img/bag_cartoon.png
+  image: /assets/img/boosting_vs_bagging_header.png
 tags:
   - machine learning
   - ensemble
