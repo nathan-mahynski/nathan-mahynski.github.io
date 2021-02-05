@@ -19,7 +19,7 @@ Using the Jensen-Shannon divergence you can develop protocols to:
 
 1. Decide if there are features that are particularly helpful at distinguishing a class from the "rest of the pack" (one-vs-all). If so, a simple decision trees might be good model.
 2. If there are plausible macroclasses (merges) that are highly separable using any features; if this is true, there might be a connection between the atomic classes in that macroclass.
-3. Looking at binary JSD (one-vs-one, OvO) values can suggest if ensemble methods might be succeed where a simple decision tree (OvA) might fail.
+3. Looking at binary JSD (one-vs-one, OvO) values, in addition to OvA results, can suggest if ensemble methods might succeed where a simple decision tree might fail.
 
 See the [ml_utils](https://github.com/mahynski/ml_utils) package for code and details.
 
@@ -133,8 +133,10 @@ The binary JSD clearly reflect that in the original case (no polynomical feature
 
 <img style="float: center" src="js_example16.png" width=600px>
 
-Binary JSD only imply that open class is highly differentiable from another based on simple thresholds.  If you see a lot of large binary JSD values in a row or column above this suggests that this class can be distinguished from all other classes easily somehow, though it may be a different feature used for each comparison. In this case, deep trees to make a series of comparisons might be necessary; however, these do not generalize well as they tend to overfit strongly based on the training data so you need a lot of "stable" data to make these work.  However, a [gradient boosted tree](/notes/boosting_vs_bagging/) might a good alternative because it make us of many stumps in series. Alternatively, [random forests](/notes/boosting_vs_bagging/) might also be an alternate, more stable approach to using deep trees.  It may also happen that there is no single strong OvA result, but perhaps a "column" (above) of weak (JSD $\sim$ 0.5) ones, which might also suggest that an ensemble approach could succeed where a simpler model is likely to fail.
- 
+# When to Consider Ensemble Methods
+
+Binary JSD only imply that open class is highly differentiable from another based on simple thresholds.  If you see a lot of large binary JSD values in a row or column above this suggests that this class can be distinguished from all other classes easily somehow, though it may be a different feature used for each comparison. In this case, deep trees to make a series of comparisons might be necessary; however, these do not generalize well as they tend to overfit strongly based on the training data so you need a lot of "stable" data to make these work.  [Random forests](/notes/boosting_vs_bagging/) might be a good alternative to using deep trees in this case. It may also happen that there is no single strong OvA result, but perhaps a "column" (features) of weak (JSD $\sim$ 0.5) ones instead; this might also suggest that an ensemble approach could succeed where a simpler model is likely to fail. Specifically, a [gradient boosted tree](/notes/boosting_vs_bagging/) might a good choice because it make use of many stumps (weak learners) in series to produce a strong model. 
+
 # Common Pitfalls
 
 There are a few pitfalls to this approach. They essentially boil down to how to discretize the distributions to compute the KL divergence in the first place.  In practice, the distributions for a given feature are histogrammed into discrete bins, from which the KLD and JSD can be easily computed.  As a side note, in practice some small amount added to all bins (~1.0e-12) since numerically, we cannot divide by zero in the KLD calculation.  This is a small affect usually, should be noted.
