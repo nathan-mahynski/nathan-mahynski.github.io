@@ -19,7 +19,8 @@ Using the Jensen-Shannon divergence you can develop protocols to:
 
 1. Decide if there are features that are particularly helpful at distinguishing a class from the "rest of the pack" (one-vs-all). If so, a simple decision trees might be good model.
 2. If there are plausible macroclasses (merges) that are highly separable using any features; if this is true, there might be a connection between the atomic classes in that macroclass.
-3. Looking at binary JSD (one-vs-one, OvO) values, in addition to OvA results, can suggest if ensemble methods might succeed where a simple decision tree might fail.
+3. "Weak" OvA results can suggest that ensemble methods might succeed where a simple decision tree might fail (boosting).
+4. "Weak" binary JSD values can also suggest that feature engineering might be necessary or worthwhile.
 
 See the [ml_utils](https://github.com/mahynski/ml_utils) package for code and details.
 
