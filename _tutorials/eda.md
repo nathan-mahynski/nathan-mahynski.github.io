@@ -3,6 +3,7 @@ title: "EDA Suggestions"
 excerpt: "Recommendations for exploratory data analysis."
 header:
   teaser: /assets/img/rocket_cartoon.png
+  image: /assets/img/eda_header.png
 tags:
   - python
   - eda
