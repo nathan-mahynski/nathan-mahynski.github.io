@@ -20,7 +20,7 @@ This is the workflow for tabular, dense data that has been the most useful to me
 This figure, from "Python Machine Learning: 2nd Ed." by Raschka & Mirjalili, illustates the overall workflow pattern.  Below, I discuss some specifics at different stages.
 
 # 1. [Preprocessing] Exploratory Data Analysis (EDA)
-Look at you data, plot things, look for patterns that might seem intuitive.  This is somewhat controversial in the data science community as this process can be influenced by a user's bias; however, for scientific applications this can be an invaluable step.  
+Look at you data, plot things, look for patterns that might seem intuitive.  This is somewhat controversial in the data science community as this process can be influenced by a user's bias; however, for scientific applications this can be an invaluable step.  This notebook contains an example workflow that accompanies this [tutorial](/tutorials/eda/) on EDA methods that I have found helpful: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mahynski/mahynski.github.io/public?filepath=%2F_tutorials%2Feda%2Feda_starting_point.ipynb) 
  * See [ml_inspector.data](https://github.com/mahynski/ml_inspector) for tools to help visualize data.
  * The [seaborn](https://seaborn.pydata.org/) library has a lot of valuable tools to consider also.
  * Pre-processing is an art.  You may have to deal with missing data, imputation, standardization, etc.  See Rashka & Mirjalili's book, [chapter 3](https://github.com/rasbt/python-machine-learning-book-3rd-edition/tree/master/ch04) for some discussion and suggestions.  This is not exhaustive and you may have to try several different things.
