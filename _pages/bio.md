@@ -7,10 +7,11 @@ header:
   image_description: ""
   overlay_image: /assets/img/logo/logo_wide.png
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
+classes:
+  - wide
 ---
 
-{% include toc icon="gears" title="Table of Contents" %}
-
+<!--{% include toc icon="gears" title="Table of Contents" %}-->
 
 For a complete list of (hyperlinked) publications, refer to my CV below.  PDFs of all peer-reviewed work are available upon [request](mailto: nathan.mahynski@gmail.com), most of which can also be found on [ResearchGate](https://www.researchgate.net/profile/Nathan_Mahynski).
 
