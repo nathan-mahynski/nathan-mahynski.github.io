@@ -5,6 +5,7 @@ sidebar:
   nav: "resources"
 classes:
   - landing
+  - wide
 excerpt: ""
 title: "Resources"
 permalink: /resources/
@@ -17,7 +18,7 @@ header:
 #  cta_url: "https://www.nist.gov/people/nathan-mahynski"
 ---
 
-{% include toc icon="gears" title="Table of Contents" %}
+<!-- {% include toc icon="gears" title="Table of Contents" %} -->
 
 # Research Opportunities
 ---
@@ -34,13 +35,12 @@ I am currently looking for a postodoctoral candidate to do work on designing sel
 # Open Source Code
 ---
 
-![mahynski's github stats](https://github-readme-stats.vercel.app/api?username=mahynski&show_icons=true&theme=tokyonight) 
-
-<a href="https://gitlab.nist.gov/nam4"><img style="float: right;" src="/assets/img/gitlab_logo.png" width=150px></a>
-<img style="float: right;" src="/assets/img/vertical_spacer.png" height=50px>
-<a href="https://github.com/mahynski"><img style="float: right;" src="/assets/img/github_logo.png" width=150px></a>
-
+[![mahynski's github stats](https://github-readme-stats.vercel.app/api?username=mahynski&show_icons=true&theme=tokyonight)](https://github.com/mahynski)
 ![1](https://github-readme-stats.vercel.app/api/top-langs/?username=mahynski&theme=tokyonight)
+
+<!--<a href="https://gitlab.nist.gov/nam4"><img style="float: right;" src="/assets/img/gitlab_logo.png" width=150px></a>
+<img style="float: right;" src="/assets/img/vertical_spacer.png" height=50px>
+<a href="https://github.com/mahynski"><img style="float: right;" src="/assets/img/github_logo.png" width=150px></a>-->
 
 <a href="https://pages.nist.gov/feasst/"><img style="float: right;" src="/assets/img/feasst_logo.png"></a>
 
@@ -54,9 +54,11 @@ I am currently looking for a postodoctoral candidate to do work on designing sel
 <a href="https://slack.com/"><img style="float: center;" src="/assets/img/slack_logo.png" width=100px></a>
 <a href="https://zoom.com/"><img style="float: center;" src="/assets/img/zoom_logo.png" width=100px></a>
 <a href="https://www.onenote.com/"><img style="float: center;" src="/assets/img/onenote_logo.png" width=100px></a>
+<a href="https://drive.google.com/"><img style="float: center;" src="/assets/img/google_drive_logo.png" width=100px></a>
 <a href="https://getrocketbook.com/pages/about-rocketbook"><img style="float: center;" src="/assets/img/rocketbook_logo.png" width=100px></a>
 <a href="https://www.brain.fm/"><img style="float: center;" src="/assets/img/brainfm_logo.png" width=100px></a>
 <a href="https://obsproject.com/"><img style="float: center;" src="/assets/img/obs_studio_logo.png" width=100px></a>
+<a href="http://mahynski.ddns.net/authentication/login/?next=/"><img style="float: center;" src="/assets/img/mayan_edms_logo.png" width=100px></a>
 
 Slack and Zoom are indispensable collaboration tools.  I prefer OneNote over alternatives like Evernote for organizing notes, recordings, and other clippings because of its superior integration with the rest of the MS Office ecosystem.  After years of trying tablets and different pens, styli, etc. I was not able to find an electronic handwriting alternative that I found adequate and I still prefer to take notes by hand.  Rocketbook lets you do just that, then scan them with your phone, sending it through OCR to the destination of your choice (such as OneNote).  It also allows to to cast whiteboards in real time.  I've seen a noticeable improvement in focus listening to brain.fm, though it is a monthly subscription service.  Finally, although MS PowerPoint allows you to record your presentation directly in the app, if you use an alternative, or wish to modify/stream/cast other things as part of a pre-recorded presentation, OBS Studio is a great tool typically used by streamers in other industries.
 
