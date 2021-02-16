@@ -9,6 +9,8 @@ tags:
   - hyperopt-sklearn
   - automl
   - machine learning
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

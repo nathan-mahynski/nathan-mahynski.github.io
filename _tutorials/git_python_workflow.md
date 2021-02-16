@@ -9,6 +9,8 @@ tags:
   - lint
   - git
   - continuous improvement
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

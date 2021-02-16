@@ -8,6 +8,8 @@ tags:
   - python
   - numba
   - high performance programming
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

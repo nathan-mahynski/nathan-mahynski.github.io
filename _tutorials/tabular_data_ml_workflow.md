@@ -9,6 +9,8 @@ tags:
   - feature engineering
   - machine learning
   - workflow
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

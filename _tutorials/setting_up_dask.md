@@ -7,6 +7,8 @@ tags:
   - python
   - parallel programming
   - high performance progamming
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}
