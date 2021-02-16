@@ -6,6 +6,8 @@ header:
   image: /assets/img/jupyter_best_practices_header.png
 tags:
   - jupyter
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}
@@ -58,8 +60,8 @@ $ conda install -c conda-forge jupyter_nbextensions_configurator
 $ jupyter nbextensions_configurator enable --user
 ~~~
 
-From the server (locahost:8888 usually) click on the "Nbextensions" tab and enable the ones you like.  Play around to see what features work best for you.  Below is an example (especially important is the toc2, table of contents) - also consider enabling Autopep8, VariableInspector, and datestamper.
-<img style="float: center" src="jupyter_nbextensions.png" width=600px>
+From the server (localhost:8888 usually) click on the "Nbextensions" tab and enable the ones you like.  Play around to see what features work best for you.  Below is an example (especially important is the toc2, table of contents) - also consider enabling Autopep8, VariableInspector, and datestamper.
+<img style="float: right" src="jupyter_nbextensions.png" width=600px>
 
 [snippets](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/snippets/README.html) is a great tool if you regularly use a certain piece of code or header, etc. that you want to add easily to your notebook.  This is especially helpful for teaching and developing.
 

@@ -9,6 +9,8 @@ tags:
   - colab
   - jupyter
   - machine learning
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}
@@ -36,7 +38,7 @@ In contrast, if you don't work remotely (from your resources) you may prefer to 
 5. Choose hardware acceleration under Edit > Notebook Settings > Hardware Accelerator.  Both [GPUs](https://en.wikipedia.org/wiki/Graphics_processing_unit){:target="_blank"} and [TPUs](https://en.wikipedia.org/wiki/Tensor_Processing_Unit){:target="_blank"} are currently supported.
 6. All [Jupyter magics](https://ipython.readthedocs.io/en/stable/interactive/magics.html){:target="_blank"} are available; also, because you can perform shell commands be prepending the `!` symbol to a command, you to use `!wget`, for example, to import data from a website.
 7. Install any repos you need.  By default things like numpy, scipy, matplotlib, pandas, [fastai](https://www.fast.ai/){:target="_blank"}, and torch are available.  If you want to import other things, like cartopy for example, you may get an error like this.
-<img style="float: center" src="cartopy_error.png" width=600px>
+<img style="float: right" src="cartopy_error.png" width=600px>
 * Conveniently, links to stackoverflow are already provided.  Here we have a link to "install cartopy" since Colab recognizes this; if not, you may get an "open examples" link instead. Clicking the link opens a "snippets" panel at the left which shows how to proceed, and other suggestions.
 * Here, the solution is to have a cell that looks like this:
 ~~~ python

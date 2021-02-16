@@ -9,6 +9,8 @@ tags:
   - eda
   - feature engineering
   - decision trees
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

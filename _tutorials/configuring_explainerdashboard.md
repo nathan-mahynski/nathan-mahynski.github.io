@@ -8,6 +8,8 @@ tags:
   - SHAP
   - explainable AI
   - dashboard
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}
