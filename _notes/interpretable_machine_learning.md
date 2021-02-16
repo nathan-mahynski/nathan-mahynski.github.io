@@ -19,6 +19,8 @@ tags:
   - interpretability
   - SHAP
   - python
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}
