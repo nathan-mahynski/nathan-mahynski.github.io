@@ -58,7 +58,7 @@ row2:
 
 <p style="text-align: center;">"All truths are easy to understand once they are discovered; the point is to discover them." - Galileo Galilei </p>
 
-A website, blog, and repository for chemical informatics research broadly incorporating, but not limited to: computational soft matter physics, topology, machine learning, thermodynamics, and molecular simulation methods.  This "attic" is meant to accompany formal, peer-reviewed [publications](/_bio/bio/) with additional thoughts, examples, and animations.  All thoughts and opinions expressed here are solely that of the author, as well as any errors, and should not be construed to reflect on my collaborators or employer.
+A website, blog, and repository for chemical informatics research broadly incorporating, but not limited to: computational soft matter physics, topology, machine learning, thermodynamics, and molecular simulation methods.  This "attic" is meant to accompany formal, peer-reviewed [publications](/bio/) with additional thoughts, examples, and animations.  All thoughts and opinions expressed here are solely that of the author, as well as any errors, and should not be construed to reflect on my collaborators or employer.
 
 "Chemical informatics," or cheminformatics, as defined by wikipedia "refers to use of physical chemistry theory with computer and information science techniques in application to a range of descriptive and prescriptive problems in the field of chemistry, including in its applications to biology and related molecular fields."  My background is in (computational) chemical engineering, but my interests range broadly within the cheminformatics field.  Some examples include:
 
