@@ -7,6 +7,8 @@ tags:
   - machine learning
   - ensemble
   - random forest
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

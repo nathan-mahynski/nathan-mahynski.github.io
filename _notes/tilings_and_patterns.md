@@ -17,6 +17,8 @@ gallery:
   - url: 
     image_path: 
     alt: ""
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

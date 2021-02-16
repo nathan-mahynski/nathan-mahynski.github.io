@@ -9,6 +9,8 @@ tags:
   - ensemble
   - boosting
   - bagging
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

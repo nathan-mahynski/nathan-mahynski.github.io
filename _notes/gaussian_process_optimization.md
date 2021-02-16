@@ -7,6 +7,8 @@ tags:
   - machine learning
   - optimization
   - non-parametric
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

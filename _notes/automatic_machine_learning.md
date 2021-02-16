@@ -6,6 +6,8 @@ header:
 tags:
   - machine learning
   - automl
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}

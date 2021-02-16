@@ -8,6 +8,8 @@ tags:
   - statistics
   - cross-validation
   - t-test
+classes:
+  - wide
 ---
 
 {% include toc icon="gears" title="Table of Contents" %}
