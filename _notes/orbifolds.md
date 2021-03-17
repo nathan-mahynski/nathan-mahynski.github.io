@@ -20,6 +20,8 @@ classes:
 
 As shown by William Thurston, John H. Conway and coworkers <a href="#conway">[3]</a>, there is a direct connection between crystallographic symmetry and orbifolds.  Orbifolds can be used to prove, for example, that there are 17 different wallpaper groups in 2D Euclidean space <a href="#conway2">[4</a>,<a href="#conway3">5]</a>.  Their uniqueness make them unambiguous descriptors of symmetry.  While the notation and language can be confusing at first, this schema is, in my opinion, a powerful and underappreciated tool for engineering patterns and self-assembly in soft matter physics and related applications.  
 
+For an introduction to symmetry, I recommend the "Math and Art of MC Escher" <a href="https://mathstat.slu.edu/escher/index.php/Math_and_the_Art_of_M._C._Escher">website</a>, which contains accessible discussions, illustrations, and examples that avoid a lengthy foray into complex mathematical language.
+
 # Mathematical History
 
 Topology has a long history in mathematics; it is essentially the study of how things are connected.  As a general prototype, the field studies <a href="https://en.wikipedia.org/wiki/Topology">"properties of geometric objects that are preserved under continuous deformations, such as stretching, twisting, crumpling and bending, but not tearing or gluing"</a>; the latter would change the connectivity by removing, or adding, connections, respectively. A homeomorphism shown below from wikipedia, illustrates the "inflation" of a sphere into a donut and a cow into a sphere; note that you cannot find a homeomorphism between the two of them - this would require tearing a pair of holes on either side of the cow and connecting them to form the "donut" shape. 
@@ -44,7 +46,7 @@ A more detailed history of the mathematical evolution of orbifolds is presented 
 
 # Connection to Symmetry
 
-The history and terminology associated with orbifolds may seem a bit technical at first, however, the underlying principles are quite straightforward.  Here I will provide some examples to motivate the use of topology as an intuitive description of patterns.  The majority of this, and the remainder of this discussion is devoted to two dimensional (2D) Euclidean space.  One of the beauties of using orbifolds is that you can unify the description and enumeration of symmetry groups in non-Euclidean spaces, and with a little modification, can also also use them in 3D <a href="#conway">[4</a>,<a href="#hyde">6]</a>.
+The history and terminology associated with orbifolds may seem a bit technical at first, however, the underlying principles are quite straightforward.  Here I will provide some examples to motivate the use of topology as an intuitive description of periodic patterns.  The majority of this, and the remainder of this discussion is devoted to two dimensional (2D) Euclidean space.  One of the beauties of using orbifolds is that you can unify the description and enumeration of symmetry groups in non-Euclidean spaces, and with a some additional modifications, can also also use them in 3D <a href="#conway">[4</a>,<a href="#hyde">6]</a>.
 
 ## A division of space
 
@@ -90,31 +92,55 @@ Below, you can find the matching edges (according to color and arrow) indicated 
 
 <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.0c00846"><img style="float: center" src="boundary_conditions.png" width=1000px></a>
 
+In Chapter 9 of Ref. <a href="#conway2">[4]</a>, the authors also provide some examples, and some levity: "We suggest you buy a spare copy of the book before cutting out the patterns on the next few pages, so as to increase our roalties".
+
 In fact, the concept of orbifolds is much more broad.  Orbifolds can be used to describe non-periodic objects, 2D periodic structures on curved surfaces, and with a little modification, can also help in 3D as well.  This largely developed by Conway and co-workers.
 
 # A Step Back: Identifying Symmetry
 
-At this point, we have discussed what a FD is and how by "gluing" it together we can obtain the orbifold that describes a given symmetry group.  This has been somewhat abstract, but is helpful a starting point.  Before proceeding further, it is enlightening to go back a bit and simply try to understand symmetry in patterns.
+At this point, we have discussed what a FD is and how by "gluing" it together we can obtain the orbifold that describes a given symmetry group.  This has been somewhat abstract, but is helpful a starting point.  Before proceeding further, it is enlightening to go back a bit and simply try to understand symmetry in patterns.  
 
-Pictures with examples of how to look for symmetry in patterns
-https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
-Also some examples from Conway's book
-Only draw symmetry elements - draw tiles and show edge matching later
+In what follows I will classify some of M. C. Escher's sketches (from his private folios) according to their symmetry.  I will disregard differences in color, as this introduces some additional complexity.  More information can be found in Ref. <a href="#conway2">[4]</a>. There are 4 fundamental "features" of symmetric patterns, or <a href="https://en.wikipedia.org/wiki/Isometry">isometries</a> of the plane: translation, rotation, reflection, and glide reflection.  Conway and co-workers call these "wonders", gyrations, kaleidoscopes, and "miracles." A glide reflection is a reflection about a line followed by translation along that line.
 
-I like to start with mirror lines - they are usually the most obvious (probably why Escher largely avoided them, but did not completely reject them still had kaleidoscopes!)
+There are a number of heuristics you can find online that can be used to identify the wallpaper group of a pattern.  For example, see the decision tree found <a href="https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns">here</a>.  However, these methods are less clear to me than using the orbifold method.  In the former, classification is based on the existence of certain symmetries that end up being generators, essentially; in the latter, we focus on the FD of the pattern and look at what its boundaries are made up of.  I find the second to be much more intuitive!
 
-It can help to keep in mind we are looking for the "smallest" region (FD) possible that contains no symmetry, itself.  Mirrors are always boundaries; rotation centers are either on and edge or corner.  Note that rotation centers can result from intersecting mirrors.  If there are mirrors, take those; if not, we have a "corner" rotation point.  Glide reflections are a little more tricky to identify; they result from a reflection + translation so we are looking for mirror images that are not related by a mirror plance. Conway actually called this a "miracle"!  Translations are the simplest to identify (according to Conway: wonderous "wandering" = "wonder-ring = "o" symbol)
+It can help to keep in mind we are looking for the "smallest" region (FD) possible that contains no symmetry, itself. Mirrors are always boundaries; rotation centers are either on and edge or corner.  Note that rotation centers can result from intersecting mirrors. If there are mirrors, take those; if not, we have a "corner" rotation point.  Glide reflections are a little more tricky to identify; since they result from a reflection + translation we are looking for mirror images that are not related by a mirror plane. 
 
+Here's how I proceed:
+1. First, I like to start by looking for mirror lines - they are usually the most obvious.  This is not great if you are an artist and is probably why M. C. Escher largely avoided them.  
+2. Next, I look for for rotation centers.  Be aware: intersecting mirror planes create rotation centers; for example if you have 2 intersecting, orthogonal mirrors creating 4 quadrants, then Q1 and Q3 are 180 degree rotations of each other, as are Q2 and Q4.  If you see a rotation center, be sure it isn't due to multiple mirror planes passing through that point.  
+3. Finally, look for mirror images that have are connected but are not related by a mirror plane, i.e., you can draw a line between the 2 parts of the image without going through a mirror.
+4. If there are none of the above, look for translations.
 
-This means something very important - instead of thinking of groups as matrices, we can vied them as "rings" decorated with maps that indicate how parts of the ring are related to each other.  Create ring, add decorations until "cost" reaches a threshold. this is what conway proved.
+Let's look at some examples. These are taken from the "Math and Art of MC Escher" website <a href="https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings">here</a>.  I have demarcated the symmetries I see with green lines and shapes.
+
+<img style="float: center" src="p1-symm-Regular-division-105.png" width=300px>
+<img style="float: center" src="p2-symm-455px-Regular-division-01.png" width=300px>
+<img style="float: center" src="p2-symm-Regular-division-11.png" width=300px>
+
+Above, we have an example of p1, and 2 examples of p2.  In the first, only translation is present and the Pegasus is merely "shifted" in 2 orthogonal directions to fill the plane.  In the second two examples, we see there are only 2-fold rotation centers (ovals) present.  You can see where Escher originally drew his guide lines and made points to denote where he would place those points of symmetry.
+
+<img style="float: center" src="p3m1-symm-Regular-division-85.png" width=300px>
+<img style="float: center" src="p31m-symm-448px-Regular-division-04.png" width=300px>
+<img style="float: center" src="p2gg-symm-451px-Regular-division-10.png" width=300px>
+
+In this row of examples, first we see a case where only intersecting mirror planes are used (p3m1).  The motif is composed of 3 "halves" of animals: a lizard, fish, and bat.  Their biaxial symmetry enables one to use only a half of a single animal to generate the other half; it is purely artistic talent that enables the three to together inside a single bounded triangle.  The second example also contains a motif (person) with a mirror plane, however, in this case a 3-fold rotation center is present allowing different motifs to nest perfectly inside each other (p31m).  The final example is one with glide planes (dashed lines) which bound 2-fold rotation centers (p2gg, or pgg for short).
+
+> "Some animal motifs, generally larger animals, are usually seen from the front or side, and so look silly when viewed upside down or at an angle. Escher was careful, at least in his later work, to avoid symmetries containing rotation when working with such animals. On the other hand, Escher writes: "When a rotation does take place, then the only animal motifs which are logically acceptable are those which show their most characteristic image when seen from above" <a href="#doris">[9]</a>. For example, insects and lizards occur frequently in Escher's work when rotation symmetry is present. Although Escher understood symmetry well and and knew of the mathematical classification of wallpaper symmetry groups from Polya's work, he was interested in creating new patterns rather than analyzing existing work. His technique, which will be explored in the next chapter, made little reference to symmetry groups." - Excerpt from <a href="https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns">https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns</a>
+
+Allegedly, it was Escher's brother-in law who knew of George Polya and originally mentioned Polya's work to him. Escher hand-copied some of Polya's papers into his own notebooks to study the theory of symmetry. Polya was Conway's mentor and had a great influence on Conway's interests; Polya himself invented a naming scheme for crystallographic symmetries, though it is not among those commonly used today. In the next section I will review Conway's naming convention and why it is so elegant.
 
 # The Power of Orbifolds
+
+Now I will illustrate how simple naming and classifying symmetry is using Conway's notation.  To do so, first I will review the naming convention itself; this should alo make it clear how one can easily identfy a FD for a pattern.  Next, I will go over how this naming scheme is related to the proof that there are only 17 distinct wallpaper groups.  Finally, this excercise should explicitly illustrate the connection between symmetry, orbifolds, and tilings of the plane using only a single type of tile.
 
 ## Conway's Naming Convention
 
 Emphasice that (Conway, Huson 2002) an orbifold is more than just a simple manifodl because it has angles defined on it.
 
-## Proof of 17 Wallpaper Groups (2D)
+
+
+## Proof of 17 Wallpaper Groups (2D) using Orbifolds
 
 Remarkably, Conway proved that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group.  In other words, there is one and only one orbifold for each symmetry group (even though there are often many fundamental domains).  This "Magic Theorem", is truly that.  
 
@@ -125,7 +151,13 @@ Gauss Bonnet theorem
 
 topologies (p1=torus, p2=pillowcase, p3-p6=turnover)
 
+SymetryLand from his royal scoeity notes
+Other "cost" example in his book
+Also see Hyde for more examples.
+
 ## Topologically Distinct Domains
+
+As a counterexample, see Escher picture with same tile but different markings on which make it look like different things.
 
 Since the orbifold is unique to each symmetry group, and can be formed by folding up a FD, we can derive other "tiles" of the plane by looking at different ways of reversing this folding, i.e., cutting them open again.  Unsurprisingly, there are multiple ways of cutting open orbifold and this can be shown to correspond to different fundamental domains.  
 
@@ -148,9 +180,43 @@ https://mathstat.slu.edu/escher/index.php/Math_and_the_Art_of_M._C._Escher
 
 Draw colored edges from the previous symetry examples
 
+Here is a gif to show mutation from rectangle to pegasus: http://www.eschertile.com/kids/david-a6.gif
+http://www.eschertile.com/kids/animate.htm
+
+Heesch's system explained
+http://www.tessellations.org/tess-symmetry7.shtml
+
 
 https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
 "Over the course of his career, Escher filled five folio notebooks with sketches of periodic tessellations. These were not intended for public consumption, but instead sources of ideas and design patterns he would use in creating his finished graphic works. Escher numbered his sketches, from 1 to 137. " - https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
+
+
+
+
+
+
+
+
+
+
+> "The use of imagery from life led to restrictions on possible choices for symmetry for aesthetic reasons, restrictions which Escher gradually evolved over time. Examining the Regular Division of the Plane Drawings, one finds that the vast majority fall into one of seven symmetry groups: p1, p2, p3, p4, p6, pg, and pgg. These are exactly the symmetry groups which have no reflection symmetry - only translation, rotation, and glide reflection. If two creatures meet on a line of mirror symmetry, they must have a flat edge, and recognizable figures from life rarely have perfectly straight edges. Because of this, Escher mostly avoided mirror symmetry, although he did create a few drawings where bilateral symmetry of the motif leads to overall mirror symmetry of the pattern" - https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns
+
+
+
+
+This is because he cleverly chose, perhaps without realizing, that he was using different isohedral tiles that belong to a given symmetry group.  These can be derived as different "cut open" orbifolds.
+
+Like Heesch, who specificially investigated asymmetric tiles.
+Heesch types
+http://www.eschertile.com/
+
+
+
+This means something very important - instead of thinking of groups as matrices, we can vied them as "rings" decorated with maps that indicate how parts of the ring are related to each other.  Create ring, add decorations until "cost" reaches a threshold. this is what conway proved.
+
+
+
+
 
 # Generating Crystals
 
@@ -177,7 +243,8 @@ As already discussed, this is connected to tiling theories. <a href="#conway">[1
 <p id="conway3">[5] Conway, John H., and Daniel H. Huson. "The Orbifold Notation for Two-dimensional Groups." <it>Structural Chemistry</it> 13.3 (2002): 247-257.</p>
 <p id="hyde">[6] Hyde, S. T., S. J. Ramsden, and Vanessa Robins. "Unification and Classification of Two-dimensional Crystalline Patterns using Orbifolds." <it>Acta Crystallographica Section A: Foundations and Advances</it> 70.4 (2014): 319-337.</p>
 <p id="macbeath">[7] Macbeath, A. M. "The classification of non-euclidean plane crystallographic groups." <it>Canadian Journal of Mathematics</it> 19 (1967): 1192-1205.</p>
-<p id="pretti">[8] Pretti, Evan, et al. "Symmetry-Based Crystal Structure Enumeration in Two Dimensions." <it>The Journal of Physical Chemistry A</it> 124.16 (2020): 3276-3285.</p>
+<p id="pretti">[8] Pretti, Evan, <it>et al.</it> "Symmetry-Based Crystal Structure Enumeration in Two Dimensions." <it>The Journal of Physical Chemistry A</it> 124.16 (2020): 3276-3285.</p>
+<p id="doris">[9] Schattschneider, D. <it>M.C. Escher: Visions of Symmetry.</it> Thames & Hudson, 2004.
 
 <!--
 2D Crystallographic Tiling
