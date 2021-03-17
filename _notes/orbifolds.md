@@ -22,7 +22,7 @@ As shown by William Thurston, John H. Conway and coworkers <a href="#conway">[3]
 
 # Mathematical History
 
-Topology has a long history in mathematics; it is essentially the study of how things are connected.  As a general prototype, the field studies <a href="https://en.wikipedia.org/wiki/Topology">"properties of geometric objects that are preserved under continuous deformations, such as stretching, twisting, crumpling and bending, but not tearing or gluing"</a>; the latter would change the connectivity by removing, or adding, connections, respectively. A homeomorphism shown below from wikipedia, illustrates the "inflation" of a sphere into a donut and a cow into a sphere; note that you cannot find a homeomorphism between the two of them - this would require tearing a hole in the cow to form the "hole". 
+Topology has a long history in mathematics; it is essentially the study of how things are connected.  As a general prototype, the field studies <a href="https://en.wikipedia.org/wiki/Topology">"properties of geometric objects that are preserved under continuous deformations, such as stretching, twisting, crumpling and bending, but not tearing or gluing"</a>; the latter would change the connectivity by removing, or adding, connections, respectively. A homeomorphism shown below from wikipedia, illustrates the "inflation" of a sphere into a donut and a cow into a sphere; note that you cannot find a homeomorphism between the two of them - this would require tearing a pair of holes on either side of the cow and connecting them to form the "donut" shape. 
 
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Mug_and_Torus_morph.gif/200px-Mug_and_Torus_morph.gif)
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Spot_the_cow.gif/200px-Spot_the_cow.gif)
@@ -44,7 +44,7 @@ A more detailed history of the mathematical evolution of orbifolds is presented 
 
 # Connection to Symmetry
 
-The history and terminology associated with orbifolds may seem a bit technical at first, however, the underlying principles are quite straightforward.  Here I will provide some examples to motivate the use of topology as an intuitive description of patterns.  The majority of this, and the remainder of this discussion is devoted to two dimensional (2D) Euclidean space.
+The history and terminology associated with orbifolds may seem a bit technical at first, however, the underlying principles are quite straightforward.  Here I will provide some examples to motivate the use of topology as an intuitive description of patterns.  The majority of this, and the remainder of this discussion is devoted to two dimensional (2D) Euclidean space.  One of the beauties of using orbifolds is that you can unify the description and enumeration of symmetry groups in non-Euclidean spaces, and with a little modification, can also also use them in 3D <a href="#conway">[4</a>,<a href="#hyde">6]</a>.
 
 ## A division of space
 
@@ -62,27 +62,61 @@ In the example above, it is clear that, if repeated in all directions, a rectang
 
 ## Wallpaper groups and symmetry
 
-The chunks in the above 2D example are related only by translation, but other symmetries (isometries) are possible; combinations of such operations gives rise to the different symmetry groups.  As a result, the primitive cell usually contains multiple "chunks" related by these other symmetries.  Consequently, the unit cell is NOT the smallest "unit" of the crystal in terms of symmetry.  Formally, these chunks are referred to as fundamental domains (by mathematicians) or asymmetric units (by crystallographers).  The latter designation is adopted because it indicates that the fundamental domain (FD) contains no symmetry elements.  Symmetry elements are locations, such as points or planes, about which symmetry operations act. For example, rotation (operation) about a point (element). In fact, all symmetry elements exist along the boundary/surface of the FD; as we will later see, this means that the edges of the FD must be related to each other by virtue of those operations.  It was Conway who proved that that relation is unique for a given symmetry group.  This is particularly remarkable because there is (usually) no unique geometric shape for a FD; topologically, however, they will turn out to be the same if they belong to the same symmetry group!
+The chunks in the above 2D example are related only by translation, but other isometries are possible; combinations of such operations gives rise to the different symmetry groups.  As a result, the primitive cell usually contains multiple "chunks" related by these other symmetries.  Consequently, the unit cell is NOT the smallest "unit" of the crystal in terms of symmetry.  Formally, these chunks are referred to as fundamental domains (by mathematicians) or asymmetric units (by crystallographers).  The latter designation is adopted because it indicates that the fundamental domain (FD) contains no symmetry elements.  Symmetry elements are locations, such as points or planes, about which symmetry operations act. For example, rotation (operation) about a point (element). In fact, all symmetry elements exist along the boundary/surface of the FD; as we will later see, this means that the edges of the FD must be related to each other by virtue of those operations.  It was Conway who proved that that relation is unique for a given symmetry group.  This is particularly remarkable because there is (usually) no unique geometric shape for a FD; topologically, however, they will turn out to be the same if they belong to the same symmetry group!
 
-FDs are critical to the description of crystals because they describe all of the "independent degrees of freedom." You can do anything inside the FD because it is going to be repeated, but all other locations in the crystal are describable as an operation (in topology, the "orbit") of points in a single FD.  It is useful to recalibrate your imagination to think of the FD as the smallest "unit" of the crystal, not the unit/primitive cell when it comes to symmetry.  In molecular simulations and computational applications, the simplicity of programming p1 boundary conditions is why most people work with crystals at this scale, rather than at the FD level.
+FDs are critical to the description of crystals because they describe all of the "independent degrees of freedom." You can do anything inside the FD because it is going to be repeated, but all other locations in the crystal are describable as an operation (in topology, the "orbit") of points in a single FD.  It is useful to recalibrate your imagination to think of the FD as the smallest "unit" of the crystal, not the unit/primitive cell when it comes to symmetry.  In molecular simulations and computational applications, the simplicity of programming p1 boundary conditions is why most people work with crystals at this scale, rather than at the FD level.  The p1 primitive cell is its own fundamental domain; for all other wallpaper groups there are between 2 and 12 FD per primitive cell (see red boxes below)<a href="#pretti">[8]</a>. The number is fixed for a given groups and is always the same for that group, even though the specific tiles that form FDs might be different.
 
-In 2D there are 4 different isometries of the Euclidean plane: translation, rotation, reflection, and glide reflection.
+<a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.0c00846"><img style="float: center" src="pc_example.png" width=1000px></a>
 
-Nat comms paper with some examples
+In 2D there are 4 different isometries of the Euclidean plane: translation, rotation, reflection, and glide reflection. Wallpaper groups describe the set of unique combinations of isometries of the Euclidean plane containing two linearly independent translations. These operations act on the fundamental domain to tessellate the plane. There are a total of 17 wallpaper groups, shown in the figures above and below; in the figure below, a FD is drawn with a black outline, with a chiral RGB trimer on top.  This is to illustrate how the groups tile space according to their operations.  Again, the tiles chosen below are not unique, but they are convenient for other purposes, which will be discussed later.
+
+<a href="https://github.com/usnistgov/PACCS"><img style="float: center" src="wpgroups.png" width=1000px></a>
+
+In the top row, only rotations are used to generate the plane; in the second, only reflections are used.  These operations only occur at the boundary of the FDs, i.e., along the black lines.  Check this for yourself as an exercise.  You should be able to see how the "knife" cut the space up into non-overlapping chunks without any gaps.  Moreover, pay attention to which edges are symmetrically equivalent.  In other words, for p1, since the cell is translated up and down, and also left and right, these sets of edges "overlap" between neighboring images.  These are, thus, "symmetrically equivalent."
 
 ## What is a crystallographic orbifold?
 
-Aka "good" orbifold? (very good = global quoteint)
+The term "orbifold" is short for orbit manifold <a href="#thurston">[1]</a>.  As already stated, an orbit manifold is topological object that describes the "division" of a space (2D Euclidean plane, for example) by the action of a finite group.  The fundamental domain is the region of space containing no symmetry operations and is this quotient.  In crystallographic topology, a wallpaper group's orbifold can derived by gluing together the FD to match up the symmetrically equivalent edges.<a href="#hyde">[6]</a>  Some examples are shown below.
 
-The term "orbifold" is short for orbit manifold <a href="#thurston">[1]</a>.  Essentially, an orbit manifold is topological object that describes the "division" of a space (2D Euclidean plane, for example) by the action of a finite group.  The fundamental domain (to mathematicians), or asymmetric unit (to crystallographers), is the region of space containing no symmetry operations and is this quotient. In crystallographic topology, 
+<a href="https://www.nature.com/articles/s41467-019-10031-4"><img style="float: center" src="orbifold_examples.png" width=1000px></a>
 
-Orbifolding mechanics - johnson paper
+For example, for p1 the pattern is created by shifting the cell "up" and "down", and "left" and "right".  Consequently, the left edge of a FD overlaps the right of the FD to its left, and so on.  This implies the left edge is symmetrically equivalent to the right, and the top with the bottom. If we wrap the FD's top to meet its bottom we create a cylinder; next, wrapping the left to meet the right we obtain a torus, as shown above.  This torus is the p1 group's orbifold.  Recall that this sort of cell is the type of cell used in conventional molecular simulations such as Monte Carlo or molecular dynamics.  Clearly, the orbifold effectively represents the boundary conditions on the FD; a p1 cell is sometimes said to have "toroidal" boundary conditions, though it has become such common practice that today they are referred to as "standard periodic boundary conditions" in most molecular simulation literature.
 
-Show how to fold up just one example of a FD to an orbifold
+One can repeat this exercise for other groups.  The examples above show how this (orbi)folding process superimposes equivalent sites.
 
-# Proof of 17 Wallpaper Groups
+> "Orbifolding is simply the operation of wrapping, or folding in the case of mirrors, to superimpose all equivalent points. There are times when the orbifolding process itself is important since we may need to unfold the orbifold partially to obtain some other (covering) orbifold or to unfold it fully to obtain the original space (i.e., the universal cover). Covering orbifolds are related to the original orbifold as subgroups are related to groups. The universal cover of all Euclidean n-orbifolds is Euclidean n-space and that for spherical n- orbifolds is the n-sphere." <a href="#johnson">[2]</a>
 
-Remarkably, Conway proved that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group.  In other words, there is one and only one orbifold for each symmetry group.  This "Magic Theorem", is truly that.  
+Below, you can find the matching edges (according to color and arrow) indicated for all the FDs shown so far.  This can be found in Ref. <a href="#pretti">[8]</a>. You can do this yourself by cutting out the shape below and gluing the matching edges together.
+
+<a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.0c00846"><img style="float: center" src="boundary_conditions.png" width=1000px></a>
+
+In fact, the concept of orbifolds is much more broad.  Orbifolds can be used to describe non-periodic objects, 2D periodic structures on curved surfaces, and with a little modification, can also help in 3D as well.  This largely developed by Conway and co-workers.
+
+# A Step Back: Identifying Symmetry
+
+At this point, we have discussed what a FD is and how by "gluing" it together we can obtain the orbifold that describes a given symmetry group.  This has been somewhat abstract, but is helpful a starting point.  Before proceeding further, it is enlightening to go back a bit and simply try to understand symmetry in patterns.
+
+Pictures with examples of how to look for symmetry in patterns
+https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
+Also some examples from Conway's book
+Only draw symmetry elements - draw tiles and show edge matching later
+
+I like to start with mirror lines - they are usually the most obvious (probably why Escher largely avoided them, but did not completely reject them still had kaleidoscopes!)
+
+It can help to keep in mind we are looking for the "smallest" region (FD) possible that contains no symmetry, itself.  Mirrors are always boundaries; rotation centers are either on and edge or corner.  Note that rotation centers can result from intersecting mirrors.  If there are mirrors, take those; if not, we have a "corner" rotation point.  Glide reflections are a little more tricky to identify; they result from a reflection + translation so we are looking for mirror images that are not related by a mirror plance. Conway actually called this a "miracle"!  Translations are the simplest to identify (according to Conway: wonderous "wandering" = "wonder-ring = "o" symbol)
+
+
+This means something very important - instead of thinking of groups as matrices, we can vied them as "rings" decorated with maps that indicate how parts of the ring are related to each other.  Create ring, add decorations until "cost" reaches a threshold. this is what conway proved.
+
+# The Power of Orbifolds
+
+## Conway's Naming Convention
+
+Emphasice that (Conway, Huson 2002) an orbifold is more than just a simple manifodl because it has angles defined on it.
+
+## Proof of 17 Wallpaper Groups (2D)
+
+Remarkably, Conway proved that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group.  In other words, there is one and only one orbifold for each symmetry group (even though there are often many fundamental domains).  This "Magic Theorem", is truly that.  
 
 first proof in 1891 (https://en.wikipedia.org/wiki/Space_group)
 
@@ -91,9 +125,15 @@ Gauss Bonnet theorem
 
 topologies (p1=torus, p2=pillowcase, p3-p6=turnover)
 
-# Topologically Distinct Domains
+## Topologically Distinct Domains
 
-Since the orbifold is unique to each symmetry group, and can be formed by folding up a FD, we can derive other "tiles" of the plane by looking at different ways of reversing this folding, i.e., cutting them open again.  There are some rules for cutting
+Since the orbifold is unique to each symmetry group, and can be formed by folding up a FD, we can derive other "tiles" of the plane by looking at different ways of reversing this folding, i.e., cutting them open again.  Unsurprisingly, there are multiple ways of cutting open orbifold and this can be shown to correspond to different fundamental domains.  
+
+There are some rules for cutting...
+
+These are the different so-called "Heesch types" after the mathematician Heesch who, among other things, studied tilings and their connection to symmetry; the renowned Dutch artist M. C. Escher also undertook a study of these tilings.
+- http://www.eschertile.com/
+- http://jwilson.coe.uga.edu/EMT668/EMAT6680.2002.Fall/AllenL/MATH%207200/Escher%20Project/Tesselmania/tesselmania.html
 
 Different cuttings to produce different isohedral tiles (some of them are FD)
 Point to papers coming out?
@@ -102,11 +142,22 @@ For most applications, it doesn't matter how you select the tile - you can cut t
 See ETH zurich java applet for example where you use a single tile
 ITCA uses a single tile
 
+
+https://mathstat.slu.edu/escher/index.php/Math_and_the_Art_of_M._C._Escher
+
+
+Draw colored edges from the previous symetry examples
+
+
+https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
+"Over the course of his career, Escher filled five folio notebooks with sketches of periodic tessellations. These were not intended for public consumption, but instead sources of ideas and design patterns he would use in creating his finished graphic works. Escher numbered his sketches, from 1 to 137. " - https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
+
 # Generating Crystals
 
 PACCS - have separate post about paper on this
-Wykoff positions and stoichiometry (a bit about this)
+Wykoff positions and stoichiometry (a bit about this) --> remember wyckoff positions originally mentioned in tldr?
 High symmetry hypothesis from David Wales
+See paper by Doye, also isopointal sets by Glotzer student
 
 # Beyond
 
@@ -126,6 +177,7 @@ As already discussed, this is connected to tiling theories. <a href="#conway">[1
 <p id="conway3">[5] Conway, John H., and Daniel H. Huson. "The Orbifold Notation for Two-dimensional Groups." <it>Structural Chemistry</it> 13.3 (2002): 247-257.</p>
 <p id="hyde">[6] Hyde, S. T., S. J. Ramsden, and Vanessa Robins. "Unification and Classification of Two-dimensional Crystalline Patterns using Orbifolds." <it>Acta Crystallographica Section A: Foundations and Advances</it> 70.4 (2014): 319-337.</p>
 <p id="macbeath">[7] Macbeath, A. M. "The classification of non-euclidean plane crystallographic groups." <it>Canadian Journal of Mathematics</it> 19 (1967): 1192-1205.</p>
+<p id="pretti">[8] Pretti, Evan, et al. "Symmetry-Based Crystal Structure Enumeration in Two Dimensions." <it>The Journal of Physical Chemistry A</it> 124.16 (2020): 3276-3285.</p>
 
 <!--
 2D Crystallographic Tiling
