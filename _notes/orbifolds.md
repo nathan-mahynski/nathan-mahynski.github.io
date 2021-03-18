@@ -1,5 +1,5 @@
 ---
-title: "Intro Crystallographic Orbifolds"
+title: "Intro to Crystallographic Orbifolds"
 excerpt: "How orbit manifolds describe symmetry and why they are so useful."
 header:
   teaser: /assets/img/klein_bottle.png
@@ -21,6 +21,10 @@ classes:
 As shown by William Thurston, John H. Conway and coworkers <a href="#conway">[3]</a>, there is a direct connection between crystallographic symmetry and orbifolds.  Orbifolds can be used to prove, for example, that there are 17 different wallpaper groups in 2D Euclidean space <a href="#conway2">[4</a>,<a href="#conway3">5]</a>.  Their uniqueness make them unambiguous descriptors of symmetry.  While the notation and language can be confusing at first, this schema is, in my opinion, a powerful and underappreciated tool for engineering patterns and self-assembly in soft matter physics and related applications.  
 
 For an introduction to symmetry, I recommend the "Math and Art of MC Escher" <a href="https://mathstat.slu.edu/escher/index.php/Math_and_the_Art_of_M._C._Escher">website</a>, which contains accessible discussions, illustrations, and examples that avoid a lengthy foray into complex mathematical language.
+
+Prof. Frank Hoffman has a very nice YouTube course as well.  You can find it <a href="https://www.youtube.com/c/FrankHoffmann1000/featured">here</a>.
+
+> "The orbifold idea is the most powerful way to achieve a conceptual understanding of these \[wallpaper\] groups and, in particular, it trivializes their enumeration." - Conway & Huson in Ref. <a href="#conway3">[5]</a>
 
 # Mathematical History
 
@@ -134,11 +138,29 @@ Allegedly, it was Escher's brother-in law who knew of George Polya and originall
 
 Now I will illustrate how simple naming and classifying symmetry is using Conway's notation.  To do so, first I will review the naming convention itself; this should alo make it clear how one can easily identfy a FD for a pattern.  Next, I will go over how this naming scheme is related to the proof that there are only 17 distinct wallpaper groups.  Finally, this excercise should explicitly illustrate the connection between symmetry, orbifolds, and tilings of the plane using only a single type of tile.
 
+Conway and Huson have provided a very accessible paper on the subject of orbifiold notation for 2D groups in Structural Chemistry (See Ref. <a href="#conway3">[5]</a>), which I will refer the reader to for more information.
+
 ## Conway's Naming Convention
 
-Emphasice that (Conway, Huson 2002) an orbifold is more than just a simple manifodl because it has angles defined on it.
+As we have already seen, the orbifold is the "surface divided by the group" and may be found by folding or wrapping the FD up to match up symmetrically equivalent points on its edges. The orbifold symbol is given generally as:
 
+$\circ \dots \circ ABC \dots * abc \dots * def \dots \times \dots \times$
 
+Here, the letters represent numbers while the symbols ($$\circ, *, \times$$), are known as the "characters" of the orbifold symbol.  By convention, the above order is typically followed.  First, the "wonder-rings" ($\circ$) are shown, which indicate the presence of translational symmetry.  Second, letters are used to denote the presence of rotational centers ($2\pi/A$, for example) which manifest as "cone points" on the orbifold. Third, the $*abc$ clause(s) which indicate kaleidoscopes (intersecting mirrors) are written; it is possible to have multiple clauses because you can technically have parallel mirrors ($**$) which do not intersect and so are not technically kaleidoscopes.  Overall, this part of the symbol represents all the possible configurations of mirror planes.  The numbers which follow the asterisk denote "corner points," which indicate angles along the boundary curve of $\pi/a$ (angle between intersecting mirrors), for example.  Finally, the crosses denote crosscaps, which represent glide reflections.
+
+> "The orbifold idea is the most powerful way to achieve a conceptual understanding of these groups and, in particular, it trivializes their enumeration." - Conway & Huson in Ref. <a href="#conway3">[5]</a>
+
+So what do these actually look like?  The examples below are taken from Ref. <a href="#conway3">[5]</a> which show this orbifolding process.  The patterns are shown to the left, with the orbifold shown on the right of each instance.  If we look at the isometries present, following the guidelines given above, you can easily see the fundamental domains in these examples.  If you focus on the FD, you can see which parts of the FD are equivalent to others and which "unique" symmetries are present.  If you list those unique symmetries (remember, a periodic pattern keeps on repeating indefinitely so you could never write down *all* of them) you obtain the orbifold symbol.
+
+<img style="float: center" src="conway_huson_examples.png" width=1000px>
+
+While the torus and moebius strip are straightforward, I want to emphasize the different "points" in the first case (c2mm or 2*22).  In this example we have 1 cone point (2 fold rotation) and 2 corner points (mirrors intersecting at $\pi/2$).  In a generic manifold, the homeomorphisms illustrated at the beginning of this post which "inflate the cow" would seem to suggest that we can just "bend" away those corner points.  However, as Conway and Huson caution: "an orbifold is slightly more than a topological manifold, because it inherits a metric from the original surface, which means, in particular, that angles are defined on it" <a href="#conway3">[5]</a>.  In other words, that angle is alway present locally.  It is possible to bend or deform the edges leading away from it without ruining the orbifold, but it is important that the local curvature is preserved.  To my understanding, this is a critical feature that enables the proof presented in the next section, since it involves integrating the Gaussian curvature of the orbifold.
+
+Here is a list of all orbifolds for each the wallpaper groups from Ref. <a href="#johnson">[2]</a>.  n-gons indicate n-fold rotation centers, dashed lines are glide planes, and thick lines are mirror; "regular" lines are where the surface is folded up, indicating the boundary of the FD if it is not otherwise indcated by one of these other lines.
+
+<img style="float: center" src="orbifold_summary.png" width=1000px>
+
+In the table, the symmetry diagram is shown on top, with the orbifold below.
 
 ## Proof of 17 Wallpaper Groups (2D) using Orbifolds
 
@@ -157,11 +179,19 @@ Also see Hyde for more examples.
 
 ## Topologically Distinct Domains
 
+
+Only briefly summarize using points below that specifically reference material presented above.
+Otherwise move to a new post on Heesch Types (and disambiguate with heesch tilings).
+
+
+
 As a counterexample, see Escher picture with same tile but different markings on which make it look like different things.
 
 Since the orbifold is unique to each symmetry group, and can be formed by folding up a FD, we can derive other "tiles" of the plane by looking at different ways of reversing this folding, i.e., cutting them open again.  Unsurprisingly, there are multiple ways of cutting open orbifold and this can be shown to correspond to different fundamental domains.  
 
 There are some rules for cutting...
+
+Show cutting of the 2*22 orbifold in conway huson example above
 
 These are the different so-called "Heesch types" after the mathematician Heesch who, among other things, studied tilings and their connection to symmetry; the renowned Dutch artist M. C. Escher also undertook a study of these tilings.
 - http://www.eschertile.com/
@@ -176,6 +206,9 @@ ITCA uses a single tile
 
 
 https://mathstat.slu.edu/escher/index.php/Math_and_the_Art_of_M._C._Escher
+
+
+p2 from 3D example of molecule
 
 
 Draw colored edges from the previous symetry examples
@@ -218,7 +251,7 @@ This means something very important - instead of thinking of groups as matrices,
 
 
 
-# Generating Crystals
+# Generating Crystals --> Research Post
 
 PACCS - have separate post about paper on this
 Wykoff positions and stoichiometry (a bit about this) --> remember wyckoff positions originally mentioned in tldr?
