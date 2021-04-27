@@ -146,7 +146,9 @@ As we have already seen, the orbifold is the "surface divided by the group" and 
 
 $\circ \dots \circ ABC \dots * abc \dots * def \dots \times \dots \times$
 
-Here, the letters represent numbers while the symbols ($$\circ, *, \times$$), are known as the "characters" of the orbifold symbol.  By convention, the above order is typically followed.  First, the "wonder-rings" ($\circ$) are shown, which indicate the presence of translational symmetry.  Second, letters are used to denote the presence of rotational centers ($2\pi/A$, for example) which manifest as "cone points" on the orbifold. Third, the $*abc$ clause(s) which indicate kaleidoscopes (intersecting mirrors) are written; it is possible to have multiple clauses because you can technically have parallel mirrors ($**$) which do not intersect and so are not technically kaleidoscopes.  Overall, this part of the symbol represents all the possible configurations of mirror planes.  The numbers which follow the asterisk denote "corner points," which indicate angles along the boundary curve of $\pi/a$ (angle between intersecting mirrors), for example.  Finally, the crosses denote crosscaps, which represent glide reflections.
+Here, the letters represent numbers while the symbols ($$\circ, *, \times$$), are known as the "characters" of the orbifold symbol.  By convention, the above order is typically followed.  First, the "wonder-rings" ($\circ$) are shown, which indicate the presence of translational symmetry.  Second, letters are used to denote the presence of rotational centers ($2\pi/A$, for example) which manifest as "cone points" on the orbifold. Third, the $*abc$ clause(s) which indicate kaleidoscopes (intersecting mirrors) are written; it is possible to have multiple clauses because you can technically have parallel mirrors ($**$) which do not intersect and so are not technically kaleidoscopes.  Overall, this part of the symbol represents all the possible configurations of mirror planes.  The numbers which follow the asterisk denote "corner points," which indicate angles along the boundary curve of $\pi/a$ (angle between intersecting mirrors), for example.  Finally, the crosses denote crosscaps, which represent glide reflections. To prove that this list of 4 is complete requires more topology; while it is not too detailed, it is beyond the scope of this post.  The reader is referred to Chapter 8 of Ref. <a href="#conway2">[4]</a> for the proof.
+
+This number of orbifold "words" is infinite, as a generic orbifold can contain any number of the above symbols. There are only a few words that correspond to known crystallographic groups and their grammar will be derived in the next section.
 
 > "The orbifold idea is the most powerful way to achieve a conceptual understanding of these groups and, in particular, it trivializes their enumeration." - Conway & Huson in Ref. <a href="#conway3">[5]</a>
 
@@ -164,12 +166,55 @@ In the table, the symmetry diagram is shown on top, with the orbifold below.
 
 ## Proof of 17 Wallpaper Groups (2D) using Orbifolds
 
-Remarkably, Conway proved that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group.  In other words, there is one and only one orbifold for each symmetry group (even though there are often many fundamental domains).  This "Magic Theorem", is truly that.  
+Remarkably, Conway proved that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group. In other words, there is one and only one orbifold for each symmetry group (even though there are often many fundamental domains).  This "Magic Theorem" (his words, not mine), is truly that.  
+
+As he and co-workers write <a href="#conway2">[4]</a>: "Any repeating pattern can be folded into an orbifold on some surface. So to prove that \[the\] list of possible orbifolds is complete, we only have to show that we've considered all possible surfaces. ... any surface surface can be obtained from a collection of spheres by punching holes that introduce boundaries ($*$) and then adding handles ($\circ$) or crosscaps ($\times$). Since all possible surfaces can be described in this way, we can conclude that all possible orbifolds are obtainable by adding corner points to their boundaries and cone points to their interiors."  Recall, that these points are there to encode rotational symmetries, and as stated, we need to simply add those (and preserve their curvature on the surface) to represent all isometries present in the 2D plane!  Again, this is why an "orbifold is slightly more than a topological manifold."
+
+Importantly, this works for all surfaces of constant curvature. The 2D Euclidean plane has zero curvature (it is "flat"), but there are also planes with constant positive (spherical), or negative (hyperbolic) curvature which are also perfectly describable with orbifolds in this way. See Ref. <a href="#hyde">[6]</a> for a longer discussion on this unification.  There are some additional caveats in those cases, and Euclidean space turns out to be the easiest to work with.
+
+Let's go through a sketch of the proof. Conway and others have previously presented proofs in a number of places, for examples, Refs. <a href="#conway">[3</a>,<a href="#conway2">4</a>,<a href="#hyde">6]</a>. You can find more details therein.  
+
+As already stated, all surfaces can be obtained by performing "surgery" on a sphere.  We push out cones to represent rotation centers, and cut holes to create boundaries; if we glue together multiple boundaries (in a "reverse" fashion) we can make crosscaps (representing glide reflections), and if we glue on handles we can encode translations.  If we attach nothing to the boundary, it is a line along which a reflection occurs.
+
+Importantly, all of these surgical operations change the <a href="https://en.wikipedia.org/wiki/Euler_characteristic">Euler characteristic</a> of the sphere you start from. The [Gauss-Bonnet theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Bonnet_theorem) connects the curvature of a surface (geometry) to its Euler characteristic (topology).  Thus, if we start changing the surface's integral ("net") curvature via "surgery" we have a direct relationship to the topological properties of that surface.
+
+$\int_M K dA + \int_{\partial M} k_g ds = 2 \pi \chi(M) $
+
+where $\chi(M)$ is the Euler characteristic of the (compact, 2D Riemannian) manifold $M$, with boundary $\partial M$; here $k_g$ is the [geodesic curvature](https://en.wikipedia.org/wiki/Geodesic_curvature) of the boundary.  For geodesic polygons,
+
+$\int_M K dA = (2-p)\pi + \sum \nu_i$,
+
+where $\nu_i$ are the interior angles of the polygon.  A sketch of the proof using these facts is attached HERE.  The essence is that orbifold features are input surgically on the sphere, we each of which reduces the curvature, and therefore the Euler characteristic.   Surface with a characteristic (and therefore, integral curvature) of zero correspond to surfaces that can be made by folding up that "flat plane", and are therefore, all the possible orbifolds.
+
+For a generic orbifold word $\circ^{\alpha} ABC \dots * abc \dots * def \dots \times^{\beta}$ we have:
+
+$\chi = 2 - \left[ 2\alpha + \beta + \frac{A-1}{A} + \frac{B-1}{B} + \frac{C-1}{C} \dots + \left(1 + \frac{a-1}{2a} + \dots \right) + \left(1 + \frac{d-1}{2d} + \dots\right) \right]$
+
+This unites a "top down" view (a sphere being surgically operated on) and a "bottom up" view (folding of a FD) to show they are representations of the same thing.  The above proof allows you to input different orbifold words and see what their $\chi$ is.  You can easily show with some testing (since all characters are integers > 1, and the bracketed term above is always positive) that there are only 17 ways to get to $\chi = 0$.  Try for yourself!
+
+The allowable orbifold words are:
+
+1. $\circ$ (p1)
+2. 2222 (p2)
+3. 333 (p3)
+4. 442 (p4)
+5. 632 (p6)
+6. *2222 (pmm)
+7. *333 (p3m1)
+8. *442 (p4m)
+9. *632 (p6m)
+10. 2*22 (cmm)
+11. 3*3 (p31m)
+12. 4*2 (p4m)
+13. 22* (pmg)
+14. xx (pg)
+15. ** (pm)
+16. 22x (pgg)
+17. *x (cm)
+
+
 
 first proof in 1891 (https://en.wikipedia.org/wiki/Space_group)
-
-"Top down" approach (Surgery on a sphere) connects to "bottom up" (folding FD)
-Gauss Bonnet theorem
 
 topologies (p1=torus, p2=pillowcase, p3-p6=turnover)
 
