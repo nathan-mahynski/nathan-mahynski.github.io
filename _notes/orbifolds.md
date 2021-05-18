@@ -37,7 +37,7 @@ The <a href="https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture">Poincare Co
 
 <a href="https://en.wikipedia.org/wiki/Crystallography">Crystallography</a>, roughly speaking, is the study of the arrangement of atoms in a crystal solid.  Crystals are described by an underlying (<a href="https://en.wikipedia.org/wiki/Bravais_lattice">Bravais</a>) lattice, on which symmetries act at lattice points.  By combining all possible <a href="https://en.wikipedia.org/wiki/Point_group">point symmetry groups<a/> consistent with the crystallographic restriction theorem (<a href="https://en.wikipedia.org/wiki/Crystallographic_point_group">32 total in 3D Euclidean space</a>) with all possible Bravais  lattices (14 in 3D, 5 in 2D, for example), and removing duplicates we arrive at all possible <a href="https://en.wikipedia.org/wiki/Space_group">space groups</a>.  The proof that there exist exactly 230 in 3D was known in the 1890's and was completed before the much easier proof of 17 "wallpaper" groups in 2D.  This original work was completed by Fedorov, Schoenflies; the same result was later reached by Barlow, and even later independently, by Polya and Niggli.
 
-Naturally, there exists a connection between the way that crystals are "put together" and topology; the latter seeming to be a natural language for expressing that concept.  Indeed, Johnson and coworkers discussed the idea of combining geometric topology with structural crystallography as a field of "Structural Crystallographic Topology" in 1996. <a href="#johnson">[2]</a> Conway and Huson also discussed this notion in 2002 <a href="#conway3">[5]</a>.  More recently, in 2014, Hyde and coworkers have advocated this orbifold system, as it provides a new way to think about symmetric patterns and therefore, crystallography itself <a href="#hyde">[6]</a>.  To my knowledge, there has been little work to apply this to engineering problems in the soft matter physics community.
+Naturally, there exists a connection between the way that crystals are "put together" and topology; the latter seeming to be a natural language for expressing that concept.  Indeed, Johnson and coworkers discussed the idea of combining geometric topology with structural crystallography as a field of "Structural Crystallographic Topology" in 1996. <a href="#johnson">[2]</a> Conway and Huson also discussed this notion in 2002 <a href="#conway3">[5]</a>.  More recently, in 2014, Hyde and coworkers have advocated this orbifold system, as it provides a new way to think about symmetric patterns and therefore, crystallography itself <a href="#hyde">[6]</a>.  
 
 The "orbifold notation" for crystallographic groups is attributed to Conway <a href="#conway3">[5]</a>, though he does not take credit for the underlying philosophy. Conway claims his orbifold symbols are "just an elegant form of Macbeath's <a href="#macbeath">[7]</a> signature" <a href="#conway3">[5]</a>.
 > "The philosophy that geometrical groups should be studied through their orbifolds in Bill Thurston's.  I claim originality only for the simple and elegant notation introduced here.  David Singerman tells me that Murray MacBeath has long described the orbifolds of surface groups in a less compact but essentially equivalent way." <a href="#conway">[3]</a>
@@ -68,7 +68,7 @@ In the example above, it is clear that, if repeated in all directions, a rectang
 
 ## Wallpaper groups and symmetry
 
-The chunks in the above 2D example are related only by translation, but other isometries are possible; combinations of such operations gives rise to the different symmetry groups.  As a result, the primitive cell usually contains multiple "chunks" related by these other symmetries.  Consequently, the unit cell is NOT the smallest "unit" of the crystal in terms of symmetry.  Formally, these chunks are referred to as fundamental domains (by mathematicians) or asymmetric units (by crystallographers).  The latter designation is adopted because it indicates that the fundamental domain (FD) contains no symmetry elements.  Symmetry elements are locations, such as points or planes, about which symmetry operations act. For example, rotation (operation) about a point (element). In fact, all symmetry elements exist along the boundary/surface of the FD; as we will later see, this means that the edges of the FD must be related to each other by virtue of those operations.  It was Conway who proved that that relation is unique for a given symmetry group.  This is particularly remarkable because there is (usually) no unique geometric shape for a FD; topologically, however, they will turn out to be the same if they belong to the same symmetry group!
+The chunks in the above 2D example are related only by translation, but other isometries are possible; combinations of such operations gives rise to the different symmetry groups.  As a result, the primitive cell usually contains multiple "chunks" related by these other symmetries.  Consequently, the unit cell is NOT the smallest "unit" of the crystal in terms of symmetry.  Formally, these chunks are referred to as fundamental domains (by mathematicians) or asymmetric units (by crystallographers).  The latter designation is adopted because it indicates that the fundamental domain (FD) contains no symmetry elements.  Symmetry elements are locations, such as points or planes, about which symmetry operations act. For example, rotation (operation) about a point (element). In fact, all symmetry elements exist along the boundary/surface of the FD; as we will later see, this means that the edges of the FD must be related to each other by virtue of those operations.  It was Conway who proved that there is a unique underlying relationship for a given symmetry group.  This is particularly remarkable because there is (usually) no unique geometric shape for a FD; topologically, however, they will turn out to be the same if they belong to the same symmetry group!
 
 FDs are critical to the description of crystals because they describe all of the "independent degrees of freedom." You can do anything inside the FD because it is going to be repeated, but all other locations in the crystal are describable as an operation (in topology, the "orbit") of points in a single FD.  It is useful to recalibrate your imagination to think of the FD as the smallest "unit" of the crystal, not the unit/primitive cell when it comes to symmetry.  In molecular simulations and computational applications, the simplicity of programming p1 boundary conditions is why most people work with crystals at this scale, rather than at the FD level.  The p1 primitive cell is its own fundamental domain; for all other wallpaper groups there are between 2 and 12 FD per primitive cell (see red boxes below)<a href="#pretti">[8]</a>. The number is fixed for a given groups and is always the same for that group, even though the specific tiles that form FDs might be different.
 
@@ -82,7 +82,7 @@ In the top row, only rotations are used to generate the plane; in the second, on
 
 ## What is a crystallographic orbifold?
 
-The term "orbifold" is short for orbit manifold <a href="#thurston">[1]</a>.  As already stated, an orbit manifold is topological object that describes the "division" of a space (2D Euclidean plane, for example) by the action of a finite group.  The fundamental domain is the region of space containing no symmetry operations and is this quotient.  In crystallographic topology, a wallpaper group's orbifold can derived by gluing together the FD to match up the symmetrically equivalent edges.<a href="#hyde">[6]</a>  Some examples are shown below.
+The term "orbifold" is short for orbit manifold <a href="#thurston">[1]</a>. As already stated, an orbit manifold is topological object that describes the "division" of a space (2D Euclidean plane, for example) by the action of a finite group.  The fundamental domain is the region of space containing no symmetry operations and is this quotient.  In crystallographic topology, a wallpaper group's orbifold can derived by gluing together the FD to match up the symmetrically equivalent edges <a href="#hyde">[6]</a>. Some examples are shown below.
 
 <a href="https://www.nature.com/articles/s41467-019-10031-4"><img style="float: center" src="orbifold_examples.png" width=1000px></a>
 
@@ -96,7 +96,7 @@ Below, you can find the matching edges (according to color and arrow) indicated 
 
 <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.0c00846"><img style="float: center" src="boundary_conditions.png" width=1000px></a>
 
-In Chapter 9 of Ref. <a href="#conway2">[4]</a>, the authors also provide some examples, and some levity: "We suggest you buy a spare copy of the book before cutting out the patterns on the next few pages, so as to increase our roalties".
+In Chapter 9 of Ref. <a href="#conway2">[4]</a>, the authors also provide some examples, and some levity: "We suggest you buy a spare copy of the book before cutting out the patterns on the next few pages, so as to increase our royalties".
 
 In fact, the concept of orbifolds is much more broad.  Orbifolds can be used to describe non-periodic objects, 2D periodic structures on curved surfaces, and with a little modification, can also help in 3D as well.  This largely developed by Conway and co-workers.
 
@@ -106,12 +106,14 @@ At this point, we have discussed what a FD is and how by "gluing" it together we
 
 In what follows I will classify some of M. C. Escher's sketches (from his private folios) according to their symmetry.  I will disregard differences in color, as this introduces some additional complexity.  More information can be found in Ref. <a href="#conway2">[4]</a>. There are 4 fundamental "features" of symmetric patterns, or <a href="https://en.wikipedia.org/wiki/Isometry">isometries</a> of the plane: translation, rotation, reflection, and glide reflection.  Conway and co-workers call these "wonders", gyrations, kaleidoscopes, and "miracles." A glide reflection is a reflection about a line followed by translation along that line.
 
+> "Over the course of his career, Escher filled five folio notebooks with sketches of periodic tessellations. These were not intended for public consumption, but instead sources of ideas and design patterns he would use in creating his finished graphic works. Escher numbered his sketches, from 1 to 137." - From [here](https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings)
+
 There are a number of heuristics you can find online that can be used to identify the wallpaper group of a pattern.  For example, see the decision tree found <a href="https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns">here</a>.  However, these methods are less clear to me than using the orbifold method.  In the former, classification is based on the existence of certain symmetries that end up being generators, essentially; in the latter, we focus on the FD of the pattern and look at what its boundaries are made up of.  I find the second to be much more intuitive!
 
 It can help to keep in mind we are looking for the "smallest" region (FD) possible that contains no symmetry, itself. Mirrors are always boundaries; rotation centers are either on and edge or corner.  Note that rotation centers can result from intersecting mirrors. If there are mirrors, take those; if not, we have a "corner" rotation point.  Glide reflections are a little more tricky to identify; since they result from a reflection + translation we are looking for mirror images that are not related by a mirror plane. 
 
 Here's how I proceed:
-1. First, I like to start by looking for mirror lines - they are usually the most obvious.  This is not great if you are an artist and is probably why M. C. Escher largely avoided them.  
+1. First, I like to start by looking for mirror lines - they are usually the most obvious.  This is not great if you are an artist and is seemingly why M. C. Escher largely avoided them.  
 2. Next, I look for for rotation centers.  Be aware: intersecting mirror planes create rotation centers; for example if you have 2 intersecting, orthogonal mirrors creating 4 quadrants, then Q1 and Q3 are 180 degree rotations of each other, as are Q2 and Q4.  If you see a rotation center, be sure it isn't due to multiple mirror planes passing through that point.  
 3. Finally, look for mirror images that have are connected but are not related by a mirror plane, i.e., you can draw a line between the 2 parts of the image without going through a mirror.
 4. If there are none of the above, look for translations.
@@ -122,7 +124,7 @@ Let's look at some examples. These are taken from the "Math and Art of MC Escher
 <img style="float: center" src="p2-symm-455px-Regular-division-01.png" width=300px>
 <img style="float: center" src="p2-symm-Regular-division-11.png" width=300px>
 
-Above, we have an example of p1, and 2 examples of p2.  In the first, only translation is present and the Pegasus is merely "shifted" in 2 orthogonal directions to fill the plane.  In the second two examples, we see there are only 2-fold rotation centers (ovals) present.  You can see where Escher originally drew his guide lines and made points to denote where he would place those points of symmetry.
+Above, we have an example of p1, and 2 examples of p2. In the first, only translation is present and the Pegasus is merely "shifted" in 2 orthogonal directions to fill the plane.  In the second two examples, we see there are only 2-fold rotation centers (ovals) present.  You can see where Escher originally drew his guide lines and made points to denote where he would place those points of symmetry.
 
 <img style="float: center" src="p3m1-symm-Regular-division-85.png" width=300px>
 <img style="float: center" src="p31m-symm-448px-Regular-division-04.png" width=300px>
@@ -130,7 +132,7 @@ Above, we have an example of p1, and 2 examples of p2.  In the first, only trans
 
 In this row of examples, first we see a case where only intersecting mirror planes are used (p3m1).  The motif is composed of 3 "halves" of animals: a lizard, fish, and bat.  Their biaxial symmetry enables one to use only a half of a single animal to generate the other half; it is purely artistic talent that enables the three to together inside a single bounded triangle.  The second example also contains a motif (person) with a mirror plane, however, in this case a 3-fold rotation center is present allowing different motifs to nest perfectly inside each other (p31m).  The final example is one with glide planes (dashed lines) which bound 2-fold rotation centers (p2gg, or pgg for short).
 
-> "Some animal motifs, generally larger animals, are usually seen from the front or side, and so look silly when viewed upside down or at an angle. Escher was careful, at least in his later work, to avoid symmetries containing rotation when working with such animals. On the other hand, Escher writes: "When a rotation does take place, then the only animal motifs which are logically acceptable are those which show their most characteristic image when seen from above" <a href="#doris">[9]</a>. For example, insects and lizards occur frequently in Escher's work when rotation symmetry is present. Although Escher understood symmetry well and and knew of the mathematical classification of wallpaper symmetry groups from Polya's work, he was interested in creating new patterns rather than analyzing existing work. His technique, which will be explored in the next chapter, made little reference to symmetry groups." - Excerpt from <a href="https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns">https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns</a>
+> "Some animal motifs, generally larger animals, are usually seen from the front or side, and so look silly when viewed upside down or at an angle. Escher was careful, at least in his later work, to avoid symmetries containing rotation when working with such animals. On the other hand, Escher writes: "When a rotation does take place, then the only animal motifs which are logically acceptable are those which show their most characteristic image when seen from above" <a href="#doris">[9]</a>. For example, insects and lizards occur frequently in Escher's work when rotation symmetry is present. Although Escher understood symmetry well and and knew of the mathematical classification of wallpaper symmetry groups from Polya's work, he was interested in creating new patterns rather than analyzing existing work." - Excerpt from [here](https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns)
 
 Allegedly, it was Escher's brother-in law who knew of George Polya and originally mentioned Polya's work to him. Escher hand-copied some of Polya's papers into his own notebooks to study the theory of symmetry. Polya was Conway's mentor and had a great influence on Conway's interests; Polya himself invented a naming scheme for crystallographic symmetries, though it is not among those commonly used today. In the next section I will review Conway's naming convention and why it is so elegant.
 
@@ -140,7 +142,7 @@ Now I will illustrate how simple naming and classifying symmetry is using Conway
 
 Conway and Huson have provided a very accessible paper on the subject of orbifiold notation for 2D groups in Structural Chemistry (See Ref. <a href="#conway3">[5]</a>), which I will refer the reader to for more information.
 
-## Conway's Naming Convention
+## The Orbifold Naming Convention
 
 As we have already seen, the orbifold is the "surface divided by the group" and may be found by folding or wrapping the FD up to match up symmetrically equivalent points on its edges. The orbifold symbol is given generally as:
 
@@ -156,7 +158,7 @@ So what do these actually look like?  The examples below are taken from Ref. <a 
 
 <img style="float: center" src="conway_huson_examples.png" width=1000px>
 
-While the torus and moebius strip are straightforward, I want to emphasize the different "points" in the first case (c2mm or 2*22).  In this example we have 1 cone point (2 fold rotation) and 2 corner points (mirrors intersecting at $\pi/2$).  In a generic manifold, the homeomorphisms illustrated at the beginning of this post which "inflate the cow" would seem to suggest that we can just "bend" away those corner points.  However, as Conway and Huson caution: "an orbifold is slightly more than a topological manifold, because it inherits a metric from the original surface, which means, in particular, that angles are defined on it" <a href="#conway3">[5]</a>.  In other words, that angle is alway present locally.  It is possible to bend or deform the edges leading away from it without ruining the orbifold, but it is important that the local curvature is preserved.  To my understanding, this is a critical feature that enables the proof presented in the next section, since it involves integrating the Gaussian curvature of the orbifold.
+While the torus and Moebius strip are straightforward, I want to emphasize the different "points" in the first case (c2mm or 2*22).  In this example we have 1 cone point (2 fold rotation) and 2 corner points (mirrors intersecting at $\pi/2$).  In a generic manifold, the homeomorphisms illustrated at the beginning of this post which "inflate the cow" would seem to suggest that we can just "bend" away those corner points.  However, as Conway and Huson caution: "an orbifold is slightly more than a topological manifold, because it inherits a metric from the original surface, which means, in particular, that angles are defined on it" <a href="#conway3">[5]</a>.  In other words, that angle is alway present locally.  It is possible to bend or deform the edges leading away from it without ruining the orbifold, but it is important that the local curvature is preserved.  To my understanding, this is a critical feature that enables the proof presented in the next section, since it involves integrating the Gaussian curvature of the orbifold.
 
 Here is a list of all orbifolds for each the wallpaper groups from Ref. <a href="#johnson">[2]</a>.  n-gons indicate n-fold rotation centers, dashed lines are glide planes, and thick lines are mirror; "regular" lines are where the surface is folded up, indicating the boundary of the FD if it is not otherwise indcated by one of these other lines.
 
@@ -168,7 +170,7 @@ In the table, the symmetry diagram is shown on top, with the orbifold below.
 
 Remarkably, Conway proved that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group. In other words, there is one and only one orbifold for each symmetry group (even though there are often many fundamental domains).  This "Magic Theorem" (his words, not mine), is truly that.  
 
-As he and co-workers write <a href="#conway2">[4]</a>: "Any repeating pattern can be folded into an orbifold on some surface. So to prove that \[the\] list of possible orbifolds is complete, we only have to show that we've considered all possible surfaces. ... any surface surface can be obtained from a collection of spheres by punching holes that introduce boundaries ($*$) and then adding handles ($\circ$) or crosscaps ($\times$). Since all possible surfaces can be described in this way, we can conclude that all possible orbifolds are obtainable by adding corner points to their boundaries and cone points to their interiors."  Recall, that these points are there to encode rotational symmetries, and as stated, we need to simply add those (and preserve their curvature on the surface) to represent all isometries present in the 2D plane!  Again, this is why an "orbifold is slightly more than a topological manifold."
+As he and co-workers write <a href="#conway2">[4]</a>: "Any repeating pattern can be folded into an orbifold on some surface. So to prove that \[the\] list of possible orbifolds is complete, we only have to show that we've considered all possible surfaces. ... any surface can be obtained from a collection of spheres by punching holes that introduce boundaries ($*$) and then adding handles ($\circ$) or crosscaps ($\times$). Since all possible surfaces can be described in this way, we can conclude that all possible orbifolds are obtainable by adding corner points to their boundaries and cone points to their interiors."  Recall, that these points are there to encode rotational symmetries, and as stated, we need to simply add those (and preserve their curvature on the surface) to represent all isometries present in the 2D plane!  Again, this is why an "orbifold is slightly more than a topological manifold."
 
 Importantly, this works for all surfaces of constant curvature. The 2D Euclidean plane has zero curvature (it is "flat"), but there are also planes with constant positive (spherical), or negative (hyperbolic) curvature which are also perfectly describable with orbifolds in this way. See Ref. <a href="#hyde">[6]</a> for a longer discussion on this unification.  There are some additional caveats in those cases, and Euclidean space turns out to be the easiest to work with.
 
@@ -184,7 +186,7 @@ where $\chi(M)$ is the Euler characteristic of the (compact, 2D Riemannian) mani
 
 $\int_M K dA = (2-p)\pi + \sum \nu_i$,
 
-where $\nu_i$ are the interior angles of the polygon.  A sketch of the proof using these facts is attached HERE.  The essence is that orbifold features are input surgically on the sphere, we each of which reduces the curvature, and therefore the Euler characteristic.   Surface with a characteristic (and therefore, integral curvature) of zero correspond to surfaces that can be made by folding up that "flat plane", and are therefore, all the possible orbifolds.
+where $\nu_i$ are the interior angles of the polygon.  A sketch of the proof using these facts is attached [here](proof_sketch.pdf).  The essence is that orbifold features are input surgically on the sphere, we each of which reduces the curvature, and therefore the Euler characteristic.   Surface with a characteristic (and therefore, integral curvature) of zero correspond to surfaces that can be made by folding up that "flat plane", and are therefore, all the possible orbifolds.
 
 For a generic orbifold word $\circ^{\alpha} ABC \dots * abc \dots * def \dots \times^{\beta}$ we have:
 
@@ -192,125 +194,86 @@ $\chi = 2 - \left[ 2\alpha + \beta + \frac{A-1}{A} + \frac{B-1}{B} + \frac{C-1}{
 
 This unites a "top down" view (a sphere being surgically operated on) and a "bottom up" view (folding of a FD) to show they are representations of the same thing.  The above proof allows you to input different orbifold words and see what their $\chi$ is.  You can easily show with some testing (since all characters are integers > 1, and the bracketed term above is always positive) that there are only 17 ways to get to $\chi = 0$.  Try for yourself!
 
-The allowable orbifold words are:
+The allowable orbifold words, and visual representations, are:
 
-1. $\circ$ (p1)
-2. 2222 (p2)
-3. 333 (p3)
-4. 442 (p4)
-5. 632 (p6)
-6. *2222 (pmm)
-7. *333 (p3m1)
-8. *442 (p4m)
-9. *632 (p6m)
-10. 2*22 (cmm)
-11. 3*3 (p31m)
-12. 4*2 (p4m)
-13. 22* (pmg)
-14. xx (pg)
-15. ** (pm)
-16. 22x (pgg)
-17. *x (cm)
+1. $\circ$ (p1) - torus
+2. 2222 (p2) - closed pillowcase (4-pointed pillowcase)
+3. 333 (p3) - 3,3,3 turnover (3-pointed pillowcase)
+4. 442 (p4) - 4,4,2 turnover (3-pointed pillowcase)
+5. 632 (p6) - 6,3,2 turnover (3-pointed pillowcase)
+6. *2222 (pmm) - rectangle
+7. *333 (p3m1) - equilateral triangle
+8. *442 (p4m) - right, isoceles triangle
+9. *632 (p6m) - right, scalene triangle
+10. 2*22 (cmm) - 4,4,2 turnover with a slit along one edge (4,4)
+11. 3*3 (p31m) - 6,3,2 turnover with a slit along one edge (3,2)
+12. 4*2 (p4m) - 4,4,2 turnover with a slit along one edge (4,2)
+13. 22* (pmg) - open pillowcase, or a 2-pointed "hat"
+14. xx (pg) - Klein bottle
+15. ** (pm) - cylinder
+16. 22x (pgg) - non-orientable football
+17. *x (cm) - Moebius strip
 
+You can find these, and more illustrations at [The Geometry Center](http://www.geom.uiuc.edu/docs/reference/CRC-formulas/node12.html#SECTION01240000000000000000). Conway's proof using orbifolds <a href="#federov">[10]</a> was not the first proof that there are 17 wallpaper groups; in fact, this list was proven to be complete in 1891, [only after](https://en.wikipedia.org/wiki/Space_group) the proof of 230 groups in three dimensions was completed.  Below are some examples of orbifolds taken from Ref. <a href="conway2">[4]</a>.
 
+<img style="float: center" src="sot_orbifold_examples.jpg" width=1000px>
 
-first proof in 1891 (https://en.wikipedia.org/wiki/Space_group)
+Conway uses various analogies to explain the orbifold notation and how orbifolds trivialize the description of repeating patterns on surface of constant curvature.  In Ref. <a href="#conway">[3]</a> he uses the analogy of an amusement park called ["SymmetryLand"](https://books.google.com/books?hl=en&lr=&id=HmoDWHA8lE8C&oi=fnd&pg=PA438&dq=the+orbifold+notation+for+surface+group&ots=T6sLvtY_gg&sig=-JJayjcjsNKStLsy8N_i8hX3u4g#v=onepage&q=the%20orbifold%20notation%20for%20surface%20group&f=false) in which the cost of tickets ($2) serves as analogy for the "cost" of performing the surgical operations to encode features in the orbifold.
 
-topologies (p1=torus, p2=pillowcase, p3-p6=turnover)
-
-SymetryLand from his royal scoeity notes
-Other "cost" example in his book
-Also see Hyde for more examples.
+Hyde <it>et al.</it> in Ref. <a href="#hyde">[6]</a> also present a nice summary, derivation, and explanation and cataloging of the orbifold notation in different spaces, beyond just Euclidean space.
 
 ## Topologically Distinct Domains
 
+If crystallographic orbifolds are (1) just "folded up" FDs that, in Euclidean dimensions, correspond to all surfaces with a $\chi = 0$, and (2) they are unique for each wallpaper group, then it follows that one should be able to recover the FD if one is presented with an orbfold simply by "cutting" it back open.  Indeed, this approach was pioneered by Daniel Huson and Olaf Delgado-Friedrichs <a href="conway2">[4]</a>.  
 
-Only briefly summarize using points below that specifically reference material presented above.
-Otherwise move to a new post on Heesch Types (and disambiguate with heesch tilings).
+> "A graph on the orbifold will be the boundary of a fundamental domain if it cuts the orbifold into a topological disk that has no internal cone point and can be opened flat onto the plane."
 
+For example, the p6 (632) group is illustrated below in chapter 25 of Ref. <a href="conway2">[4]</a>:
 
+<img style="float: center" src="632_SOT_example.jpg" width=1000px>
 
-As a counterexample, see Escher picture with same tile but different markings on which make it look like different things.
+In other words, if you take the orbifold for a given wallpaper group, all the possible FDs correspond to all the different ways you could cut it back open to fall "flat" back on the plane.  This means that the graph has to go through each symmetry operator.  You can intuitively understand this since the FD is also known as the "asymmetric unit", i.e., it contains no symmetry within it; so the graph has to create a boundary on the orbifold that puts all the symmetry operators (features like cones) on itself so that none are contained "inside" the FD once it is unfolded.
 
-Since the orbifold is unique to each symmetry group, and can be formed by folding up a FD, we can derive other "tiles" of the plane by looking at different ways of reversing this folding, i.e., cutting them open again.  Unsurprisingly, there are multiple ways of cutting open orbifold and this can be shown to correspond to different fundamental domains.  
+There are a total of 46 such tiles that could be formed, which had been found previously through other methods.  Gruenbaum and Shepherd list these as "motif-transitive proper subgroups" of each wallpaper group which are primitive <a href="gs">[11]</a>. Both M. C. Escher, as an artist, and Heesch and Kienzele <a href="hk">[12]</a>, as mathematicians, have undertaken studies of this "regular division of the plane."  The latter were particularly concerned with tiles that could "interlock", i.e., those that do not require any straight edges.  Escher was also primarily focused on this case, though not exclusively.  A nice website devoted to the math and art of Escher can be found [here](https://mathstat.slu.edu/escher/index.php/Math_and_the_Art_of_M._C._Escher)
 
-There are some rules for cutting...
+> "The use of imagery from life led to restrictions on possible choices for symmetry for aesthetic reasons, restrictions which Escher gradually evolved over time. Examining the Regular Division of the Plane Drawings, one finds that the vast majority fall into one of seven symmetry groups: p1, p2, p3, p4, p6, pg, and pgg. These are exactly the symmetry groups which have no reflection symmetry - only translation, rotation, and glide reflection. If two creatures meet on a line of mirror symmetry, they must have a flat edge, and recognizable figures from life rarely have perfectly straight edges. Because of this, Escher mostly avoided mirror symmetry, although he did create a few drawings where bilateral symmetry of the motif leads to overall mirror symmetry of the pattern" - See [here](https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns).
 
-Show cutting of the 2*22 orbifold in conway huson example above
+Heesch's naming system is constrained to these 7 groups as well, for the same reason: they must contain no mirror planes.  Interesting, mirror "images" are still possible as a result of glide planes.  The fact that reflections are possible without mirrors is why Conway refers to these operations as "miracles" <a href="conway2">[4]</a>.  In Heesch's system sides of a tile are labelled with letter: T, C, or G.  If an edge is a translated version of another edge, those labelled with a "T". If an edge results from a rotation (cyclic symmetry) about one corner of a neighbor, these edges are denoted with "C"s and are given a subscript to denote the angle of rotation: N for 360$^{\circ}/N$ degrees, though 2 is (180$^{\circ}$) is not indicated.  Moreover, if any edge is a (180$^{\circ}$) rotation of itself, it is just considered a single edge, not two.  Finally, if one edge is a result of a glide operation (flip and translate) the two edges are labelled with "G"s; if there are more than one glide pair they are given subscripts to disambiguate them, but otherwise have no subscript.  More details can be found [here](http://www.eschertile.com/), [here](http://www.tessellations.org/tess-symmetry7.shtml) and in the [Tesselmania!](http://jwilson.coe.uga.edu/EMT668/EMAT6680.2002.Fall/AllenL/MATH%207200/Escher%20Project/Tesselmania/tesselmania.html) program.
 
-These are the different so-called "Heesch types" after the mathematician Heesch who, among other things, studied tilings and their connection to symmetry; the renowned Dutch artist M. C. Escher also undertook a study of these tilings.
-- http://www.eschertile.com/
-- http://jwilson.coe.uga.edu/EMT668/EMAT6680.2002.Fall/AllenL/MATH%207200/Escher%20Project/Tesselmania/tesselmania.html
+<img style="float: center" src="Heesch-tiles.png" width=1000px>
 
-Different cuttings to produce different isohedral tiles (some of them are FD)
-Point to papers coming out?
+There are a total of 28 Heesch types, corresponding to all FDs for these 7 groups; thee image above is from Ref. <a href="hk">[12]</a>.  These are a subset of the 46 total tiles mentioned earlier.  These tiles are the same, so the crystal or tesselation that results is made from tiles of all the same "shape" or face, so are referred to as "isohedral."
+ In fact, it is also possible to derive "composite" tiles which also tile the plane with the same shape.  If the FDs are the "atomic" unit of a crystal, is also possible to have topologically distinct units if several of them combine to form "molecular" units; such units contain the symmetry of the crystal.  For example, it is possible to have a tile with an internal mirror plane such that half of it forms a FD, and the mirror plane simply aligns with a mirror plane running through the crystal. These correspond to non-primitive subgroups in Ref. <a href="gs">[11]</a>.  
 
-For most applications, it doesn't matter how you select the tile - you can cut the same crystal many ways --> "headless horse" situation
-See ETH zurich java applet for example where you use a single tile
-ITCA uses a single tile
+It turns out that you can also derive these isohedral tiles using the orbifolds as well.  You simply need to change the "cutting rules" used to find the ones that are FDs in order to get the rest.  Previously, we had to cut so that all the symmetry operations fell on the boundary we cut along; now, we may at most leave (1) a single cone point in the interior, or (2) a cone point on the boundary (a corner point).  We may also "ignore" parts of the boundary (mirrors) which makes them "part" of the tile.  Thus, all isohedral tiles can be enumerated directly from the orbifold.  There are 47 isohedral tiles that do not correspond to FDs, for a total of 93.  
 
+Importantly, these cuttings do NOT change the property of the tiling.  These are simply different ways that you can divide the pattern (remember an orbifold is a "quotient" space!) into equal pieces.  For many applications, this does not make any difference; this is why "standard" FDs can be defined in the [International Tables for Crystallography](https://it.iucr.org/Ab/), for example.  One convention is just as good as another if you are describing the arrangement of points in space, such as atoms.  
 
-https://mathstat.slu.edu/escher/index.php/Math_and_the_Art_of_M._C._Escher
+However, it can sometimes a convenient choice can be very relevant for design.  It is common practice for crystallographers to define FDs "around" molecules to form their "outline". In the example below, taken from [here](http://pd.chem.ucl.ac.uk/pdnn/symm3/asymunit.htm), the outline of the molecule is qualitatively drawn to illustrate this, though in this case it is in 3D.
 
+<img style="float: center" src="sg4asym4.gif" width=410px>
 
-p2 from 3D example of molecule
+Below, on the right, is a mutation of a simple box with p1 symmetry into Escher's Pegasus depicted earler, taken from [here](http://www.eschertile.com/kids/animate.htm).  More such examples can be found at [eschertile.com](http://www.eschertile.com/kids/animate.htm).  For comparison, the isohedral tile (IH) is also shown.  It is clear that we could either divide the picture into squares, or into Pegasus-shaped objects.  Topologically they are the same, but one is far more intuitive that the other.
 
+<img style="float: center" src="david-a6.gif" width=300px>
+<img style="float: center" src="p1-Regular-division-105.jpg" width=225x>
 
-Draw colored edges from the previous symetry examples
+As a final example, consider the "fish" below.  Here, I have drawn two possible divisions of space according to two different IH tiles.  IH52 is a more "conventional" cell you might find in the International Tables for Crystallography or another standard reference, while IH5 is the one used to actually generate the tesselation.
 
-Here is a gif to show mutation from rectangle to pegasus: http://www.eschertile.com/kids/david-a6.gif
-http://www.eschertile.com/kids/animate.htm
+<img style="float: center" src="p2gg-451px-Regular-division-10.jpg" width=300px>
 
-Heesch's system explained
-http://www.tessellations.org/tess-symmetry7.shtml
+As a final counterexample, examine the picture below.  In it, Escher has drawn the same shape (tile) but inside he has draw two different motifs by sketching different lines and curves.  One appears to be a "flying fish" and other a bird.  However, careful examination reveals that they have the same outline.  Thus, they are the same tile.  Only the interior of the FD has been changed, which is perfectly acceptable in the context of art.  It violates no rules, because the "inside" of the FD represents all degrees of freedom, whereas the boundary encodes the symmetry.
 
-
-https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
-"Over the course of his career, Escher filled five folio notebooks with sketches of periodic tessellations. These were not intended for public consumption, but instead sources of ideas and design patterns he would use in creating his finished graphic works. Escher numbered his sketches, from 1 to 137. " - https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings
-
-
-
-
-
-
-
-
-
-
-> "The use of imagery from life led to restrictions on possible choices for symmetry for aesthetic reasons, restrictions which Escher gradually evolved over time. Examining the Regular Division of the Plane Drawings, one finds that the vast majority fall into one of seven symmetry groups: p1, p2, p3, p4, p6, pg, and pgg. These are exactly the symmetry groups which have no reflection symmetry - only translation, rotation, and glide reflection. If two creatures meet on a line of mirror symmetry, they must have a flat edge, and recognizable figures from life rarely have perfectly straight edges. Because of this, Escher mostly avoided mirror symmetry, although he did create a few drawings where bilateral symmetry of the motif leads to overall mirror symmetry of the pattern" - https://mathstat.slu.edu/escher/index.php/Wallpaper_Patterns
-
-
-
-
-This is because he cleverly chose, perhaps without realizing, that he was using different isohedral tiles that belong to a given symmetry group.  These can be derived as different "cut open" orbifolds.
-
-Like Heesch, who specificially investigated asymmetric tiles.
-Heesch types
-http://www.eschertile.com/
-
-
-
-This means something very important - instead of thinking of groups as matrices, we can vied them as "rings" decorated with maps that indicate how parts of the ring are related to each other.  Create ring, add decorations until "cost" reaches a threshold. this is what conway proved.
-
-
-
-
-
-# Generating Crystals --> Research Post
-
-PACCS - have separate post about paper on this
-Wykoff positions and stoichiometry (a bit about this) --> remember wyckoff positions originally mentioned in tldr?
-High symmetry hypothesis from David Wales
-See paper by Doye, also isopointal sets by Glotzer student
-
-# Beyond
-
-So far, have focused discussion on 2D Euclidean space but is extensible to 3D and to non-Euclidean spaces (Hyde paper and Conway's book).
-As already discussed, this is connected to tiling theories. <a href="#conway">[1]</a>
+<img style="float: center" src="Regular-division-80.jpg" width=1000px>
 
 # In summary
 
-* Orbifolds describe symmetrically unique (think independent degrees of freedom)
+Orbifolds provide a unique and general way to describe symmetry and tilings, and are particularly useful in 2D.  Extensions to 3D can be performed, but with some effort.  The interested reader should refer to Ref. <a href="conway2">[4] for an overview.  They make explicit the connection between tiling and symmetry and represent a different approach to understanding the mathematics which underpin these concepts.  This has application is design, material science, art, and engineering which in many regards, remains underutilized to this day.
+
+* Orbifolds describe a "folded" fundamental domain (FD).
+* The FD contains the symmetrically unique sites (think independent degrees of freedom).
+* The FD, aka "asymmetric unit", has all the symmetry elements on its edge or boundary, which is usually only roughly half "independent" since these operations map one edge to a symmetrically equivalent one.
+* The sequence of these pairings is how Heesch represented isohedral tilings.
 
 # Citations
 
@@ -322,25 +285,10 @@ As already discussed, this is connected to tiling theories. <a href="#conway">[1
 <p id="hyde">[6] Hyde, S. T., S. J. Ramsden, and Vanessa Robins. "Unification and Classification of Two-dimensional Crystalline Patterns using Orbifolds." <it>Acta Crystallographica Section A: Foundations and Advances</it> 70.4 (2014): 319-337.</p>
 <p id="macbeath">[7] Macbeath, A. M. "The classification of non-euclidean plane crystallographic groups." <it>Canadian Journal of Mathematics</it> 19 (1967): 1192-1205.</p>
 <p id="pretti">[8] Pretti, Evan, <it>et al.</it> "Symmetry-Based Crystal Structure Enumeration in Two Dimensions." <it>The Journal of Physical Chemistry A</it> 124.16 (2020): 3276-3285.</p>
-<p id="doris">[9] Schattschneider, D. <it>M.C. Escher: Visions of Symmetry.</it> Thames & Hudson, 2004.
+<p id="doris">[9] Schattschneider, D. <it>M.C. Escher: Visions of Symmetry.</it> Thames & Hudson, 2004.</p>
+<p id="federov">[10] Federov, E. <it>Symmetry in the plane.</it> Proceedings of the Imperial St. Petersburg Mineralogical Society, 28 (1891): 345-390.</p>
+<p id="gs">[11] Gruenbaum, Branko, and Geoffrey Colin Shephard. Tilings and Patterns. Second Edition. Courier Dover Publications, 2016.</p>
+<p id="hk">[12] Heesch, Heinrich, and Kienzle, Otto. <it>Flaechenschluss; System der Formen lückenlos aneinanderschliessender
+Flachteile.</it> Berlin: Springer, 1963. 
 
-<!--
-2D Crystallographic Tiling
 
-# Heesch Types
-Escher
-Heesch Tiles - 28 tiles from certain wallpaper groups
-
-# Fundamental Domains from Orbifolds
-
-Conway's symbols on circles - "shortcut" method to get FD for groups
-
-# Fundamental Domain Tilings
-
-Can find all 46 FDs for groups by making transformations in the plane.
-
-# Non-FD Tilings
-
-The other 47 "molecular" units.
-
--->
