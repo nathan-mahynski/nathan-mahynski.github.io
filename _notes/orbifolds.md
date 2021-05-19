@@ -3,6 +3,7 @@ title: "Intro to Crystallographic Orbifolds"
 excerpt: "How orbit manifolds describe symmetry and why they are so useful."
 header:
   teaser: /assets/img/klein_bottle.png
+  image: /assets/img/orbifold_header.png
 tags:
   - symmetry
   - orbifolds

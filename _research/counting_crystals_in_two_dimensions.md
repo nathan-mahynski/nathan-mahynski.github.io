@@ -2,18 +2,18 @@
 title: "Counting Crystals in Two Dimensions"
 excerpt: "Leveraging symmetry to efficiently enumerate important patterns in 2D."
 header:
-  image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/unsplash-gallery-image-1-th.jpg
+  image: 
+  teaser: /assets/img/wallpaper_groups.png
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
+  - url: http://dx.doi.org/10.1038/s41467-019-10031-4
+    image_path: /assets/img/nat_comm_2019.png
+    alt: "Using symmetry to elucidate the importance of stoichiometry in colloidal crystal assembly."
+  - url: https://dx.doi.org/10.1021/acs.jpca.0c00846
+    image_path: /assets/img/crystal_bc_ex.png
+    alt: "Symmetry-based crystal structure enumeration in two dimensions."
+  - url: http://dx.doi.org/10.1039/C9SM02426C
+    image_path: /assets/img/soft_matter_cover_2020.png
+    alt: "Grand canonical inverse design of multicomponent colloidal crystals."
 classes:
   - wide
 tags:
@@ -27,7 +27,7 @@ tags:
 
 {% include toc icon="gears" title="Table of Contents" %}
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="" %}
 
 # tl;dr
 
@@ -38,17 +38,17 @@ This post is accompaniment to several manuscripts:
 3. ["Python Analysis of Colloidal Crystal Structures (PACCS)," E. Pretti, N. A. Mahynski, https://github.com/usnistgov/PACCS (2020).](https://github.com/usnistgov/PACCS) 
 4. ["Grand canonical inverse design of multicomponent colloidal crystals," N. A. Mahynski, R. Mao, E. Pretti, V. K. Shen, J. Mittal, Soft Matter <b>16</b>, 3187–3194 (2020).](https://dx.doi.org/10.1039/C9SM02426C)
 
-In this series of papers we reconsidered the task of creating interfaces that require a specific surface pattern to be functional.  Specifically, we deevloped an algorithm, inspired by symmetry and the concept of [orbifolds](/notes/orbifolds) to create an algorithm that can enumerate point patterns as quickly as is possible in two Euclidean dimensions.  This enables you to generate different candidatee structures that are particularly relevant for atomic crystals made of atoms that are similar in size, or out of colloidal crystals made from similarly sized spherical constituents.  This method enumerates structures according to rules of symmetry; compared to random searching, this enables the enumeration of "important" candidate structures trillions of times faster, reducing a calculation that would otherwise take the age of the universe to complete (13.8e9 years) to a mere 15 minutes.  This code is available in Ref. 3 above, and is further described in Ref. 2.
+In this series of papers we reconsidered the task of creating planar interfaces that require a unique surface pattern to be functional. In a system that self-assembles, such as an appropriate colloidal suspension, there are many possibilities, but the one that we might expect is the one with the lowest free energy.  However, a ensemble of possibilities needs to be generated in order to screen them for the most thermodynamically stable one.  To this end, we developed an algorithm, inspired by symmetry and the concept of [orbifolds](/notes/orbifolds), that can enumerate point patterns as quickly as is possible in two Euclidean dimensions.  This enables one to generate different candidate patterns that are particularly relevant for atomic crystals made of atoms that are similar in size, or out of colloidal crystals made from similarly sized spherical constituents.  This method enumerates structures according to rules of symmetry; compared to random searching, this enables the enumeration of "important" candidate structures trillions of times faster, reducing a calculation that would otherwise take the age of the universe to complete (13.8e9 years) to a mere 15 minutes.  This code is available in Ref. 3 above, and is further described in Ref. 2.
 
 Many of the graphics below have been presented at scientific conferences including:
 
-* ``Symmetry-based discovery of multicomponent, two-dimensional colloidal crystals,'' N. A. Mahynski, E. Pretti, V. K. Shen, J. Mittal, American Physical Society March Meeting, Denver, CO [virtual] USA (03/2021).
+* ``Symmetry-based discovery of multicomponent, two-dimensional colloidal crystals,'' N. A. Mahynski, E. Pretti, V. K. Shen, J. Mittal, American Physical Society March Meeting, Denver, CO USA (03/2021).
 * ``Symmetry-based discovery of multicomponent, two-dimensional colloidal crystals,'' N. A. Mahynski, E. Pretti, V. K. Shen, J. Mittal, GRC: Colloidal, Macromolecular & Polyelectrolyte Solutions, Ventura, CA USA (02/2020). 
 * ``Grand canonical inverse design of multicomponent colloidal assemblies,'' N. A. Mahynski, E. Pretti, V. K. Shen, J. Mittal, American Institute of Chemical Engineers Annual Meeting, Orlando, FL USA (11/2019).
 * ``Symmetry-based discovery of multicomponent, two-dimensional colloidal crystals,'' N. A. Mahynski, E. Pretti, V. K. Shen, J. Mittal, American Institute of Chemical Engineers Annual Meeting, Pittsburgh, PA USA (11/2018).
 * ``Symmetry-based discovery of multicomponent, two-dimensional colloidal crystals,'' N. A. Mahynski, E. Pretti, V. K. Shen, J. Mittal, Foundations of Molecular Modeling and Simulation, Delavan, WI USA (07/2018). 
 
-Please cite appropriately if this material is helpful.
+Please cite appropriately if you find this material to be helpful.
 
 # 2D Materials from Programmable Matter
 
