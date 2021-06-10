@@ -28,7 +28,7 @@ I am currently looking for a postodoctoral candidate to do work on designing sel
 1. [NRC Postdoctoral Opportunity](http://nrc58.nas.edu/RAPLab10/Opportunity/Opportunity.aspx?LabCode=50&ROPCD=506461&RONum=C0449&ROBaseMode=R100) You must be a US citizen to apply for this program.  [Contact me](mailto:nathan.mahynski@gmail.com) for details on how to apply!
 2. [NIST Summer Undergraduate Research Fellowship (SURF) Program](https://www.nist.gov/surf)
   - Bliss Han, 2021, Brown Univ. Biochemistry
-  - Daniel Markiewitz, 2021, Cornell Univ. Chemical Engineering
+  - Daniel Markiewitz, 2021, Cornell Univ. Chemical Engineering; now a Ph.D. candidate at Massachusetts Institute of Technology
   - Evan Pretti, 2018, Lehigh Univ. Chemical Engineering; now a Ph.D. candidate at The University of California, Santa Barbara
   - Kamryn Kant, 2018, Clemson Univ. Chemical Engineering; now a Ph.D. candidate at Clemson University
   - Sally Jiao, 2017, 2018, Princeton Univ. Chemical Engineering; now a Ph.D. candidate at The University of California, Santa Barbara

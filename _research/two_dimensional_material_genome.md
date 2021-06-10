@@ -28,6 +28,7 @@ tags:
 
 Heesch's syetme expanded to [A]TCG.
 
+Motivate that disassembly is FD = E^2/G so that assembly pathways are just FD*G = E^2
 
 <!--
 2D Crystallographic Tiling

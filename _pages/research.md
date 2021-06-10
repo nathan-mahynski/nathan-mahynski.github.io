@@ -12,6 +12,6 @@ header:
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
 ---
 
-Here you can find a longer discussions and posts that accompany ongoing and previous research and peer-reviewed publications.  Discussion is welcome and encouraged.
+Here you can find a longer discussion to accompany ongoing and previous research which ties together different peer-reviewed publications into (potentially) more coherent, long-term project descriptions. These are written for the scientifically minded, but do not require subject matter expertise. If you find a project or paper interesting, or if you are interested in collaboration or research opportunities, please send me an <a href="mailto:nathan.mahynski@nist.gov">email</a>.
 
 ---
