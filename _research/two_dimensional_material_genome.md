@@ -30,6 +30,11 @@ Heesch's syetme expanded to [A]TCG.
 
 Motivate that disassembly is FD = E^2/G so that assembly pathways are just FD*G = E^2
 
+FD = atomic i.e. indivisible from (global) symmetry perspective - IH tiles are a superset of FD's which may not be indivisible, so are "molecular analogs"
+
+explaining how to draw lines:
+REmark that orbifold means that "curved edges in flat plane" = "straight lines on curved surface" much like Einstein's theory of frame dragging
+
 <!--
 2D Crystallographic Tiling
 

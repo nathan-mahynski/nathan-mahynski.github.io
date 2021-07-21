@@ -20,3 +20,41 @@ tags:
   - 
 ---
 
+
+# tl;dr
+
+Data-science needs lots of data; quality can be less than perfect if the trends come through for screening.
+
+list papers
+
+# Thermodynamic Extrapolation
+
+What is it, and what else has been done.
+
+# Computationally Efficient Exploration
+
+T-extrap
+mu-extrap
+t-mu extrap
+Multicomponent
+
+# Examples
+
+Film wetting
+Stuff with Matt
+
+# Optimal Combination
+
+Jacob's Work
+
+# Extrapolating Structural Observables
+
+Sally's work
+
+# Future Work
+
+Mention Ward's work so far as first order
+Other people have reached similar conclusions and used similar results to explore water behavior.
+
+Jeppe Dyre
+Iso-structural stuff

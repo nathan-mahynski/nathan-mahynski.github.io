@@ -207,12 +207,12 @@ The allowable orbifold words, and visual representations, are:
 8. *442 (p4m) - right, isoceles triangle
 9. *632 (p6m) - right, scalene triangle
 10. 2*22 (cmm) - 4,4,2 turnover with a slit along one edge (4,4)
-11. 3*3 (p31m) - 6,3,2 turnover with a slit along one edge (3,2)
+11. 3*3 (p31m) - 6,3,2 turnover with a slit along one edge (6,2)
 12. 4*2 (p4m) - 4,4,2 turnover with a slit along one edge (4,2)
 13. 22* (pmg) - open pillowcase, or a 2-pointed "hat"
 14. xx (pg) - Klein bottle
 15. ** (pm) - cylinder
-16. 22x (pgg) - non-orientable football
+16. 22x (pgg) - non-orientable American football
 17. *x (cm) - Moebius strip
 
 You can find these, and more illustrations at [The Geometry Center](http://www.geom.uiuc.edu/docs/reference/CRC-formulas/node12.html#SECTION01240000000000000000). Conway's proof using orbifolds <a href="#federov">[10]</a> was not the first proof that there are 17 wallpaper groups; in fact, this list was proven to be complete in 1891, [only after](https://en.wikipedia.org/wiki/Space_group) the proof of 230 groups in three dimensions was completed.  Below are some examples of orbifolds taken from Ref. <a href="conway2">[4]</a>.

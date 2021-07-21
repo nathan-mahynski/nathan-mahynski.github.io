@@ -35,6 +35,13 @@ provenance for traceability
 
 # STAMP
 
+## The Data
+
+## Taxonomical Trends
+
+Binomial nomenclature
+
+## Spatiotemporal Trends
 
 # Recirculating Aquaculture and Salmon
 
