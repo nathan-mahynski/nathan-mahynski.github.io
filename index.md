@@ -70,5 +70,7 @@ A website, blog, and repository for chemical informatics research broadly incorp
 
 Details can be found throughout this site, and you can <a href="https://twitter.com/mahynski?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mahynski</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+Some current and previous collaborators include:
+
 ![](/assets/img/splash/partners.png)
 

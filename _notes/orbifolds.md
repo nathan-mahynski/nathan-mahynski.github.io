@@ -269,7 +269,7 @@ As a final counterexample, examine the picture below.  In it, Escher has drawn t
 
 # In summary
 
-Orbifolds provide a unique and general way to describe symmetry and tilings, and are particularly useful in 2D.  Extensions to 3D can be performed, but with some effort.  The interested reader should refer to Ref. <a href="conway2">[4] for an overview.  They make explicit the connection between tiling and symmetry and represent a different approach to understanding the mathematics which underpin these concepts.  This has application is design, material science, art, and engineering which in many regards, remains underutilized to this day.
+Orbifolds provide a unique and general way to describe symmetry and tilings, and are particularly useful in 2D.  Extensions to 3D can be performed, but with some effort.  The interested reader should refer to Ref. <a href="conway2">[4]</a> for an overview.  They make explicit the connection between tiling and symmetry and represent a different approach to understanding the mathematics which underpin these concepts.  This has application is design, material science, art, and engineering which in many regards, remains underutilized to this day.
 
 * Orbifolds describe a "folded" fundamental domain (FD).
 * The FD contains the symmetrically unique sites (think independent degrees of freedom).

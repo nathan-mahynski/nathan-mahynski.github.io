@@ -23,6 +23,8 @@ classes:
 
 {% include toc icon="gears" title="Table of Contents" %}
 
+Here is a "spark notes" version of the main concepts from G&S.
+
 # Chapter 1
 
 # Chapter 2

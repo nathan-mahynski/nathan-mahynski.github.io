@@ -19,3 +19,9 @@ classes:
 tags:
   - 
 ---
+
+Unlike electronic structure measurements which determine chemistry, here we are probing nuclear measurements to investigate atomic makeup irrespective of the arrangement of those building blocks.
+
+# SIMCA
+
+# Nonlinear Dimensionality Reduction Approaches
