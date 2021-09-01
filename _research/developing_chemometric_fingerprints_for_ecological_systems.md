@@ -42,7 +42,7 @@ This so-called "food fraud" often involves "economically motivated adulteration"
 
 * A recent [Indian Honeygate](https://www.indiatoday.in/india/story/honeygate-and-china-connection-cse-s-adulteration-investigation-reveals-shocking-details-1746416-2020-12-03) was reported in 2020 when an investigation reported that honey from 13 top brands in India showed signs of adulteration with Chinese syrups that can defeat conventional food safety and authenticity tests.
 
-EMA is particularly rampant in certain areas.  For example, Manuka Honey is an iconic product of New Zealand, widely regarded for its purported health benefits; the country has an annual production of roughly 1,700 tons, yet in 2013 as much as 10,000 tons of “manuka honey” appeared on the global marketplace. <a href="zhou">[6]</a>.  This is because honey is difficult to produce and highly valued, creating a large economic driver for adulteration.  While crude oil and natural gas usually steal the spotlight as the no. 1 and no. 3 most traded commodities in the world, [coffee comes in at no. 2](https://www.bllnr.sg/leadership/what-are-commodities-and-what-are-the-top-10-most-traded-commodities-in-the-world).  Since a mature coffee tree [produces only 1-1.5 pounds](https://askinglot.com/how-much-is-a-coffee-tree) of roasted coffee per year, coffee (which the reader may be drinking at this very moment) is also particularly susceptible to EMA.
+EMA is particularly rampant in certain areas.  For example, Manuka Honey is an iconic product of New Zealand, widely regarded for its purported health benefits; the country has an annual production of roughly 1,700 tons, yet in 2013 as much as 10,000 tons of “manuka honey” appeared on the global marketplace. <a href="zhou">[6]</a>.  This is because honey is difficult to produce and highly valued, creating a large economic driver for adulteration.  While crude oil and natural gas usually steal the spotlight as the no. 1 and no. 3 most traded commodities in the world, [coffee comes in at no. 2](https://www.bllnr.sg/leadership/what-are-commodities-and-what-are-the-top-10-most-traded-commodities-in-the-world).  Since a mature coffee tree [produces only 1-1.5 pounds](https://askinglot.com/how-much-is-a-coffee-tree) of roasted beans per year, coffee (which the reader may be drinking at this very moment) is also particularly susceptible to EMA.
 
 ## The Basic Solution
 
@@ -100,7 +100,22 @@ Before any mathematical model can be built, accurate data must be collected.  Th
 
 # Seabirds of the Northern Pacific Ocean
 
+<img style="float: right" src="compounds.png" width=350px>
+
+In this work, my collaborators and I sought to identify chemometric trends in anthropogenic toxins in the northern Pacific ocean.  These toxins include [organochlorine pesticides](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5464684/), [per- and poly- fluoralkyl compounds (PFAS)](https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances), [polychlorinated biphenyls (PCBs)](https://en.wikipedia.org/wiki/Polychlorinated_biphenyl), and heavy metals such as mercury. 
+
+
+> [In 1999, the U.S. Fish and Wildlife Service Alaska Maritime National Wildlife Refuge (USFWS-AMNWR), the U.S. Geological Survey Biological Resources Division (USGS-BRD), and NIST implemented the Seabird Tissue Archival and Monitoring Project (STAMP) to monitor contaminants in Alaska's marine environments. In 2010, the 111th Congress directed NIST to expand this and other programs into the U.S. Pacific Islands. STAMP was designed as an ongoing long-term effort to track geographic and temporal trends in environmental quality by collecting seabird eggs using standardized protocols, processing and banking the contents under conditions that ensure chemical stability during long-term (decadal) storage, and analyzing subsamples of the stored material to determine baseline levels of persistent bioaccumulative contaminants.](https://www.nist.gov/programs-projects/seabird-tissue-archival-and-monitoring-project-stamp)
+
+<a href="https://www.grida.no/resources/5453"><img style="float: right" src="biomagnify.png" width=250px></a>
+
+Seabird eggs are useful chemometric indicators because these birds exist near the top of the food chain, and act as a reservoir for these toxins via [biomagnification](https://en.wikipedia.org/wiki/Biomagnification).  Egg contents are fairly stable over long periods of time so they can be entered into animal [biobanks](https://en.wikipedia.org/wiki/Biobank) and analyzed at later dates.  Furthermore, because birds feed over broad areas, they represent a reasonable average of the Pacific environment.
+
 ## The Data
+
+<img style="float: right" src="seabirds.png" width=350px>
+
+To understand any spatiotemporal trends, we started by curating analytical chemistry data for eggs collected from 1999-2010 on a subset of species and analytes that were measured regularly and reasonably systematically. Thousands of STAMP samples have been archived in the [NIST Biorepository](https://www.nist.gov/programs-projects/nist-biorepository) at [Hollings Marine Laboratory](https://www.nist.gov/mml/hollings-marine-laboratory). Longitudinal monitoring efforts of this nature provide invaluable data that enables the assessment of both wildlife and human exposures to environmental contaminants as these species often consume prey (e.g., fish) similar to, and from sources (e.g., oceanic) comparable to, human populations nearby. In certain areas, seabird eggs are also a significant part of subsistence diets for indigenous peoples. Chemometric profiles and related health implications are known to differ across species <a href="dietz">[10]</a>. Eggs, however, can be difficult to assign to a species unless the bird is observed on the nest from which the sample was collected due to similar appearance within a genus and [sympatric nesting behavior](https://en.wikipedia.org/wiki/Sympatry). This represents a large point of uncertainty for both wildlife managers and exposure researchers alike.
 
 ## Taxonomical Trends
 
@@ -141,3 +156,5 @@ honey
 <p id="pomerantsev"><a href="http://dx.doi.org/10.1016/j.trac.2016.01.010">[8] Rodionova O.Y., Titova A.V., Pomerantsev A.L., "Discriminant analysis is an inappropriate method of authentication," Trends in Analytical Chemistry, 78 (2016) 17-22.</a></p>
 
 <p id="perera"><a href="https://arxiv.org/abs/2101.03064">[9] Perera P., Oza P., Patel V.M., "One-class classification: A survey," arXiv:2101.03064 (2021).</a></p>
+
+<p id="dietz"><a href="https://www.sciencedirect.com/science/article/pii/S0048969719337337">[10] Dietz R., et al. "Current state of knowledge on biological effects from contaminants on arctic wildlife and fish," Science of the Total Environment 696 (2019) 133792.</a></p>

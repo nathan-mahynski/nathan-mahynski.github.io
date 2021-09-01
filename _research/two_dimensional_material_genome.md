@@ -26,6 +26,8 @@ tags:
   - Heesch
 ---
 
+"Boundary condition" figure from JPCA to motivate.
+
 Heesch's syetme expanded to [A]TCG.
 
 Motivate that disassembly is FD = E^2/G so that assembly pathways are just FD*G = E^2
