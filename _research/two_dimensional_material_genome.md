@@ -37,6 +37,10 @@ FD = atomic i.e. indivisible from (global) symmetry perspective - IH tiles are a
 explaining how to draw lines:
 REmark that orbifold means that "curved edges in flat plane" = "straight lines on curved surface" much like Einstein's theory of frame dragging
 
+show that JPCA boundaries are all just convenient cuttings of the orbifolds!
+
+Connection of "rotational diffusion" to Itajime shibori by C. Yackel
+
 <!--
 2D Crystallographic Tiling
 

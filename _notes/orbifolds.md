@@ -83,7 +83,7 @@ In the top row, only rotations are used to generate the plane; in the second, on
 
 ## What is a crystallographic orbifold?
 
-The term "orbifold" is short for orbit manifold <a href="#thurston">[1]</a>. As already stated, an orbit manifold is topological object that describes the "division" of a space (2D Euclidean plane, for example) by the action of a finite group.  The fundamental domain is the region of space containing no symmetry operations and is this quotient.  In crystallographic topology, a wallpaper group's orbifold can derived by gluing together the FD to match up the symmetrically equivalent edges <a href="#hyde">[6]</a>. Some examples are shown below.
+The term "orbifold" is short for orbit manifold <a href="#thurston">[1]</a>. As already stated, an orbit manifold is topological object that describes the "division" of a space (2D Euclidean plane, for example) by the action of a finite group.  The fundamental domain is the region of space enclosing no symmetry elements and is this quotient.  In crystallographic topology, a wallpaper group's orbifold can derived by gluing together the FD to match up the symmetrically equivalent edges <a href="#hyde">[6]</a>. Some examples are shown below.
 
 <a href="https://www.nature.com/articles/s41467-019-10031-4"><img style="float: center" src="orbifold_examples.png" width=1000px></a>
 
