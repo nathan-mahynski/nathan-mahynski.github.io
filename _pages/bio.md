@@ -20,10 +20,11 @@ For a complete list of (hyperlinked) publications, refer to my CV below.  PDFs o
 # Current Position 
 ---
 
+Director, MML Summer Undergraduate Research Fellowship (SURF) Program
 Chemical Engineer, Ph.D. \\
 [Chemical Informatics Research Group](https://www.nist.gov/mml/csd/chemical-informatics-research-group) \\
 Chemical Sciences Division \\
-Material Measurement Laboratory \\
+Material Measurement Laboratory (MML) \\
 National Institute of Standards and Technology \\
 100 Bureau Drive STOP 8320 \\
 Gaithersburg, MD 20899-8320 USA \\

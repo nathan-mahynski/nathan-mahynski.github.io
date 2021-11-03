@@ -28,10 +28,10 @@ I am currently looking for a postodoctoral candidate to do work on designing sel
 1. [NRC Postdoctoral Opportunity](http://nrc58.nas.edu/RAPLab10/Opportunity/Opportunity.aspx?LabCode=50&ROPCD=506461&RONum=C0449&ROBaseMode=R100) You must be a US citizen to apply for this program.  [Contact me](mailto:nathan.mahynski@gmail.com) for details on how to apply!
 2. [NIST Summer Undergraduate Research Fellowship (SURF) Program](https://www.nist.gov/surf)
   - Bliss Han, 2021, Brown Univ. Environmental Engineering
-  - Daniel Markiewitz, 2021, Cornell Univ. Chemical Engineering; now a Ph.D. candidate at Massachusetts Institute of Technology
-  - Evan Pretti, 2018, Lehigh Univ. Chemical Engineering; now a Ph.D. candidate at The University of California, Santa Barbara
-  - Kamryn Kant, 2018, Clemson Univ. Chemical Engineering; now a Ph.D. candidate at Clemson University
-  - Sally Jiao, 2017, 2018, Princeton Univ. Chemical Engineering; now a Ph.D. candidate at The University of California, Santa Barbara
+  - Daniel Markiewitz, 2021, Cornell Univ. Chemical Engineering -> Ph.D. @ Massachusetts Institute of Technology
+  - Evan Pretti, 2018, Lehigh Univ. Chemical Engineering -> Ph.D. @ The University of California, Santa Barbara
+  - Kamryn Kant, 2018, Clemson Univ. Chemical Engineering
+  - Sally Jiao, 2017, 2018, Princeton Univ. Chemical Engineering -> Ph.D. @ The University of California, Santa Barbara
 3. [NIST Summer High School Intern (SHIP) Program](https://www.nist.gov/ohrm/summer-high-school-intern-program)
 
 # Open Source Code
@@ -48,10 +48,10 @@ I am currently looking for a postodoctoral candidate to do work on designing sel
 
 * The [Free Energy and Advanced Sampling Simulation Toolkit (FEASST)](https://pages.nist.gov/feasst/) is a free, open-source, modular program to conduct molecular and particle-based simulations with flat-histogram Monte Carlo methods, primarily developed by Wick Hatch at NIST.
 
-* [PACCS](https://github.com/usnistgov/paccs) is a colloidal crystal structure analysis, generation, optimization, and visualization library written in Python. It supports stochastic optimization of periodic multicomponent systems in two and three dimensions, as well as the generation of candidate structures in two dimensions using wallpaper groups.  It was primarily developed by Evan Pretti as his SURF project in 2018.
+* [PACCS](https://github.com/usnistgov/paccs) is primarily a colloidal crystal structure generation and optimization library written in Python. It supports stochastic optimization of periodic multicomponent systems in two and three dimensions, as well as the generation of candidate structures in two dimensions using wallpaper groups.  It was primarily developed by Evan Pretti as his SURF project in 2018.
 
+<!--
 # (Mostly) Software Stack for a Virtual Office
----
 
 <a href="https://slack.com/"><img style="float: center;" src="/assets/img/slack_logo.png" width=100px></a>
 <a href="https://zoom.com/"><img style="float: center;" src="/assets/img/zoom_logo.png" width=100px></a>
@@ -67,3 +67,4 @@ Slack and Zoom are indispensable collaboration tools.  I prefer OneNote over alt
 <a href="https://hubs.mozilla.com/"><img style="float: center;" src="/assets/img/mozilla_hubs_logo.png" width=600px></a>
 
 Virtual environments like [Mozilla Hubs](https://hubs.mozilla.com/), [Teooh](https://www.teooh.com/), [Gather](https://gather.town/) also provide interesting alternative work/interaction environments.
+-->
