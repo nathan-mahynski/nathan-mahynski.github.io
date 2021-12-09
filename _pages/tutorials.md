@@ -8,10 +8,10 @@ classes: wide
 author_profile: true
 header:
   image_description: ""
-  overlay_image: /assets/img/logo/logo_wide.png
+  overlay_image: /assets/img/logo/wombo_splash.JPG
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
 ---
 
-The tutorials below are step-by-step looks at different tasks, objectives, and other functions I regularly employ.  Feedback is welcome!
+<!--The tutorials below are step-by-step looks at different tasks, objectives, and other functions I regularly employ.  Feedback is welcome!-->
 
----
+

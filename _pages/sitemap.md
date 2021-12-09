@@ -5,11 +5,9 @@ permalink: /sitemap/
 author_profile: true
 header:
   image_description: ""
-  overlay_image: /assets/img/logo/logo_wide.png
+  overlay_image: /assets/img/logo/wombo_splash.JPG
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
 ---
-
-A list of all the posts and pages found on the site. 
 
 ## Pages
 ---

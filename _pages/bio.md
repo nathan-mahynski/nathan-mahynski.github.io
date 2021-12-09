@@ -5,7 +5,7 @@ title: "Publications & Bio"
 permalink: /bio/
 header:
   image_description: ""
-  overlay_image: /assets/img/logo/logo_wide.png
+  overlay_image: /assets/img/logo/wombo_splash.JPG
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
 classes:
   - wide
@@ -15,12 +15,12 @@ classes:
 
 For a complete list of (hyperlinked) publications, refer to my CV below.  PDFs of all peer-reviewed work are available upon [request](mailto: nathan.mahynski@gmail.com), most of which can also be found on [ResearchGate](https://www.researchgate.net/profile/Nathan_Mahynski).
 
-[Curriculum Vitae (publications)](/assets/docs/Curriculum_Vitae.pdf){: .btn .btn--success} [NIST Profile](https://www.nist.gov/people/nathan-mahynski){: .btn .btn--danger}
+[Curriculum Vitae](/assets/docs/Curriculum_Vitae.pdf){: .btn .btn--success} [NIST Profile](https://www.nist.gov/people/nathan-mahynski){: .btn .btn--danger}
 
 # Current Position 
 ---
 
-Director, MML Summer Undergraduate Research Fellowship (SURF) Program
+Director, MML Summer Undergraduate Research Fellowship (SURF) Program \\
 Chemical Engineer, Ph.D. \\
 [Chemical Informatics Research Group](https://www.nist.gov/mml/csd/chemical-informatics-research-group) \\
 Chemical Sciences Division \\
@@ -34,10 +34,10 @@ E: [nathan.mahynski@gmail.com](mailto: nathan.mahynski@gmail.com)
 # Education
 ---
 
-* Ph.D., Chemical Engineering, Princeton University, 2015
+* Ph.D., Chemical Engineering, Princeton University, 2015 \\
   Certificate in Computational and Information Science
 * M.A., Chemical Engineering, Princeton University, 2012
-* B.S., Chemical Engineering, Purdue University, 2010 (Magna Cum Laude)
+* B.S., Chemical Engineering, Purdue University, 2010 (Magna Cum Laude) \\
   Minor in Chemistry
 
 # Recent Awards
