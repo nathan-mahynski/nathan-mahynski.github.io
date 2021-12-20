@@ -3,8 +3,8 @@ author_profile: false
 layout: splash
 classes:
   - landing
-excerpt: "chemical informatics / molecular engineering / machine learning"
-title: CHemical InforMatics and Engineering 
+excerpt: "chemical informatics / (macro)molecular engineering / machine learning"
+title: CHemical InforMatics and EngineeRing 
 header:
   image_description: ""
   overlay_image: /assets/img/logo/wombo_splash.JPG

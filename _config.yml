@@ -20,7 +20,7 @@ title                    : "CHIMERa"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "CHIMERa"
-description              : "CHemical InforMatics and EngineeRing"
+description              : "CHIMERa"
 url                      : "https://mahynski.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "mahynski/mahynski.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
