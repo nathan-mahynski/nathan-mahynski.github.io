@@ -38,6 +38,8 @@ Use grants/papers/presentations etc.
 
 In the previous work, we used polymers as SDAs to select between polymorphs (different crystals) that were similar in thermodynamic stability.  But what if I want to make a completely different structure from scratch?
 
+Q: from G&S - how can you create a tile that can carry any pattern?  Only answer this question partially, a more complete answer is subject of ongoing research
+
 ## Rings as SDAs
 
 ## Derivable Functionality

@@ -64,6 +64,7 @@ with open('/gdrive/My Drive/foo.txt', 'w') as f:
   f.write('Hello Google Drive!')
 !cat '/gdrive/My Drive/foo.txt'
 ~~~
+* You can also manually upload files by clicking on the "folder" icon on the left
 10. Execute python scripts from your drive by `!python3 my_script.py`.
 
 ## Saving

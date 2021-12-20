@@ -1,5 +1,5 @@
 ---
-title: "Using Thermodynamic Extrapolation to Predict Fluid Properties"
+title: "Using Thermodynamic Extrapolation to Accurately Predict Fluid Properties"
 excerpt: "Efficient use of resources to feed the Data Monster."
 header:
   image: /assets/images/unsplash-gallery-image-1.jpg
@@ -24,6 +24,8 @@ tags:
 # tl;dr
 
 Data-science needs lots of data; quality can be less than perfect if the trends come through for screening.
+
+In general, doing screening of anything (drugs, optimiation of molecules, perturbations, etc.)
 
 list papers
 
@@ -51,10 +53,20 @@ Jacob's Work
 
 Sally's work
 
-# Future Work
-
 Mention Ward's work so far as first order
-Other people have reached similar conclusions and used similar results to explore water behavior.
 
 Jeppe Dyre
 Iso-structural stuff
+
+Other people have reached similar conclusions and used similar results to explore water behavior.
+
+# Extrapolating other types of Simulations
+
+Hatch - mayer sampling MC, and also parameters in U(r)
+
+# Future Work
+
+
+
+
+

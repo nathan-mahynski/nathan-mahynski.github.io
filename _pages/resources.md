@@ -47,5 +47,5 @@ Open source codes used in my research can be found on [GitHub](https://www.githu
 
 * The [Free Energy and Advanced Sampling Simulation Toolkit (FEASST)](https://pages.nist.gov/feasst/) is a free, open-source, modular program to conduct molecular and particle-based simulations with flat-histogram Monte Carlo methods, primarily developed by Wick Hatch at NIST.
 
-* [PACCS](https://github.com/usnistgov/paccs) is primarily a colloidal crystal structure generation and optimization library written in Python. It supports stochastic optimization of periodic multicomponent systems in two and three dimensions, as well as the generation of candidate structures in two dimensions using wallpaper groups.  It was primarily developed by Evan Pretti as his SURF project in 2018.
+* [PACCS](https://github.com/usnistgov/paccs) is primarily a colloidal crystal structure generation and optimization library written in Python. It supports stochastic optimization of periodic multicomponent systems in two and three dimensions, as well as the generation of candidate structures in two dimensions using wallpaper groups.  It was initially developed by Evan Pretti as his SURF project in 2018.
 
