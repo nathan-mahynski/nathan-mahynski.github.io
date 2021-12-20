@@ -31,7 +31,7 @@ tags:
 
 # tl;dr
 
-This post is accompaniment to several manuscripts:
+This post is an accompaniment to several manuscripts (text available upon [request](mailto:nathan.mahynski@gmail.com) if you cannot access them):
 
 1. ["Using symmetry to elucidate the importance of stoichiometry in colloidal crystal assembly," N. A. Mahynski, E. Pretti, V. K. Shen, J. Mittal, Nature Commun. <b>10</b> 2028 (2019).](https://dx.doi.org/10.1038/s41467-019-10031-4) - Also see the ``Behind the paper'' [post](https://chemistrycommunity.nature.com/users/255993-nathan-mahynski/posts/48551-using-symmetry-to-elucidate-the-importance-of-stoichiometry-in-colloidal-crystal-assembly).
 2. ["Symmetry-based crystal structure enumeration in two dimensions," E. Pretti, V. K. Shen, J. Mittal, N. A. Mahynski, J. Phys. Chem. A <b>124</b>, 3276–3285 (2020).](https://doi.org/10.1021/acs.jpca.0c00846)

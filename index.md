@@ -3,7 +3,7 @@ author_profile: false
 layout: splash
 classes:
   - landing
-excerpt: "chemical informatics / (macro)molecular engineering / machine learning"
+excerpt: "chemical informatics / (macro)molecular engineering / machine learning & molecular simulation"
 title: CHemical InforMatics and EngineeRing 
 header:
   image_description: ""
@@ -15,32 +15,32 @@ header:
 row1:
   - image_path: /assets/img/splash/soft_matter_cover_2020.png
     title: "Multicomponent Colloidal Self-Assembly"
-    url: "/research/"
+    url: "/research/counting_crystals_in_two_dimensions"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/multi_extrap.png
     title: "Statistical Mechanical Extrapolation"
-    url: "/research/"
+    url: "/research/using _thermodynamic_extrapolation_to_predict_fluid_properties"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/orbifolds.png
     title: "Orbifold Structure-Directing Agents"
-    url: "/research/"
+    url: "/research/two_dimensional_material_genome"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
 row2:
   - image_path: /assets/img/splash/seabirds_geo.png
     title: "Wildlife Chemometric Fingerprinting"
-    url: "/research/"
+    url: "/research/developing_chemometric_fingerprints_for_ecological_systems"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/brood_cull_stock.png
     title: "Food Fraud Detection"
-    url: "/research/"
+    url: "/research/developing_chemometric_fingerprints_for_ecological_systems"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
