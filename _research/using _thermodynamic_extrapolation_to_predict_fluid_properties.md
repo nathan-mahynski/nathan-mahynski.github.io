@@ -30,24 +30,25 @@ tags:
 
 # tl;dr
 
-The concept of extrapolating thermodynamic properties measured in classical systems using statistical mechanical principles has been around for some time. This is linked to the fact that derivative properties of a system's free energy are related to fluctuations of observables (such as the number of particles in a simulation) which makes them easy to measure.  Consequently, Taylor series expansions are fairly straightforward to obtain.  Of course, the range over which this expansion is reasonably accuate is limited by the order of the expansion and how accurately you can measure these fluctuations (how long you can afford to run a simulation). However, by combining this idea of extrapolation with biased sampling (forcing a simulation to systematically visit states along a predetermined order parameter path) we can build a "network" of Taylor expansions that work together to create a remarkably accurate predictor of properties (thermodynamic and even structural) of fluid systems over a broad range of conditions.
-These extrapolations significantly amplify the amount of information that can be extracted from simulations enabling a small set of them to:
+The concept of extrapolating thermodynamic properties measured in classical systems using statistical mechanical principles has been around for some time. This is linked to the fact that derivative properties of a system's free energy are related to fluctuations of observables (such as the number of particles in a simulation) which makes them easy to measure.  Consequently, Taylor series expansions are fairly straightforward to obtain.  Of course, the range over which this expansion is reasonably accuate is limited by the order of the expansion and how accurately you can measure these fluctuations (how long you can afford to run a simulation). However, by combining this idea of extrapolation with biased sampling (forcing a simulation to systematically visit states along a predetermined order parameter path) we can build a "network" of Taylor expansions that work together to create a remarkably accurate predictor of properties (thermodynamic and even structural) of fluid systems over a broad range of conditions. These extrapolations significantly amplify the amount of information that can be extracted from simulations enabling a small set of them to:
 
 * feed data-intensive regression algorithms such as neural networks,
 * accelerate the search for, e.g., optimal experimental conditions or protocols that use simulations as a guide,
 * reduce the cost of force-field development,
 * screen candidate materials for thermodynamic properties faster
 
-This post is an abbreviated summary of concepts discussed in the manuscripts below (text available upon [request](mailto:nathan.mahynski@gmail.com) if you cannot access them); other authors have also expanded upon these ideas to explore of other systems (such as water) as well.  Please cite appropriately if you find this information helpful.
+This post is an abbreviated summary of concepts discussed in the manuscripts below (text available upon [request](mailto:nathan.mahynski@gmail.com) if you cannot access them); other authors have also expanded upon these ideas to explore of other systems (such as water) as well, so this list is not an exhaustive review of all work in this area.  Please cite appropriately if you find this information helpful.
 
-1. ["Extrapolation and interpolation strategies for efficiently estimating structural observables as a function of temperature and density," J. I. Monroe, H. W. Hatch, N. A. Mahynski, M. S. Shell, V. K. Shen, J. Chem. Phys. <b>153</b>, 144101 (2020).](https://doi.org/10.1063/5.0014282)
-2. ["Flat-histogram extrapolation as a useful tool in the age of big data," N. A. Mahynski, H. W. Hatch, M. Witman, D. A. Sheen, J. R. Errington, V. K. Shen, Molecular Simulation 1–13 (2020).](https://doi.org/10.1080/08927022.2020.1747617)
-3. ["Flat-histogram monte carlo as an efficient tool to evaluate adsorption processes involving rigid and deformable molecules," M. Witman, N. A. Mahynski, B. Smit, J. Chem.  Theory Comput. <b>14</b>, 6149–6158 (2018).](https://doi.org/10.1021/acs.jctc.8b00534)
-4. ["Predicting structural properties of fluids by thermodynamic extrapolation," N. A. Mahynski, S. Jiao, H. W. Hatch, M. A. Blanco, V. K. Shen, J. Chem. Phys. <b>148</b>, 194105 (2018).](https://doi.org/10.1063/1.5026493)
-5. ["Multivariable extrapolation of grand canonical free energy landscapes," N. A. Mahynski, J. R. Errington, V. K. Shen, J. Chem. Phys., <b>147</b>, 234111 (2017).](http://dx.doi.org/10.1063/1.5006906)
-6. ["Predicting virial coefficients and alchemical transformations by extrapolating mayer-sampling monte carlo simulations," H. W. Hatch, S. Jiao, N. A. Mahynski, M. A. Blanco, V. K. Shen, J. Chem. Phys. <b>147</b>, 231102 (2017).](http://dx.doi.org/10.1063/1.5016165)
-7. ["Temperature extrapolation of multicomponent grand canonical free energy landscapes," N. A. Mahynski, J. R. Errington, V. K. Shen, J. Chem. Phys. <b>147</b>, 054105 (2017).](http://dx.doi.org/10.1063/1.4996759)
-8. ["Predicting low-temperature free energy landscapes with flat-histogram monte carlo methods," N. A. Mahynski, M. A. Blanco, J. R. Errington, V. K. Shen, J. Chem. Phys. <b>146</b>, 074101 (2017).](http://dx.doi.org/10.1063/1.4975331)
+1. ["Predicting low-temperature free energy landscapes with flat-histogram monte carlo methods," N. A. Mahynski, M. A. Blanco, J. R. Errington, V. K. Shen, J. Chem. Phys. <b>146</b>, 074101 (2017).](http://dx.doi.org/10.1063/1.4975331)
+2. ["Temperature extrapolation of multicomponent grand canonical free energy landscapes," N. A. Mahynski, J. R. Errington, V. K. Shen, J. Chem. Phys. <b>147</b>, 054105 (2017).](http://dx.doi.org/10.1063/1.4996759)
+3. ["Predicting virial coefficients and alchemical transformations by extrapolating mayer-sampling monte carlo simulations," H. W. Hatch, S. Jiao, N. A. Mahynski, M. A. Blanco, V. K. Shen, J. Chem. Phys. <b>147</b>, 231102 (2017).](http://dx.doi.org/10.1063/1.5016165)
+4. ["Multivariable extrapolation of grand canonical free energy landscapes," N. A. Mahynski, J. R. Errington, V. K. Shen, J. Chem. Phys., <b>147</b>, 234111 (2017).](http://dx.doi.org/10.1063/1.5006906)
+5. ["Predicting structural properties of fluids by thermodynamic extrapolation," N. A. Mahynski, S. Jiao, H. W. Hatch, M. A. Blanco, V. K. Shen, J. Chem. Phys. <b>148</b>, 194105 (2018).](https://doi.org/10.1063/1.5026493)
+6. ["Flat-histogram monte carlo as an efficient tool to evaluate adsorption processes involving rigid and deformable molecules," M. Witman, N. A. Mahynski, B. Smit, J. Chem.  Theory Comput. <b>14</b>, 6149–6158 (2018).](https://doi.org/10.1021/acs.jctc.8b00534)
+7. ["Flat-histogram extrapolation as a useful tool in the age of big data," N. A. Mahynski, H. W. Hatch, M. Witman, D. A. Sheen, J. R. Errington, V. K. Shen, Molecular Simulation 1–13 (2020).](https://doi.org/10.1080/08927022.2020.1747617)
+8. ["Extrapolation and interpolation strategies for efficiently estimating structural observables as a function of temperature and density," J. I. Monroe, H. W. Hatch, N. A. Mahynski, M. S. Shell, V. K. Shen, J. Chem. Phys. <b>153</b>, 144101 (2020).](https://doi.org/10.1063/5.0014282)
+
+Ref. 7 is essentially a review of most of this work, which the interested reader should refer to.
 
 # What is "Thermodynamic Extrapolation"?
 
@@ -57,7 +58,7 @@ The [partition function](https://en.wikipedia.org/wiki/Partition_function_(stati
 
 $Q(\beta,V,\vec{N}) = \overbrace{\left[ \frac{1}{\Pi_{i=1}^k N_i!} \int {\rm exp} \left( -\beta U_p(\vec{r}) \right) {\rm d}\vec{r} \right]}^{Potential~=~Q_p} \overbrace{\left[ \frac{1}{h^{dN_i}} \int {\rm exp} \left( -\beta U_k(\vec{q}) \right) {\rm d}\vec{q} \right]}^{Kinetic~=~Q_k}$
 
-where, $N_i$ refers to the number of particles of species $i$ in the system (simulation), $V$ is the volume ($d$ is the system dimensionality, e.g., $d=3$), $h$ is the [Planck constant](https://en.wikipedia.org/wiki/Planck_constant), and $\beta = 1/(k_{\rm B}T)$ is the inverse of the absolute temperature scaled by the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant). The second integral can be evaluated exactly in terms of the [thermal de Broglie wavelength](https://en.wikipedia.org/wiki/Thermal_de_Broglie_wavelength): $Q_k = \frac{1}{\Pi_{i=1}^k \Lambda_i^{dN_i}}$.  This is typically absorbed into the system's chemical potential in the grand canonical case, which becomes temperature dependent (see Ref. 7 above); for such an open ensemble the partition function can be expressed in terms of the canonical one at each different $\vec{N} = (N_1, N_2, \dots, N_k)$ value.
+where, $N_i$ refers to the number of particles of species $i$ in the system (simulation), $V$ is the volume ($d$ is the system dimensionality, e.g., $d=3$), $h$ is the [Planck constant](https://en.wikipedia.org/wiki/Planck_constant), and $\beta = 1/(k_{\rm B}T)$ is the inverse of the absolute temperature scaled by the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant). The second integral can be evaluated exactly in terms of the [thermal de Broglie wavelength](https://en.wikipedia.org/wiki/Thermal_de_Broglie_wavelength): $Q_k = \frac{1}{\Pi_{i=1}^k \Lambda_i^{dN_i}}$.  This is typically absorbed into the system's chemical potential in the grand canonical case, which becomes temperature dependent (see Ref. 2 above); for such an open ensemble the partition function can be expressed in terms of the canonical one at each different $\vec{N} = (N_1, N_2, \dots, N_k)$ value.
 
 $\Xi ( \beta, V, \vec{\mu}) = \sum_{N_1} \sum_{N_2} \dots \sum_{N_k} {\rm exp} \left( \beta \mu_k N_k \right) Q(\beta, V, \vec{N})$
 
@@ -67,8 +68,8 @@ ${\rm ln} \Pi(\vec{N}) = \beta \sum_{i=1}^k \mu_i N_i + {\rm ln}Q(\beta,V,\vec{N
 
 This probability distribution is generally referred to as the "macrostate" distribution, where the order parameter defines the "macrostate"; this is because each order parameter value describes a set of microstates. For example, each unique arrangement of particles in a simulation may be considered a microstate, but all microstates with the same total number of particles might be considered a macrostate.  Below, on the left, is an example distribution for a single component system at different temperatures (colors); the dashed lines will be explained later.  At high $T$ there is a single peak in the middle, whereas at low $T$ there are 2, each corresponding to a different phase (one is a vapor, one is a condensed liquid). 
 
-<img style="float: center" src="lnPI_extrap.jpg" width=450px>
-<img style="float: center" src="isotherm_extrap.png" width=450px> 
+<a href="http://dx.doi.org/10.1063/1.4975331"><img style="float: center" src="lnPI_extrap.jpg" width=450px><a/>
+<a href="http://dx.doi.org/10.1063/1.4975331"><img style="float: center" src="isotherm_extrap.png" width=450px></a>
 
 Once the macrostate distribution is known you can compute (equilibrium) thermodynamic (average) properties from it.  These are just weighted sums:
 
@@ -112,6 +113,8 @@ If we measured the macrostate distribution as a function of all fluctuating exte
 
 <img style="float: center" src="extrap_vs_reweight.png" width=1000px>
 
+Typically, one can employ **both** reweighting and extrapolation. For the systems discussed here, and in the references above, usually 1 rewighting expression is known (usually in chemical potential) while extrapolation expressions can be obtained that allow exploration of other intensive variables; for example, the chemical potentials of a number of other species, or temperature.
+
 <!--
 Properties like phase coexistence (the binodal curve) are computed by finding the chemical potential(s) where the areas under the peaks of ${\rm ln}\Pi(\vec{N})$ are equal.  Moreover, average extensive properties are strongly influenced only by macrostates near their most likely state, since probabilities of states decay quickly (recall the above expressions are in log scale) as you move away from it.  We have found that as a result, properties that depend on the **shape** of the macrostate distribution, such as pressure and mole fraction, can be parameterized in terms of each other very accurately.  To see why imagin
 
@@ -123,45 +126,88 @@ Errors hide in mu when properties are defined by the SHAPE of the distribution.-
 
 ## Low Temperature Landscapes
 
-T-extrap
-mu-extrap
-t-mu extrap
+Systems with attractive interactions tend to exhibit irreversible aggregration at sufficiently low temperatures. They simply become "stuck" together for an increasing amount of time as temperature continues to decrease.  However, "time" is relative.  Many systems exhibit rearragements and are [ergodic](https://en.wikipedia.org/wiki/Ergodic_hypothesis) on the orders of seconds, but typical molecular simulations can only reach (in a reasonable amount of wallclock time) up the order of microseconds or less.  Thus, being able to predict the thermodynamic behavior of systems at "low temperature" instead of directly simulating the system is important to understanding their equilibrium thermodynamic properties.  There are simulation tools, including flat-histogram techniques, that naturally allow you to overcome barriers and perform advanced sampling under these "hard" conditions.  However, it is not always easy to know in advance what the order parameters are that you need to bias, i.e., what the "slow" modes are.
 
-even works for anisoptric particles (marco)
+In this example from Ref. 1, a simulation was performed on a simple, single component fluid (a [square well](https://www.nist.gov/mml/csd/chemical-informatics-research-group/square-well-fluid-properties)) at a supercritical temperature (black curve).  We can compare simulations explicitly performed at lower temperatures (solid lines) to those extrapolated from this single supercritical one (dashed lines).  As temperature decreases, phase separation occurs creating 2 peaks separated by a local minima in ${\rm ln}\Pi(N)$.  Clearly, there is excellent agreement!  The primary error occurs in the middle of the curve. This is in log scale, so average properties based on those states leave the prediction of properties (such as density and pressure) essentially unaffected!  The phase diagram generated by multiple explicit simulations vs. the one  resulting from extrapolation of a single supercritical simulation are almost indistinguishable.
 
-## Multiomponent Mixtures
+<a href="http://dx.doi.org/10.1063/1.4975331"><img style="float: center" src="square_well.png" width=1000px></a>
 
-Multicomponent
+In fact, properties that depend on the **shape** of ${\rm ln}\Pi(N)$ tend to be the most accurately predicted properties by extrapolation.  For example, the pressure and composition of coexisting phases can be computed from this.  Coexistence itself is determined by finding the chemical potential(s) where the areas under the 2 peaks of ${\rm ln}\Pi(\vec{N})$ are equal.  In the above example, the ${\rm ln}\Pi(N)$ from high $T$ is extrapolated in $\beta$ to lower $T$ then reweighted in chemical potential to find this coexistence condition.  Consequently, the pressure and density are accurately parameterized in terms of each other because they are linked directly to the shape of the macrostate distribution.  However, the chemical potential that this coexistence is found out may not be as reliable.  
 
-transition states are hard to sample
+As discussed in Ref. 2, the errors that come from approximate extrapolation tend to get "hidden" in the chemical potential for these grand canonical systems because they control the shape of the curve.  Simply stated, the properties computed from the curve are accurate, but the conditions that generate that curve may not be.  So the pressure-density curve, P = f($\rho$), might be accurate, but the $\mu$ each ($P$, $\rho$) occurs at may not be consistent with the fluid's true equation of state.  From a practical perspective, this may be somewhat inconsequential since accurate parameterization of observables is more important in applied settings.
+
+These extrapolations can be similarly applied to anisotropic sytems (see Ref. 1) and systems with internal degrees of freedom (see Ref. 6).
 
 ## Confined Systems
 
-Film wetting
-Stuff with Matt
+Until now we have considered bulk systems. However, it is also possible to perform such expansions for confined systems.  This usually involves assuming the confining material is an additional component which is fixed, into which the fluid adsorbs.  Internal degrees of freedom, adsorbent flexibility, and special sampling moves can influence the methodology, and Ref. 6 contains more information.  In general though, this extrapolation approach can greatly reduce the cost of screening materials for advantageous properties; for example separation efficiency of multicomponent gases.  Below are isotherms of methane asorbing in MOF-950 taken from Ref. 6; open circles are from individual simulations done verify these predictions.  The solid lines are temperature extrapolations of the macrostate distribution (obtained using a slightly different approach than what has been discussed so far) performed at $T=270$ K (purple line). Clearly, the extrapolation is able to predict adsorption isotherms across a range of industrially relevant conditions. Similar performance can be achieved for other small molecules of interest.
+
+<a href="https://doi.org/10.1021/acs.jctc.8b00534"><img style="float: center" src="adsorb.png" width=1000px></a>
+
+## Multiomponent Mixtures
+
+For multicomponent mixtures it is often easier to work with $N_{\rm tot}$ as the order parameter.  In this case, a little algebra lets you rearrange the partition function to look like:
+
+$
+\Xi(\beta, V, \vec{\mu}) = \sum_{N_{\rm tot}} {\rm exp} \left( \beta \mu_1 N_{\rm tot} \right) \sum_{N_{2}} {\rm exp} \left( \beta \Delta \mu_2 N_2 \right) \dots \times \sum_{N_k} {\rm exp} \left( \beta \mu_1 N_{\rm tot} \right)  \Upsilon \left( \beta, V, N_{\rm tot}, \Delta \vec{\mu} \right)
+$
+
+The probability of a macrostate can be expressed as:
+
+${\rm ln}\Pi(N_{\rm tot}) = \beta \mu_1N_{\rm tot} + {\rm ln}\Upsilon - {\rm ln} \Xi$,
+
+where $\Upsilon$ is the isochoric semigrand partition function (a constant) and $\Delta mu_i = \mu_i - \mu_1$. In practice a simulation is then performed at fixed $\Delta \vec{\mu}$ and $\beta$.  The useful reweighting expression is:
+
+${\rm ln} \Pi(N_{\rm tot}; \mu_1) = {\rm ln} \Pi(N_{\rm tot}; \mu_1^0) + \beta(\mu_1 - \mu_1^0)N_{\rm tot}$.
+
+The expression means that at fixed $\Delta \vec{\mu}$ we can obtain "exact" results for any $\mu_1$; this does not tell how the macrostate distribution changes as a function of $\beta$ or $\Delta \vec{\mu}$, which is where extrapolation comes in.  A first order derivative of this in terms of $\beta$ looks like:
+
+$\frac{\partial {\rm ln} \Pi(N_{\rm tot})}{\partial \beta} \sim \mu_1 N_{\rm tot} + \sum_{i=2}^k \Delta \mu_i \langle N_i \rangle - \langle U \rangle.$
+
+More details and higher order terms can be found in Refs. 4 and 7.  In practice, at a given $\beta$ you perform several simulation at different $\Delta \vec{\mu}$; reweighting then lets you move along the blue lines shown below (there are 5 simulations depicted), whereas extrapolation lets you fill in the space in between.  You can also extrapolate in $\beta$ to build such a continuous surface at other temperatures.
+
+<a href="http://dx.doi.org/10.1063/1.5006906"><img style="float: center" src="multi_extrap.png" width=1000px></a>
+
+A simple weighting function can be defined to optimize thermodynamic consistency, that is, to numerically agree with the Gibbs-Duhem equation; however, a simple weighting function like the one depicted above did not show significant deviation for the fluids we have previously investigated. Below is an example for an azeotropic system where 5 simulations were performed.  On the left, only the "middle" one (chosen to fall exactly on the azeotrope) was extrapolated; points correspond to simulations performed at the given conditions.  It clearly is reasonable across a range of temperatures, but only fairly close to the azeotrope in terms of mole fraction, $x_1$.  However, accurate Pxy phase diagrams can be obtained by combining extrapolations of 5 different simulations performed over a range of different conditions across the mole fraction space. 
+
+<a href="http://dx.doi.org/10.1063/1.5006906"><img style="float: center" src="pxy.png" width=1000px></a>
 
 # Optimal Combination
 
-Jacob's Work
+An innovation due to Monroe (see Ref. 8) is to instead use an interpolating polynomial, which is related to the optimal combination of cumulant expansions.  <a href="https://doi.org/10.1063/5.0014282"><img style="float: right" src="opt_comb.png" width=400px></a> In the context of estimating free energy differences, this is actually identical to thermodynamic integration under certain assumptions.  Given two macrostate distributions, one can exactly fit a polynomial up to order up to order 2$k$+1 if we expand each observable up to order $k$. Note that the $k^{th}$ derivative of a macrostate distribution involves $k-1$ derivatives of observables, e.g., the first derivative of ${\rm ln}\Pi(N)$ involves $\langle N \rangle$ while the second derivative involves $\frac{\partial \langle N \rangle}{\partial \beta}$ and so on. 
+The coefficients in this polynomial, $\vec{c} = (c_0, c_1, \dots, c_{2k+1})$, are found by solving the system of linear equations given at the right.
 
 # Extrapolating Structural Observables
 
-Sally's work
+So far we have described how the macrostate distribution can be extrapolated, enabling the computation of thermodynamic observables like pressure, density and mole faction.  However, the technique is really more general than that. At its core, like histogram reweighting, thermodynamic extrapolation is just a way to predict the probability that a macrostate of the system occurs. If we know some property of that macrostate, and each is well sampled, then the system's average property is just the weighted sum of those macrostates where the weight is the (normalized) macrostate probability.
 
-Mention Ward's work so far as first order
+In fact, structural properties of these systems are also average properties. Consider that the radial distribution function, $g(r)$, is really just a histogram of how often certain pairwise distances, $r$, are observed in a system at a given temperature.
 
-Jeppe Dyre
-Iso-structural stuff
+$
+g(r; \beta) = \frac{h(r; \beta) / (N_c N) }{\left[ \left( \frac{N-1}{V} \right) V_{\rm bin}(r) \right] },
+$
 
-Other people have reached similar conclusions and used similar results to explore water behavior.
+where $N_c$ is the number of configurations measured, $N$ is the number of particles in the system, and $V_{\rm bin}(r)$ is the volume of the shell centered ar $r$.  The denominator is fixed for a canonical system, while the numerator can be expanded in a Taylor series:
 
-# Extrapolating Other Types of Simulations
+$
+g(r; \beta) = \frac{h(r; \beta^0) + \sum_{k=1}^M \frac{(\Delta \beta)^k}{k!} \frac{\partial^k h(r; \beta)}{\partial \beta^k } }{(N_c N) \left[ \left( \frac{N-1}{V} \right) V_{\rm bin}(r) \right] }
+$
 
-Hatch - mayer sampling MC, and also parameters in U(r)
+Similarly, this can expanded up to some order, $M$, in other intensive variables to work in other ensembles, such as the grand canonical ensemble.  These partial derivatives can also be expressed in terms of fluctating extensive variables and the value of the observable, in this case, the value of the histogram at a given bin. This can be coupled with extrapolation of thermodynamic properties as previously described to compute the thermodynamic properties along a binodal curve, for example (see below).
+
+<a href="https://doi.org/10.1080/08927022.2020.1747617"><img style="float: center" src="rdf_extrap.png" width=1000px></a>
+
+This works because the overall structural observables are also averages obtained by a weighted average properties of a macrostate.  More rigorous details are discussed in Ref. 5. It also possible to extrapolate things like a polymer's [radius of gyration](https://en.wikipedia.org/wiki/Radius_of_gyration) and cluster size distributions of self-assembling systems.  
+
+# Further Extensions
+
+Even further innovation is due to Hatch et al. (Ref. 3) who extended the concept of thermodynamic extrapolation to importance-sampling methods such as Mayer-sampling Monte Carlo simulations used to compute virial coefficients.  This also enables one to perform alchemical transformations by extrapolating model parameter values, such as the point charge in SPC/E water. Thus, extrapolation can help in optimizing model parameters to create forcefields by fitting to some experimentally oberved properties.  Furthermore, the plethora of data that results from these extrapolations enables the use of data-intensive regressors, like neural networks, which would otherwise require more data to fit than can be generated with a reasonable amount of computational expense and time.
+
+<a href="https://doi.org/10.1080/08927022.2020.1747617"><img style="float: center" src="nn.png" width=1000px></a>
 
 # Conclusions
 
-
+Thermodynamic extrapolation is an approximate technique and has very old roots.  However, the 
 
 
 
