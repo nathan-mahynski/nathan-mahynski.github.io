@@ -21,7 +21,7 @@ row1:
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/multi_extrap.png
     title: "Statistical Mechanical Extrapolation"
-    url: "/research/using _thermodynamic_extrapolation_to_predict_fluid_properties"
+    url: "/research/using_thermodynamic_extrapolation_to_predict_fluid_properties"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
