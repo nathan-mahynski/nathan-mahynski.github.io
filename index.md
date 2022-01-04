@@ -27,7 +27,7 @@ row1:
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/orbifolds.png
     title: "Orbifold Structure-Directing Agents"
-    url: "/research/two_dimensional_material_genome"
+    url: "/research/structure_directing_agents"
     excerpt: ""
     btn_label: "Read More"
     btn_class: "btn--inverse"
