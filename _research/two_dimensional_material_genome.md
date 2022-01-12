@@ -1,5 +1,5 @@
 ---
-title: "Deriving A Two Dimensional Material Genome"
+title: "A Derivable Two Dimensional Symmetry Genome"
 excerpt: "M. C. Escher, the Magic Theorem, and Isohedral Tilings in 2D."
 header:
   image: /assets/images/unsplash-gallery-image-1.jpg
@@ -26,9 +26,61 @@ tags:
   - Heesch
 ---
 
-"Boundary condition" figure from JPCA to motivate.
+{% include toc icon="gears" title="Table of Contents" %}
 
-Heesch's syetme expanded to [A]TCG.
+# The Inorganic Gene
+
+Mackay and paper in 2017 by Delgado, OKeefe, etc. to describe Systre key
+
+# Symmetry in 2D
+
+## Crystals and Fundamental Domains
+
+FD is smallest piece of puzzle
+
+## Isohedral Tilings 
+
+Some IH are FD and some are not
+
+## Orbifolds
+
+Fold up FD, actually shape is unique, so reversing enumerates all IH tiles!
+Some IH tiles are not FD
+O = E/G as quotient space
+
+Show cutting of 3*3 from slides
+
+Show gifs of "Snakes on a Euclidean Plane"
+
+## The Magic Theorem
+
+# An Artistic Aside
+
+## Heesch and Kienzle
+
+Motivated to study how many ways to cover the plane with interlocking shapes
+Useful for manufacturing
+Perhaps motivated by Hilbert's work on mono/isohedral tilings
+
+## M.C. Escher's Brand of Magic
+
+His system was different, but mathematicians consider it the closest to Heesch's system. almost the same, and independently derived.
+
+# A Little Logic
+
+Expanding Heesch' system - othes did but not with [A]TCG
+
+Approximate methods
+
+# Conclusions
+
+
+
+
+
+
+
+
 
 Motivate that disassembly is FD = E^2/G so that assembly pathways are just FD*G = E^2
 
@@ -65,7 +117,7 @@ The other 47 "molecular" units.
 This means something very important - instead of thinking of groups as matrices, we can vied them as "rings" decorated with maps that indicate how parts of the ring are related to each other.  Create ring, add decorations until "cost" reaches a threshold. this is what conway proved.
 
 
-# Mutiple Tiles
+
 
 First examples of when actually NOT multiple tiles, just looks like multiple images but is single motif.
 This illustrates r-hderal tilings

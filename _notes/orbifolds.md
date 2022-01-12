@@ -55,7 +55,7 @@ The history and terminology associated with orbifolds may seem a bit technical a
 
 ## A division of space
 
-A formal mathematic definition of an orbifold is "a space modeled on the quotient of space by a finite group" <a href="#thurston">[1</a>,<a href="#hyde">6]</a>.  In other words, for 2D surfaces it is "the surface divided by the group". <a href="#conway">[3]</a>
+A formal mathematical definition of an orbifold is "a space modeled on the quotient of space by a finite group" <a href="#thurston">[1</a>,<a href="#hyde">6]</a>.  In other words, for 2D surfaces it is "the surface divided by the group". <a href="#conway">[3]</a>
 
 When we divide 2 numbers, we have an intuition for what this means: a/b = c, implies that there are "c" of "b" in "a", e.g., there are 6 "2"s in 12.  Generalizing this to the division of an object, it is also clear how to divide, for example, a pie: pie / 4 = 1 slice. 
 
@@ -105,7 +105,7 @@ In fact, the concept of orbifolds is much more broad.  Orbifolds can be used to 
 
 At this point, we have discussed what a FD is and how by "gluing" it together we can obtain the orbifold that describes a given symmetry group.  This has been somewhat abstract, but is helpful a starting point.  Before proceeding further, it is enlightening to go back a bit and simply try to understand symmetry in patterns.  
 
-In what follows I will classify some of M. C. Escher's sketches (from his private folios) according to their symmetry.  I will disregard differences in color, as this introduces some additional complexity.  More information can be found in Ref. <a href="#conway2">[4]</a>. There are 4 fundamental "features" of symmetric patterns, or <a href="https://en.wikipedia.org/wiki/Isometry">isometries</a> of the plane: translation, rotation, reflection, and glide reflection.  Conway and co-workers call these "wonders", gyrations, kaleidoscopes, and "miracles." A glide reflection is a reflection about a line followed by translation along that line.
+In what follows I will classify some of M. C. Escher's sketches (from his private folios not final works) according to their symmetry.  I will disregard differences in color, as this introduces some additional complexity.  More information can be found in Ref. <a href="#conway2">[4]</a>. There are 4 fundamental "features" of symmetric patterns, or <a href="https://en.wikipedia.org/wiki/Isometry">isometries</a> of the plane: translation, rotation, reflection, and glide reflection.  Conway and co-workers sometimes call these "wonders", gyrations, kaleidoscopes, and "miracles." A glide reflection is a reflection about a line followed by translation along that line.
 
 > "Over the course of his career, Escher filled five folio notebooks with sketches of periodic tessellations. These were not intended for public consumption, but instead sources of ideas and design patterns he would use in creating his finished graphic works. Escher numbered his sketches, from 1 to 137." - From [here](https://mathstat.slu.edu/escher/index.php/Regular_Division_of_the_Plane_Drawings)
 
@@ -169,7 +169,7 @@ In the table, the symmetry diagram is shown on top, with the orbifold below.
 
 ## Proof of 17 Wallpaper Groups (2D) using Orbifolds
 
-Remarkably, Conway proved that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group. In other words, there is one and only one orbifold for each symmetry group (even though there are often many fundamental domains).  This "Magic Theorem" (his words, not mine), is truly that.  
+Remarkably, Conway showed that the topological properties of the orbifolds for all crystals are unique and singular for each symmetry group. In other words, there is one and only one orbifold for each symmetry group (even though there are often many fundamental domains).  This "Magic Theorem" (his words, not mine), is truly that.  
 
 As he and co-workers write <a href="#conway2">[4]</a>: "Any repeating pattern can be folded into an orbifold on some surface. So to prove that \[the\] list of possible orbifolds is complete, we only have to show that we've considered all possible surfaces. ... any surface can be obtained from a collection of spheres by punching holes that introduce boundaries ($*$) and then adding handles ($\circ$) or crosscaps ($\times$). Since all possible surfaces can be described in this way, we can conclude that all possible orbifolds are obtainable by adding corner points to their boundaries and cone points to their interiors."  Recall, that these points are there to encode rotational symmetries, and as stated, we need to simply add those (and preserve their curvature on the surface) to represent all isometries present in the 2D plane!  Again, this is why an "orbifold is slightly more than a topological manifold."
 
@@ -269,7 +269,7 @@ As a final counterexample, examine the picture below.  In it, Escher has drawn t
 
 # In summary
 
-Orbifolds provide a unique and general way to describe symmetry and tilings, and are particularly useful in 2D.  Extensions to 3D can be performed, but with some effort.  The interested reader should refer to Ref. <a href="conway2">[4]</a> for an overview.  They make explicit the connection between tiling and symmetry and represent a different approach to understanding the mathematics which underpin these concepts.  This has application is design, material science, art, and engineering which in many regards, remains underutilized to this day.
+Orbifolds provide a unique and general way to describe symmetry and tilings, and are particularly useful in 2D.  Extensions to 3D can be performed, but with some effort.  The interested reader should refer to Ref. <a href="conway2">[4]</a> for an overview.  They make explicit the connection between tiling and symmetry and represent a different approach to understanding the mathematics which underpin these concepts.  This has application in design, material science, art, and engineering which in many regards, remains underutilized to this day.
 
 * Orbifolds describe a "folded" fundamental domain (FD).
 * The FD contains the symmetrically unique sites (think independent degrees of freedom).
@@ -278,18 +278,18 @@ Orbifolds provide a unique and general way to describe symmetry and tilings, and
 
 # Citations
 
-<p id="thurston">[1] Thurston, William P. <it>The geometry and topology of three-manifolds.</it> Princeton, NJ: Princeton University, 1979.</p>
-<p id="johnson">[2] Johnson, Carroll K., Michael N. Burnett, and William D. Dunbar. "Crystallographic Topology and its Applications." <it>Crystallographic Computing</it> 7 (1996).</p>
+<p id="thurston">[1] Thurston, W. P. <it>The geometry and topology of three-manifolds.</it> Princeton, NJ: Princeton University, 1979.</p>
+<p id="johnson">[2] Johnson, C. K., Burnett, M. N., and Dunbar W. D. "Crystallographic Topology and its Applications." <it>Crystallographic Computing</it> 7 (1996).</p>
 <p id="conway">[3] Conway, J. H. in <it>Groups, combinatorics and geometry.</it> Vol. 165. pp 438-447, Cambridge University Press, 1992</p>
-<p id="conway2">[4] Conway, John H., Heidi Burgiel, and Chaim Goodman-Strauss. <it>The Symmetries of Things.</it> CRC Press, 2008.</p>
-<p id="conway3">[5] Conway, John H., and Daniel H. Huson. "The Orbifold Notation for Two-dimensional Groups." <it>Structural Chemistry</it> 13.3 (2002): 247-257.</p>
-<p id="hyde">[6] Hyde, S. T., S. J. Ramsden, and Vanessa Robins. "Unification and Classification of Two-dimensional Crystalline Patterns using Orbifolds." <it>Acta Crystallographica Section A: Foundations and Advances</it> 70.4 (2014): 319-337.</p>
+<p id="conway2">[4] Conway, J. H., Burgiel, H., and Goodman-Strauss, C. <it>The Symmetries of Things.</it> CRC Press, 2008.</p>
+<p id="conway3">[5] Conway, J. H., and Huson, D. H. "The Orbifold Notation for Two-dimensional Groups." <it>Structural Chemistry</it> 13.3 (2002): 247-257.</p>
+<p id="hyde">[6] Hyde, S. T., Ramsden, S. J., and Robins, V. "Unification and Classification of Two-dimensional Crystalline Patterns using Orbifolds." <it>Acta Crystallographica Section A: Foundations and Advances</it> 70.4 (2014): 319-337.</p>
 <p id="macbeath">[7] Macbeath, A. M. "The classification of non-euclidean plane crystallographic groups." <it>Canadian Journal of Mathematics</it> 19 (1967): 1192-1205.</p>
-<p id="pretti">[8] Pretti, Evan, <it>et al.</it> "Symmetry-Based Crystal Structure Enumeration in Two Dimensions." <it>The Journal of Physical Chemistry A</it> 124.16 (2020): 3276-3285.</p>
+<p id="pretti">[8] Pretti, E. <it>et al.</it> "Symmetry-Based Crystal Structure Enumeration in Two Dimensions." <it>The Journal of Physical Chemistry A</it> 124.16 (2020): 3276-3285.</p>
 <p id="doris">[9] Schattschneider, D. <it>M.C. Escher: Visions of Symmetry.</it> Thames & Hudson, 2004.</p>
 <p id="federov">[10] Federov, E. <it>Symmetry in the plane.</it> Proceedings of the Imperial St. Petersburg Mineralogical Society, 28 (1891): 345-390.</p>
-<p id="gs">[11] Gruenbaum, Branko, and Geoffrey Colin Shephard. Tilings and Patterns. Second Edition. Courier Dover Publications, 2016.</p>
-<p id="hk">[12] Heesch, Heinrich, and Kienzle, Otto. <it>Flaechenschluss; System der Formen lückenlos aneinanderschliessender
+<p id="gs">[11] Gruenbaum, B., and Shephard, G. C. Tilings and Patterns. Second Edition. Courier Dover Publications, 2016.</p>
+<p id="hk">[12] Heesch, H., and Otto, K. <it>Flaechenschluss; System der Formen lückenlos aneinanderschliessender
 Flachteile.</it> Berlin: Springer, 1963. 
 
 

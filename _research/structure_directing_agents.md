@@ -3,12 +3,12 @@ title: "Structure Directing Agents"
 excerpt: "Programming the Machine and not the Part."
 header:
   image: 
-  teaser: assets/images/unsplash-gallery-image-1-th.jpg
+  teaser: research/structure_directing_agents/sda_ring_thumb.png
 gallery:
   - url: https://doi.org/10.1038/ncomms5472
     image_path: research/structure_directing_agents/polymer_sda.png
     alt: "Polymer SDA"
-  - url: /assets/images/unsplash-gallery-image-1.jpg
+  - url: https://dx.doi.org/10.1039/D1SM00875G
     image_path: research/structure_directing_agents/sda_ring.png
     alt: "SDA Rings"
 classes:
@@ -89,7 +89,7 @@ If a polymer drives the crystallization of a system of equally sized colloids, t
 
 Importantly, this train of thought is premised on understanding the system as an effectively one-component system of attractive colloids, rather than as a two component system of mutually repulsive colloids and polymers. This follows the AO model of depletion; however, as it turns out, assumptions in the AO model can lead to a breakdown of this conclusion!
 
-## The Details of the Polymer Matters
+## The Details of the Polymer Matter
 
 In fact, when the polymer is sufficiently large, the HCP can be stabilized over the FCC. The reason for this has to do with the void structure of the two competing crystals. <a href="https://doi.org/10.1039/c4sm02191f"><img style="float: right" src="fcc_hcp.png" width=400px></a> The interstices of both polymorphs can be described as forming either tetrahedral voids (TV) or octahedral voids (OV); these shapes can be seen by connecting all neighboring colloids into a platonic solid around the center of each void.  The FCC and HCP have an identical number of voids per colloid in each crystal (in a ratio of 2:1, TV:OV), however, because of the different stacking patterns the voids also adopt a different pattern.  
 
@@ -105,24 +105,79 @@ Overall, we conclude that the polymer's topology and energetic interactions can 
 
 # Generalizing the Structure of an SDA
 
-The definition of an SDA envisioned at the outset is essentially that of a "molecular engineer" who knows (1) what building blocks they will receive and (2) has all the information they need to assemble them in a certain way.  There should be no information in, or dependence on, the building block.  One way to envision a generalized object that can perform this operation is as a "box" that can envelope some cargo, and then rely on the "programming" that is a function of the box's exterior to organize that cargo.
+The definition of an SDA envisioned at the outset is essentially that of a "molecular engineer" who knows (1) what building blocks they will receive and (2) has all the information they need to assemble them in a certain way.  There should be no information in, or dependence on, the building block.  One way to envision a generalized object that can perform this operation is as a "box" that can encircle some cargo, and then rely on the "programming" that is a function of the box's exterior to organize that cargo.  In 2D, this "box" is just a topological ring.
 
-It turns out there is a remarkable connection between this very idea and crystallographic symmetry! Crystals are composed of fundamental domains, or asymmetric units, which are the smallest "piece" of the crystal that is duplicated in certain ways to create the pattern.  In two Euclidean dimensions (2D), each symmetry (aka ["wallpaper"](https://en.wikipedia.org/wiki/Wallpaper_group)) group can be described by a single, unique [orbifold](/notes/orbifolds). This surface may be "cut" open to find all possible isohedral tilings of the plane, which is a finite number in 2D (93 in total).
+## Isohedral Tiles are SDAs that Program Symmetry
 
-These tilings have unique boundary patterns that define the necessary operations to copy the FD around the plane to make a pattern with a given symmetry group.  This means isohedral tilings can be interpreted as ring-like SDAs which envelop some cargo, and using only the information around its perimeter, be programmed to self-assemble the cargo into a given crystallographic symmetry!
+It turns out there is a remarkable connection between this very idea and crystallographic symmetry! I discuss this in more detail [here](/research/counting_crystals_in_two_dimensions). Crystals are composed of fundamental domains (FD), or asymmetric units, which are the smallest "piece" of the crystal that is duplicated in certain ways to create the pattern. Below is an illustration of the FD (black polygons) and the primitive unit cells (red polygons) for all crystal symmetries in two Euclidean dimensions (2D).
 
-## Isohedral Tiles are SDAs for Symmetry
+<a href="https://doi.org/10.1021/acs.jpca.0c00846"><img style="float: center" src="fd.png" width=1000px></a>
 
-Orbifolds describe symmetry
-Cut open orbifolds to get IH tiles
-Tiles = core (colloid) + boundary.
-Boundary = derivable!
+In 2D, each symmetry (aka ["wallpaper"](https://en.wikipedia.org/wiki/Wallpaper_group)) group can be described by a single, unique [orbifold](/notes/orbifolds). This can viewed as the surface that results when the symmetrically equivalent positions on the FD are folded up to match each other.  See the last link for a longer discussion and more explanation. Below the edge pairings are indicated for these particular FDs with colored arrows and points; approximations of a few of these orbifolds are also shown. Simply reversing this "folding" process to "cut" open the orbifolds reveals all possible isohedral tilings (distinct FDs) of the plane, which is a finite number in 2D.
+
+<a href="https://doi.org/10.1021/acs.jpca.0c00846"><img style="float: center" src="surfaces.png" width=1000px></a>
+
+These tilings have unique boundary patterns that define how parts of the tile's perimeter are actually copies of other parts, abstractly illustrated at the right. These operations instruct you on how to take a copy the entire tile and place it adjacent to the first by aligning matched pairs; repeating this fills the plane to make a pattern with the symmetry group described by the orbifold the isohedral tile (FD) resulted from by "cutting"!  <img style="float: right" src="sda.png" width=300px>
+
+This means isohedral tilings can be interpreted as ring-like SDAs which envelop some cargo, and using only the information around its perimeter, can be programmed to self-assemble the cargo into a given crystallographic symmetry! Essentially, you can think of the cargo as the "L" motif above and the SDA is the colored perimeter of the polygon.  Importantly, this means the boundary (color) pattern is derivable; moreover, the SDA shapes do not (and we will see below, arguably should not) be simple polygons!  The above process of "cutting open" orbifolds is, perhaps, an abstract-sounding but remarkably simple process that I will discuss in more detail elsewhere.
 
 ## 2D Math in a 3D World
 
-We need to be careful - some practical considerations
+It suffices to understand that there are 46 ways to cut open the orbifold surfaces for the 17 wallpaper groups; there are actually more isohedral tiles (93 in total) which are also derivable from orbifolds, but require a little more logic. These 46 represent boundaries that can envelop any asymmetric cargo and self-assemble it into a structure with the symmetry group that the original orbifold represents.  This "asymmetric" property is important; if the cargo has some symmetry it is possible for it to contribute to the information that the tile's boundary encodes resulting in a different symmetry group.  This is almost never guaranteed, though. In fact, this usually requires very precise placement of the cargo inside the tile or other conditions to be met, so I will regard this as an exception for now.  In mathematical parlance, these 46 tiles correspond to the fundamental domains of crystals (the cargo "induces" only the trivial identity symmetry), or result in a patterns whose motif-transitive proper subgroup of the original orbifold's symmetry group are primitive.
 
-Soft matter paper
+Some groups have only 1 way to perform the cutting, while the group with the most (p2gg) has 8. The image below illustrates the 46 isohedral tiles (IH) for these groups. The IH numbering follows from Ref. <a href="gs">[A]</a> below.  The matching rules for each tile are indicated by colors and arrows. The color of the name, however, is different.  Clearly this figure contains some gradient from top to bottom which requires explanation.
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="sda_tiles.png" width=1000px></a>
+
+To create a self-assembling SDA we can imagine it as a ring which has been discretized into beads, and each beads is assigned a color.  Beads with the same color attract each other, while different colors are repulsive hard spheres.  The angles between neighboring beads can be specified to achieve the necessary shape. A reasonable first attempt would be to specify the shape as one of the regular polygons used to introduce orbifolds above. In fact, for some groups (e.g., p3) this will seem to work and you might think that we are done. However, there is some practical information we are ignoring. Namely, that these SDAs are essentially derived from "two dimensional mathematics" but practically we would expect them to work in our three dimensional world. 
+
+For example, we can imagine wrapping a colloid in a ring through some chemical process in a beaker (3D), then pouring them onto a substrate (2D) to start self-assembling.  However, clearly the SDA-colloid complex will have some rotational diffusion and be able to rotate randomly before deposition to the plane.  Note that the direction of the ring's programming imposes some chirality, i.e., it is read in a clockwise or counterclockwise direction. Even if the orientation is fixed after deposition, the chirality of the ring will have been randomly assigned in the plane (either L or D).
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="demon.png" width=1000px></a>
+
+First, observe that a pair of SDAs can always align along an edge if the second rotates 180 degrees out of plane around an in-plane axis defined by the edge itself.  This operation always allow 2 SDAs to match along any edge if it is straight. Second, observe that rotation out of the assembly plane is equivalent to a reflection through a mirror normal to the plane.  In the figure above, the red and blue layers will reverse positions ("top" vs. "bottom") if you rotate instead of reflecting, but the central colored layer where the "programming" is will be the same either way. This allows the p3 polygon to form both triplets shown; in both cases all beads are aligned so the configurations are equally favorable from an energetic standpoint.  At first, this may seem inconsequential, but if we consider what the cargo inside the rings will look like, it is clear the second arrangement will not be what we intended (the D's cargo is upside down).
+
+In fact, similar problems arise for all tiles.  We must have a general way to encode that an edge is intended to match with an enantiomorph of the same chirality (rotation or translation symmetry) or its opposite (a reflection symmetry). If the edges are straight, you can always match opposites even if that is not intended. A pair of approaching SDAs will not know what to do in that case.  Like [Maxwell's demon](https://en.wikipedia.org/wiki/Maxwell's_demon), we may know the intent and could arrange the SDAs as needed, but the system is missing that information.  To be true "self"-assembly, we must provide that information.
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="example.png" width=1000px></a>
+
+One way to provide this information is by giving the edges non-zero curvature. Once decided, an edge's curvature, like the color patterns, is copied to its matching pair by appropriate symmetry operations. The reader may convince themselves that this results in a situation where the correct enantiomorphs will "nest" inside each other, while the incorrect ones either form a cavity or bend away from each other preventing them from matching up their beads. Qualitatively, this process is illustrated above.  Note that when a mirror symmetry is encountered, the edge is required to be straight.
+
+## Different Self-Assembly Characteristics
+
+Owing to rotational diffusion, which is assumed to be inevitable in most practical settings, any surface contain a roughly racemic (50:50) mixture of L and D SDAs.  If the SDA's edges are straight, defects arise (L+D), whereas if they are curved (L+D bent), they will assemble without confusion.  In certain cases, it is ideal to have only one enantiomorph (L or D, arbitrary) but we have assumed this will be practically impossible to achieve. <a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: right" src="pyramid.png" width=600px></a> Reference 8 above explored the assembly characteristics of these 3 cases this in detail. If we examine the resulting self-assembly behavior in molecular dynamics simulations there seem to be 5 distinct categories that emerge, which may be naturally explained by the orbifold an SDA derives from. These are given in this pyramid and correspond to the tile name colors I initially presented. Many of these categories result from what would happen if you could create a system with a single enantiomorph.
+
+### Row 5: Gyrations (ABC)
+
+In row 5 we have all the wallpaper groups that contain no reflections.  p2-p6 contain exclusively rotations, which is indicated in the orbifold signature by numbers without other symbols; for example, 2222 is p2 and 632 is p6.  p1 is also included in this category which contains no rotations either, and is a result purely of translations.  For these wallpaper groups, every SDA is surrounded by other FDs of the same chirality.  Below are results from molecular dynamics simulations illustrating the self-assembly that occurs. L/D are indicated in red/blue colors; the top row are raw results, while the bottom row recolors this snapshot according to how "correctly" each SDA is oriented with respect to its neighbors.  In principle, this means the ideal scenario is to have just one at the interface, and indeed the configuration is almost entirely green (good). When a racemic mixture is simulated without bending the edges, the SDA enantiomorphs can interact at random.  When the edges are bent, these incorrect L-D interactions are suppressed, while only L-L and D-D interactions are allowed.  As a result, chiral phase separation (large blue/red domains) occurs.
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="row5.png" width=1000px></a>
+
+### Row 4: Kaleidoscopes (*abc)
+
+Row 4 contains all wallpaper groups which are composed of intersecting mirrors.  The orbifold signatures all start with an asterisk followed by numbers indicating the angles the mirrors form with each other; recall, each mirror creates a straight edge (no bending is allowed).  For example, *632 is a 30-60-90 triangle ($\pi/6$, $\pi/3$, and $\pi/2$).  In this case, each SDA is entirely surrounded by the opposite enantiomorph.  Mirror edges have the unique property that, unlike every other symmetry, they create an edge which does NOT match with any other part of the SDA ring.  This means that a mirror edge contains entirely unique "colors". If all egdes are mirrors, all points are unique.  Such structures are called "addressably complex" which is a concept central to the design of DNA-based nanomaterials.
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="row4.png" width=1000px></a>
+
+### Row 3: Gyroscopes (A*bc)
+
+Row 3 is made of groups which are combination of rows 4 and 5. These groups have mirrors which create a polygon, but inside contain a rotation center. The orbifold signature reflects these features with a number (A, the order of the rotation center) followed by an asterisk and other numbers (\*bc...) indicating the angles the mirrors which form the polygon make. In the example below we have 2\*22, meaning there is a 2-fold rotation center (2) inside a rectangle (\*22). When only one enantiomorph is present, the SDAs can only assemble around the rotation center creating the polygon.  To move across the polygon's edges requires the other enantiomorph.  In this example, the L enantiomorphs form dimers; p31m (3\*3) forms trimers and p4gm (4\*2) forms tetramers.
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="row3.png" width=1000px></a>
+
+### Row 2: Frieze
+
+SDAs that result from wallpaper groups in row 2 form one dimensional assemblies when only one enantiomorph is present.  Essentially, they grow in a line to form "rods".  This is because (almost) all ways of cutting open the orbifold result in patterns that match with the same enantiomorph in one direction, but the opposite enantiomorph in the orthogonal one.  An example from p1g1 (xx) is illustrated below.  This corresponds to IH43 (see above).  However, p1g1 has an exception, colored orange like those in row 2!  Note that IH44 has 2 pairs of edges related by glide reflections, and thus is completely surrounded by opposite enantiomorphs (akin to SDAs derived from groups in row 2).
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="row2.png" width=1000px></a>
+
+### Row 1: Pluripotence
+
+There was one exception to the characteristic behavior in row 2.  This implies that if you wanted to change the self-assembly behvior, you could simply choose to use that tile (IH44).  In fact, row 1 is full of exceptions!  For these groups, tiles can be found exhibiting behaviors like that of rows 2, 3, or 4, as indicated by the colors of their IH tile designation above.  Ultimately, this can be traced back to the presence of [crosscaps](https://en.wikipedia.org/wiki/Cross-cap) (x) in the orbifolds.  A [Moebius band](https://en.wikipedia.org/wiki/M%C3%B6bius_strip) is a related surface that results from combining a boundary with the crosscap.  In fact, this is the orbifold (*x) for c1m1, which belongs to row 1.  Intuitively, cross-caps and Moebius bands are "strange" things and to be brief: when strange things happen in the orbifold topology, strange things happen in the self-assembly of SDAs which derive from them.  In fact, the laces on the football below should really be a crosscap!
+
+<a href="https://dx.doi.org/10.1039/D1SM00875G"><img style="float: center" src="row1.png" width=1000px></a>
+
+Until now, the exact choice of "cuts" you make to "open up" the orbifold and create an isohedral tile does not affect its self-assembly characteristics.  Different cuts result in different tiles, but those tiles behave similarly.  Now, the choice of cuts matters!  You can choose cuts which expose different features resulting in different patterns of L/D enantiomorphs around an SDA, resulting in behavior akin to different rows of the pyramid. It is easy to remember all groups which are e\[X\]ceptions to these otherwise rigid rules because their orbifolds all contain an "x"!
 
 # Conclusions
 
@@ -130,4 +185,8 @@ Q: from G&S - how can you create a tile that can carry any pattern?  Only answer
 
 Future work in 3D
 Other "lego blocks"
+
+# Citations
+
+<p id="gs">[A] Gruenbaum, B., and Shephard, G. C. Tilings and Patterns. Second Edition. Courier Dover Publications, 2016.</p>
 

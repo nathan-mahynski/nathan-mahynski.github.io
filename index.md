@@ -26,7 +26,7 @@ row1:
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/img/splash/orbifolds.png
-    title: "Orbifold Structure-Directing Agents"
+    title: "Agent-based Colloidal Self-Assembly"
     url: "/research/structure_directing_agents"
     excerpt: ""
     btn_label: "Read More"
