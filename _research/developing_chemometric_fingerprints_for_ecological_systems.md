@@ -107,7 +107,7 @@ In this project, my collaborators and I sought to identify chemometric trends in
 
 > [In 1999, the U.S. Fish and Wildlife Service Alaska Maritime National Wildlife Refuge (USFWS-AMNWR), the U.S. Geological Survey Biological Resources Division (USGS-BRD), and NIST implemented the Seabird Tissue Archival and Monitoring Project (STAMP) to monitor contaminants in Alaska's marine environments. In 2010, the 111th Congress directed NIST to expand this and other programs into the U.S. Pacific Islands. STAMP was designed as an ongoing long-term effort to track geographic and temporal trends in environmental quality by collecting seabird eggs using standardized protocols, processing and banking the contents under conditions that ensure chemical stability during long-term (decadal) storage, and analyzing subsamples of the stored material to determine baseline levels of persistent bioaccumulative contaminants.](https://www.nist.gov/programs-projects/seabird-tissue-archival-and-monitoring-project-stamp)
 
-<a href="https://www.grida.no/resources/5453"><img style="float: right" src="biomagnify.png" width=250px></a>
+<a href="https://www.grida.no/resources/5453"><img style="float: right" src="biomagnify.png" width=350px></a>
 
 Seabird eggs are useful chemometric indicators because these birds exist near the top of the food chain, and act as a reservoir for these toxins via [biomagnification](https://en.wikipedia.org/wiki/Biomagnification).  Egg contents are fairly stable over long periods of time so they can be entered into animal [biobanks](https://en.wikipedia.org/wiki/Biobank) and analyzed at later dates.  Furthermore, because birds feed over broad areas they represent a reasonable average of the Pacific environment.
 
