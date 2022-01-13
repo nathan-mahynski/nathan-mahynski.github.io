@@ -16,7 +16,7 @@ classes:
 
 {% include toc icon="gears" title="Table of Contents" %}
 
-BorutaSHAP combines 2 of the leading machine learning methods to perform intelligent feature selection for tabular data with minimal hyperparameters or arbitrary thresholds.  The first is the original [Boruta feature selection algorithm](https://www.jstatsoft.org/article/view/v036i11), and the second is [SHAP](https://github.com/slundberg/shap), which is used to improve/replace one of the core steps in the original implementation.  Theses blog posts go into more detail about this:
+BorutaSHAP combines two of the leading machine learning methods to perform intelligent feature selection for tabular data with minimal hyperparameters or arbitrary thresholds.  The first is the original [Boruta feature selection algorithm](https://www.jstatsoft.org/article/view/v036i11), and the second is [SHAP](https://github.com/slundberg/shap), which is used to improve/replace one of the core steps in the original implementation.  Theses blog posts go into more detail about this:
 
 * ["Boruta explained exactly how you wished someone explained to you" by Samuele Mazzanti](https://towardsdatascience.com/boruta-explained-the-way-i-wish-someone-explained-it-to-me-4489d70e154a)
 * ["Is this the Best Feature Selection Algorithm 'BorutaShap'?" by Eoghan Keany](https://medium.com/analytics-vidhya/is-this-the-best-feature-selection-algorithm-borutashap-8bc238aa1677)
@@ -39,7 +39,7 @@ Any model that returns a "feature importance" can be used with Boruta, not just 
 The authors of [BorutaPy](https://github.com/scikit-learn-contrib/boruta_py) offer some improvements of their own discussed therein.  Notably, the Bonferroni correction is often considered too harsh so alternatives are discussed.
 - "Boruta is an all relevant feature selection method, while most other are minimal optimal; this means it tries to find all features carrying information usable for prediction, rather than finding a possibly compact subset of features on which some classifier has a minimal error."
 
-Here is a brief and insightful explanation from the inventor, [Miron B. Kursa](/assets/docs/boruta_in_a_hurry.pdf).
+Here is a brief and insightful explanation from the inventor, [Miron B. Kursa](boruta_in_a_hurry.pdf).
 
 # What is BorutaSHAP?
 ---

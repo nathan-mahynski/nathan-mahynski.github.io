@@ -3,6 +3,7 @@ title: "Using Cython to Accelerate Python Code"
 excerpt: "Fast scientific python code."
 header:
   teaser: /assets/img/cython_logo.png
+  image: /assets/img/cython_header.png
 tags:
   - python
   - cython

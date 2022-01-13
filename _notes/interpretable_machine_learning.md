@@ -38,7 +38,7 @@ A recent effort at NIST has been to develop standards for explainable AI - this 
 * Knowledge limits 
 This is an ongoing effort and will change over time.
 
-{% include gallery caption="SHAP and interactive dashboards based on this output are critical tools for quickly evaluating the trustworthiness of a model." %}
+<!--{% include gallery  %}-->
 
 ## Interpretability Itself
 
