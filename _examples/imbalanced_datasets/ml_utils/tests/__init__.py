@@ -1,5 +1,0 @@
-"""
-Unittest directory.
-
-author: nam
-"""
