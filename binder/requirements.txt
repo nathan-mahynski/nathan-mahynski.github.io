@@ -9,6 +9,6 @@ nodejs
 baycomp
 BorutaShap
 xgboost
--e git://github.com/hyperopt/hyperopt-sklearn@master
+-e git+https://github.com/hyperopt/hyperopt-sklearn@master
 watermark
 imblearn
