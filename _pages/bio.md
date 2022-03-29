@@ -51,12 +51,3 @@ E: [nathan.mahynski@gmail.com](mailto: nathan.mahynski@gmail.com)
 * Christopher J. Wormald Prize in Thermodynamics, 2015
 * National Research Council (NRC) RAP Fellowship, 2015 
 * National Science Foundation Graduate Research Fellowship, 2011
-
-<!--# Twitter Feed
----
-
-
-<a class="twitter-timeline" href="https://twitter.com/mahynski?ref_src=twsrc%5Etfw">Tweets by mahynski</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-{% twitter https://twitter.com/mahynski/status maxwidth=500 limit=5 %}-->
-
