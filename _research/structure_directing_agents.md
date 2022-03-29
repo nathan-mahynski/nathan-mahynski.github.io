@@ -37,7 +37,7 @@ In this body of work we reconsider the role of additives in colloidal systems wh
 4. ["Bottom-up with a twist:  a new approach for colloidal crystal assembly," N. A. Mahynski, L. Rovigatti, C. N. Likos, A. Z. Panagiotopoulos, ACS Nano <b>10</b>, 5459–5467 (2016).](https://doi.org/10.1021/acsnano.6b01854)
 5. ["Entropic  control  over  nanoscale  colloidal  crystals," N. A. Mahynski, Mol. Phys. <b>114</b>,  2586–2596 (2016).](https://doi.org/10.1080/00268976.2016.1203467)
 6. ["Reentrant equilibrium disordering in nanoparticle–polymer mixtures," D. Meng, S. K. Kumar, G. S. Grest, N. A. Mahynski, A. Z. Panagiotopoulos, npj Computational Materials <b>3</b>, 3 (2017).](https://doi.org/10.1038/s41524-016-0005-8)
-7. ["Void-based assembly of colloidal crystals," N. A. Mahynski, L. Rovigatti, C. N. Likos, A. Z. Pana-giotopoulos, G.I.T. Laboratory Journal Europe <b>21</b>, 32–34 (2017).](http://bit.ly/GLJ-Mahynski)
+7. ["Void-based assembly of colloidal crystals," N. A. Mahynski, L. Rovigatti, C. N. Likos, A. Z. Panagiotopoulos, G.I.T. Laboratory Journal Europe <b>21</b>, 32–34 (2017).](http://bit.ly/GLJ-Mahynski)
 8. ["Symmetry-derived structure directing agents for two-dimensional crystals of arbitrary colloids," N. A. Mahynski, V. K. Shen, Soft Matter <b>17</b>, 7853-7866 (2021).](https://dx.doi.org/10.1039/D1SM00875G)
 
 Refs. 5 and 7 are essentially reviews of the first part of this work, which the interested reader should refer to.

@@ -36,6 +36,7 @@ A recent effort at NIST has been to develop standards for explainable AI - this 
 * Those explanations need to be "meaningful "
 * The explanations themselves need to be accurate (this is not the same as model accuracy)
 * Knowledge limits 
+
 This is an ongoing effort and will change over time.
 
 <!--{% include gallery  %}-->
