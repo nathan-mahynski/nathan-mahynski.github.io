@@ -213,7 +213,7 @@ The National Cold Water Marine Aquaculture Center (NCWMAC) in Franklin, Maine, i
 <p id="perera"><a href="https://arxiv.org/abs/2101.03064">[9] Perera P., Oza P., Patel V.M., "One-class classification: A survey," arXiv:2101.03064 (2021).</a></p>
 
 <p id="dietz"><a href="https://www.sciencedirect.com/science/article/pii/S0048969719337337">[10] Dietz R., et al., "Current state of knowledge on biological effects from contaminants on arctic wildlife and fish," Science of the Total Environment 696 (2019) 133792.</a></p>
-
+<!--
 <p id="mahynski1"><a href="https://doi.org/10.6028/jres.126.028">[11] Mahynski N.A. et al., "Seabird Tissue Archival and Monitoring Project (STAMP) Data from 1999-2010," Journal of Research of the National Institute of Standards and Technology 126 (2021).</a></p>
 
 <p id="mahynski2"><a href="">[12] Mahynski N.A., et al., "Chemometric Differentiation of Seabirds in the North Pacific Ocean," (in prep.)</a></p>
@@ -235,3 +235,4 @@ The National Cold Water Marine Aquaculture Center (NCWMAC) in Franklin, Maine, i
 <p id="wang"><a href="https://www.jmlr.org/papers/volume22/20-1061/20-1061.pdf">[20] Wang Y., et al., "Understanding How Dimension Reduction Tools Work: An Empirical Approach to Deciphering t-SNE, UMAP, TriMAP, and PaCMAP for Data Visualization," ArXiv:2012.04456 (2020) 1–63.</a></p>
 
 <p id="lundberg"><a href="https://doi.org/10.1038/s41551-018-0304-0">[21] Lundberg S. M., et al., "Explainable machine-learning predictions for the prevention of hypoxaemia during surgery," Nature Biomedical Engineering 2 (2018) 749–760.</a></p>
+-->
