@@ -26,7 +26,7 @@ If you are using python, EDA is easy in [seaborn](https://seaborn.pydata.org/ind
 
 EDA can sometimes be controversial as there is a school of thought that suggests EDA can bias the data scientist at the outset toward false correlations or unsupported conclusions.  While this can be true, for most scientific applications the injection of background training/intuition at this stage is often more beneficial than harmful.  Still, you should always be wary of bias.
 
-An example Jupyter notebook is available here which can be modified to your needs. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mahynski/mahynski.github.io/public?filepath=%2F_examples%2Feda%2Feda_starting_point.ipynb)
+An example Jupyter notebook is available here which can be modified to your needs. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Feda_starting_point.ipynb)
 
 # Some Ideas
 

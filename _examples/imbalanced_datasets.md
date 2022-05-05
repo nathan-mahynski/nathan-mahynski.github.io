@@ -24,7 +24,7 @@ https://datascience.stackexchange.com/questions/71741/how-to-apply-dataset-balan
 
 {% include toc icon="gears" title="Table of Contents" %}
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mahynski/mahynski.github.io/public?filepath=%2F_examples%2Fimbalanced_datasets%2Fexample.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fimbalanced_datasets%2Fexample.ipynb)
 
 When building classifiers, class imbalance in the training set can be a big factor.  If a set is 80% A and 20% B, then a simple majority classifier (predict everything to be A) will have an 80% accuracy.  However, this is neither sensical, nor necessarily relevant for the real world if the balance is skewed relative to what is to be expected.  Dealing with class imbalance has been the subject (and continues to be) the subject of research, but there are many existing tools which can handle this problem reasonably well.
 

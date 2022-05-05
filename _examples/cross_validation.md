@@ -25,6 +25,6 @@ Some additional reading:
 * ["Evaluating the Replicability of Significance Tests for Comparing Learning Algorithms," Bouckaert and Frank (2004).](bouckaert_and_frank.pdf)
 * ["Choosing between two learning algorithms based on calibrated tests," Bouckaert (2003).](bouckaert-calibrated-tests.pdf)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mahynski/mahynski.github.io/public?filepath=%2F_examples%2Fcross_validation%2Fexample.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fcross_validation%2Fexample.ipynb)
 
 

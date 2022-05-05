@@ -18,6 +18,6 @@ sidebar:
 
 An example of how to use hierarchical clustering on Spearman's rank-order correlation to find decorrelated dimensions (features) in tabular data.  This is based on scikit-learn's example [here](https://scikit-learn.org/stable/auto_examples/inspection/plot_permutation_importance_multicollinear.html), but has been wrapped in classes from my own python package which consolidates many such functions.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mahynski/mahynski.github.io/public?filepath=%2F_examples%2Fdecorrelating_ml_features%2Fexample.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fdecorrelating_ml_features%2Fexample.ipynb)
 
 
