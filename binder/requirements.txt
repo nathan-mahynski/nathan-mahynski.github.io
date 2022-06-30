@@ -3,7 +3,7 @@ pandas
 scipy
 matplotlib
 seaborn
-sklearn
+scikit-learn
 shap
 nodejs
 baycomp
