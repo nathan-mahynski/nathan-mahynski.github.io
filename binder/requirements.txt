@@ -10,4 +10,4 @@ baycomp
 BorutaShap
 xgboost
 watermark
-imblearn
+imbalanced-learn
