@@ -4,10 +4,10 @@ scipy
 matplotlib
 seaborn
 scikit-learn
-shap
-nodejs
-baycomp
-BorutaShap
-xgboost
+#shap
+#nodejs
+#baycomp
+#BorutaShap
+#xgboost
 watermark
 imbalanced-learn
