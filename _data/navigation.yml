@@ -28,8 +28,6 @@ resources:
         url: https://www.cplusplus.com/
       - title: Learn Python
         url: https://anandology.com/python-practice-book/index.html
-      - title: Jupyter Notebooks
-        url: https://jupyter-notebook.readthedocs.io/en/stable/
       - title: SciPy Cookbook
         url: https://scipy-cookbook.readthedocs.io/index.html
       - title: Google Style Guide
@@ -52,8 +50,8 @@ resources:
         url: https://wvuhpc.github.io/2019-Intro-HPC/07-jobs/index.html
   - title: Data Science / Machine Learning
     children: 
-      - title: Jupyter
-        url: https://jupyter.org/
+      - title: Jupyter Notebooks
+        url: https://jupyter-notebook.readthedocs.io/en/stable/
       - title: Google Colab
         url: https://colab.research.google.com
       - title: fast.ai
