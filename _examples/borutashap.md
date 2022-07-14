@@ -17,6 +17,8 @@ sidebar:
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
 Some examples of how to use [BorutaSHAP](https://github.com/Ekeany/Boruta-Shap) to do feature selection on tabular data.  Also, a complete workflow is illustrated, going from initial feature decorrelation and selection to model explanation.
 
 Note that if you are dealing with imbalanced datasets for classification tasks, see [this example](/examples/imbalanced_datasets/) for how to incorporate BorutaSHAP into pipelines which balance the data as part of their pipeline.
