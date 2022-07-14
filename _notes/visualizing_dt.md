@@ -13,7 +13,7 @@ tags:
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
-This is a living document with notes on visualizing decision trees and related models.  Since state-of-the-art models for structured data are typically based on trees, such as random forests, visualizing these sort of models is a routine, and key task.
+This is a living document with notes on visualizing decision trees and related models.  Since state-of-the-art models for structured data are typically based on trees, such as random forests, visualizing a decision tree is a routine, and key task in machine learning.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_notes%2Fvisualizing_dt%2Fnotes.ipynb)
 
