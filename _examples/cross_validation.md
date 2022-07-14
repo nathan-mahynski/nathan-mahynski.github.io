@@ -16,6 +16,8 @@ sidebar:
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
 Examples of different types of cross validation and how to use them.  This includes holdout, "vanilla" k-fold, nested, and repeated k-fold CV.  All examples use the scikit-learn library.
 
 This includes a discussion of how to use CV to perform hypothesis testing, for example, to compare the performances of different algorithms.
