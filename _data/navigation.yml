@@ -52,14 +52,18 @@ resources:
         url: https://wvuhpc.github.io/2019-Intro-HPC/07-jobs/index.html
   - title: Data Science / Machine Learning
     children: 
-      - title: fast.ai
-        url: https://www.fast.ai/
+      - title: Jupyter
+        url: https://jupyter.org/
       - title: Google Colab
         url: https://colab.research.google.com
+      - title: fast.ai
+        url: https://www.fast.ai/
       - title: Pandas
         url: https://pandas.pydata.org/
       - title: scikit-learn
         url: https://scikit-learn.org/stable/
+      - title: Keras
+        url: https://keras.io/
       - title: PyTorch
         url: https://pytorch.org/
       - title: AutoML
