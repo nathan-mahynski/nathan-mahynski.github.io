@@ -19,6 +19,8 @@ sidebar:
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
 An introduction with some notes and very simple examples of how common chemometric methods work and when to apply them.  These are all implemented in python and use the scikit-learn library when possible.
 
 A nice review by [Frank and Friedman](frank_friedman.pdf) provides more detailed reading.
