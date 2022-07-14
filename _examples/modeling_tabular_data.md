@@ -17,6 +17,8 @@ sidebar:
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
 Some examples of how to initially analyze (EDA, etc.) tabular data, create pipelines, test and compare them, and analyze their behavior.  This is not exhaustive, but should be a good place to start from.
 
 A longer discussion of the qualitative features and steps taken in these examples can be found [here](/tutorials/tabular_data_ml_workflow).
