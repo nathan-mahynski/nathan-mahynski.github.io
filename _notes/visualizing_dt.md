@@ -13,6 +13,8 @@ tags:
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
 This is a living document with notes on visualizing decision trees and related models.  Since state-of-the-art models for structured data are typically based on trees, such as random forests, visualizing a decision tree is a routine, and key task in machine learning.
 
 Launch on:
