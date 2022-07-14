@@ -1,6 +1,6 @@
 ---
 title: "Visualizing Decision Trees"
-excerpt: "Tools to inspect the one of the powerful models for tabular data."
+excerpt: "Tools to inspect one of the powerful models for tabular data."
 header:
   teaser: /assets/img/jupyter_logo.png
 tags:
@@ -9,17 +9,11 @@ tags:
   - machine learning
   - decision tree
   - random forest
-sidebar:
-  - title: "Code"
-    image: /assets/img/jupyter_logo.png
-    image_alt: "logo"
-    text: "python, jupyter"
 ---
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
-This is a living document with notes on visualizing decision trees and related models.  
-Since state-of-the-art models for structured data are typically based on trees, such as random forests, visualizing these sort of models is a routine, and key task.
+This is a living document with notes on visualizing decision trees and related models.  Since state-of-the-art models for structured data are typically based on trees, such as random forests, visualizing these sort of models is a routine, and key task.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fvisualizing_dt%2Fnotes.ipynb)
 
