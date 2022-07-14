@@ -11,6 +11,8 @@ tags:
 
 <!-- Enter details at https://mybinder.org/, then copy the badge below -->
 
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
 This is a living document with notes on using biases or other problems associated with explaination tools for AI/ML model.s 
 
 Launch on:
