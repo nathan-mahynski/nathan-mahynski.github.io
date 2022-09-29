@@ -22,22 +22,25 @@ This is a guide to setting up git repos for python code that take advantage of a
 Most repos are built as packages and therefore should take advantage of python's use of `__init__.py` files to indicate structure.  This makes writing documentation, tests, and use of the code itself (importing it externally) rational and readable.  Python includes a nice discussion about this [here](https://docs.python.org/3/tutorial/modules.html) with examples on how to configure your code as a package.  To be brief, here is the basic layout by example:
 
 ~~~
-my_module/
-	__init__.py
-	subpackage_1/
-		__init__.py
-		a.py
-		b.py
-	subpackage_2/
-		__init__.py
-		c.py
-	tests/
-		__init__.py
-	doc/
-		__init__.py
+my_repository/
+  setup.py
+  version.py
+  LICENSE.txt
+  README.md
+  my_package/
+    __init__.py
+    subpackage_1/
+      __init__.py
+      a.py
+      b.py
+    subpackage_2/
+      __init__.py
+      c.py
+  tests/
+    __init__.py
 ~~~
 
-The `my_module/__init__.py` file should look like this so that when a used imports my_module they can access the subpackages via "dots", like `my_module.subpackage_1`:
+The `my_package/__init__.py` file should look like this so that when a user imports "my_package" they can access the subpackages via "dots", like `my_package.subpackage_1`:
 
 ~~~
 """
@@ -49,7 +52,7 @@ __all__ = ["subpackage_1", "subpackage_2"]
 from . import subpackage_1, subpackage_2
 ~~~
 
-The `my_module/subpackage_1/__init__.py` file is similar:
+The `my_package/subpackage_1/__init__.py` file is similar:
 
 ~~~
 """
@@ -60,13 +63,13 @@ Load all modules.
 __all__ = ["a", "b]
 ~~~
 
-The `__init__.py` files in tests/ and doc/ are generally empty, but should contain a docstring header (as above) to be consistent with the pre-commit documentation linters used below.  
+Empty `__init__.py` files should contain a docstring header (as above) to be consistent with the pre-commit documentation linters used below.  
 
 A user can now import is the standard way:
 
 ~~~ python
->>> import my_module
->>> from my_module.subpackage_1.a import some_function
+>>> import my_package
+>>> from my_package.subpackage_1.a import some_function
 ~~~
 
 Even if a "subpackage" is really just your source code, this keeps your tests (which you should always write) conveniently separated.
@@ -271,7 +274,7 @@ author: username
 """
 import unittest
 
-from my_module.subpackage_1.a import MyClass
+from my_package.subpackage_1.a import MyClass
 
 
 class TestMyClass(unittest.TestCase):
@@ -295,13 +298,13 @@ class TestMyClass(unittest.TestCase):
 
 There are many different [assert methods](https://docs.python.org/3/library/unittest.html#assert-methods), and you can have certain functions run once at setUp as well.  Refer to Python's documentation for more details and [here](https://www.tutorialspoint.com/unittest_framework/unittest_framework_assertion.htm) for an abbreviated summary.  
 
-These tests (all files) can be all discovered and run automatically from the [command line](https://stackoverflow.com/questions/1732438/how-do-i-run-all-python-unit-tests-in-a-directory), assuming you have placed your test scripts in tests/ which includes an `__init__.py` file; from the my_module/ level you can simply call:
+These tests (all files) can be all discovered and run automatically from the [command line](https://stackoverflow.com/questions/1732438/how-do-i-run-all-python-unit-tests-in-a-directory), assuming you have placed your test scripts in tests/ which includes an `__init__.py` file; from the my_repository/ level you can simply call:
 
 ~~~ bash
 $ python -m unittest discover tests/
 ~~~
 
-See [here](https://www.patricksoftwareblog.com/python-unit-testing-structuring-your-project/) for another blog post about structuring your module for convenient testing.  Unittests need to be written in the form: set up something, execute, test output against expectation.  However, this doesn't always help if you haven't thought of a way the code could fail or be used incorrectly; tests like [hypothesis](https://hypothesis.readthedocs.io/en/latest/) are geared at trying to solve this.  Another way to help is to use [coverage](https://github.com/nedbat/coveragepy) to estimate how much of you code is executed (and therefore tested) when you run these tests.  Conveniently, you can just change the syntax above a little bit after installing the code.
+See [here](https://www.patricksoftwareblog.com/python-unit-testing-structuring-your-project/) for another blog post about structuring your package for convenient testing.  Unittests need to be written in the form: set up something, execute, test output against expectation.  However, this doesn't always help if you haven't thought of a way the code could fail or be used incorrectly; tests like [hypothesis](https://hypothesis.readthedocs.io/en/latest/) are geared at trying to solve this.  Another way to help is to use [coverage](https://github.com/nedbat/coveragepy) to estimate how much of you code is executed (and therefore tested) when you run these tests.  Conveniently, you can just change the syntax above a little bit after installing the code.
 
 ~~~ bash
 $ pip install coverage
