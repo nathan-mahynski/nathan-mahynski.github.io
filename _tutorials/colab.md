@@ -110,7 +110,13 @@ $ conda create -n my_env_name python=3.7
 
 You can create environments with specific versions of packages by appropriately appending the above comman, as detailed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)  It can be helpful to specify all the packages you want here since installing packages one at a time can sometimes lead to dependency conflicts, though I have rarely encountered this problem.
 
-Once create, you can activate and deactivate your environment as follows.  
+It can be very helpful to "silo" individual projects into individual environments.  You can maintain a [separate yaml file](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/04-sharing-environments/index.html) for each project, e.g., conda-env.yml, to save which codes (and versions) were used for each.  You can create this environment automatically:
+
+~~~bash
+$ conda env create -f conda-env.yml
+~~~
+
+Once created, you can activate and deactivate your environment as follows.  
 
 ~~~ bash
 $ conda activate my_env_name
