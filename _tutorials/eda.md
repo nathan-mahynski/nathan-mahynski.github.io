@@ -28,7 +28,7 @@ EDA can sometimes be controversial as there is a school of thought that suggests
 
 An example Jupyter notebook is available here which can be modified to your needs. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Feda_starting_point.ipynb)
 
-EDA tools are constantly evolving and improving.  While the tools described below are good ways to get started, tools like [D-Tale](https://github.com/man-group/dtale) and [Lux](https://github.com/lux-org/lux) really make things very easy and fast.  
+EDA tools are constantly evolving and improving.  While the tools described below are good ways to get started, tools like [D-Tale](https://github.com/man-group/dtale) and [Lux](https://github.com/lux-org/lux) really make things very easy and fast.  Here is an example notebook: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Finteractive-eda.ipynb)
 
 # Some Ideas
 
