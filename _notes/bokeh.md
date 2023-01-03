@@ -2,7 +2,7 @@
 title: "Bokeh Dashboards"
 excerpt: "Notes on using Bokeh to make Interactive Tools."
 header:
-  teaser: /assets/img/bokeh_logo.png
+  teaser: /assets/img/logo/bokeh_logo.png
 tags:
   - python
   - data science
