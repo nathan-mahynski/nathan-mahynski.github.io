@@ -106,6 +106,8 @@ k-nearest neighbors 	|	No	| No 		| No 		| class,regr
 
 ### The Generalized Linear Model (GLM)
 
+An introduction to GLMs can be found [here](https://online.stat.psu.edu/stat504/lesson/6/6.1) and [here](https://web.stat.tamu.edu/~suhasini/teaching613/chapter9.pdf).
+
 The linear regression model assumes that some prediction, y, may be expressed as a weighted sum of its features with an error $$\epsilon$$ that is normally distributed.
 
 {% raw %}
