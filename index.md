@@ -70,7 +70,9 @@ CHIMERa is a website, blog, and repository for my chemical informatics and engin
 
 Details can be found throughout this site, and you can <a href="https://twitter.com/mahynski?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mahynski</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<!--
 The background above was generated using [wombo.art](https://www.wombo.art/). Some current and former collaborators include:
 
 ![](/assets/img/splash/partners.png)
+-->
 
