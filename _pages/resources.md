@@ -51,7 +51,7 @@ Open source codes used in my research can be found on [GitHub](https://www.githu
 
 * [PACCS](https://github.com/usnistgov/paccs) is primarily a colloidal crystal structure generation and optimization library written in Python. It supports stochastic optimization of periodic multicomponent systems in two and three dimensions, as well as the generation of candidate structures in two dimensions using wallpaper groups.  It was initially developed by Evan Pretti as his SURF project in 2018.
 
-# An Interactive Period Table
+# An Interactive Periodic Table
 
 <!-- This is stored in the _includes directory -->
 {% include interactive_periodic_table.html %}
