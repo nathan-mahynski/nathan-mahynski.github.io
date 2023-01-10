@@ -61,4 +61,4 @@ Remember to remove the explicit DOCTYPE declaration at the top that Bokeh create
 
 {% include interactive_periodic_table.html %}
 
-See the code to generate this [here](examples/periodic_table).
+See the code to generate this [here](/examples/periodic_table).
