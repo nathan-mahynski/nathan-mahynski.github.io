@@ -58,4 +58,7 @@ Open source codes used in my research can be found on [GitHub](https://www.githu
 This is stored in the _includes directory.
 Remember to remove the explicit DOCTYPE declaration at the top that Bokeh creates.
 -->
+
 {% include interactive_periodic_table.html %}
+
+See the code to generate this [here](examples/periodic_table).
