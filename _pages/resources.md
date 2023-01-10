@@ -20,9 +20,10 @@ header:
 
 <!-- {% include toc icon="gears" title="Table of Contents" %} -->
 
+<!--
+
 # Research Opportunities
 ---
-
 I am currently accepting postdoctoral applications for those interested in working on some of my research [focus areas](/research/).  There are also new opportunities for undergraduate and high school students who are interested in learning about research in chemical informatics and engineering.
 
 1. [NRC Postdoctoral Opportunity](http://nrc58.nas.edu/RAPLab10/Opportunity/Opportunity.aspx?LabCode=50&ROPCD=506461&RONum=C0449&ROBaseMode=R100) You must be a US citizen to apply for this program.  [Contact me](mailto:nathan.mahynski@gmail.com) for details on how to apply.
@@ -33,6 +34,7 @@ I am currently accepting postdoctoral applications for those interested in worki
   - Kamryn Kant, 2018, Clemson Univ. Chemical Engineering
   - Sally Jiao, 2017, 2018, Princeton Univ. Chemical Engineering -> Ph.D. @ The University of California, Santa Barbara
 3. [NIST Summer High School Intern (SHIP) Program](https://www.nist.gov/ohrm/summer-high-school-intern-program)
+-->
 
 # Open Source Code
 ---
@@ -49,3 +51,7 @@ Open source codes used in my research can be found on [GitHub](https://www.githu
 
 * [PACCS](https://github.com/usnistgov/paccs) is primarily a colloidal crystal structure generation and optimization library written in Python. It supports stochastic optimization of periodic multicomponent systems in two and three dimensions, as well as the generation of candidate structures in two dimensions using wallpaper groups.  It was initially developed by Evan Pretti as his SURF project in 2018.
 
+# An Interactive Period Table
+
+<!-- This is stored in the _includes directory -->
+{% include interactive_periodic_table.html %}
