@@ -1,6 +1,6 @@
 ---
-title: "Interpretable Machine Learning"
-excerpt: "Some notes on how to make models interpretable."
+title: "Interpretable / Explainable Machine Learning"
+excerpt: "Some notes on how to make black-box models explainable."
 header:
   teaser: /assets/img/shap_logo.png
   image: /assets/img/interpretable_machine_learning_header.png
@@ -39,6 +39,18 @@ A recent effort at NIST has been to develop standards for explainable AI - this 
 
 This is an ongoing effort and will change over time.
 
+If you are looking for any kind of high-performing model and simply want it to be accurate, [scikit-learn's cheat sheet](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html) is a nice map of what algorithm might be the most useful.  
+![](https://scikit-learn.org/stable/_static/ml_map.png)
+
+However, in practice that is often not enough.  We need to have either "explainable AI" or "interpretable AI" (which are not the same thing) to judge how much trust we should place in the model.  Cynthia Rudin has a nice YouTube talk on this subject, linked below:
+
+[![](https://img.youtube.com/vi/I0yrJz8uc5Q/default.jpg)](https://youtu.be/I0yrJz8uc5Q)
+
+Jay Alammar has a nice repository of [Explainable AI](https://ex.pegg.io/) tools and a [cheat-sheet](https://ex.pegg.io/Explainable-AI-cheat-sheet-v0.2.1080.png) that nicely summarizes things.
+![](https://ex.pegg.io/Explainable-AI-cheat-sheet-v0.2.1080.png)
+
+[![](https://img.youtube.com/vi/Yg3q5x7yDeM/default.jpg)](https://youtu.be/Yg3q5x7yDeM)
+
 <!--{% include gallery  %}-->
 
 ## Interpretability Itself
@@ -57,8 +69,10 @@ This is an ongoing effort and will change over time.
 ### What characterizes an interpretable model? 
 
 There are several ways to make a model "interpretable":
-1. Intrinsic: use a simple, naturally interpretable model, such as a decision tree or linear model.
+1. Intrinsic: use a simple, naturally interpretable model, such as a decision tree or linear model.  
 2. Post hoc: use model agnostic approaches that analyze the model after training.
+
+Today, type (1) is generally considered "interpretable AI" while type (2) is considered "explainable AI".
 
 Model agnostic approaches can be divided into 2 categories:
 > 1. They explain global, overall behavior, such as:
