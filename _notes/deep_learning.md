@@ -29,3 +29,6 @@ Other notes based on subjects:
 2. Transformers
  * [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
  * [Harvard's Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
+
+General resources:
+* [Tensor2Tensor](https://github.com/tensorflow/tensor2tensor) contains models to accelerate ML research.
