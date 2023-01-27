@@ -31,4 +31,7 @@ Other notes based on subjects:
  * [Harvard's Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
 
 General resources:
+* [Tensorflow tutorials](https://www.tensorflow.org/tutorials)
+* [Keras examples](https://keras.io/examples/)
+* [PyTorch tutorials](https://pytorch.org/tutorials/beginner/basics/intro.html)
 * [Tensor2Tensor](https://github.com/tensorflow/tensor2tensor) contains models to accelerate ML research.
