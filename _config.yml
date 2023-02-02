@@ -71,7 +71,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : mahynski
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -99,7 +99,6 @@ author:
   bio              : "Chemical Engineer, Ph.D."
   location         : "Gaithersburg, MD"
   email            : "nathan.mahynski@gmail.com"
-  twitter          : "mahynski"
   github           : "mahynski"
   linkedin         : "nathanmahynski"
   researchgate     : "Nathan_Mahynski"
@@ -110,9 +109,6 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://mahynski.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/mahynski"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/mahynski"
@@ -120,9 +116,6 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mahynski"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/nathanmahynski"
