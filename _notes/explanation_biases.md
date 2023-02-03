@@ -13,7 +13,7 @@ tags:
 
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
-This is a living document with notes on using biases or other problems associated with explaination tools for AI/ML model.s 
+This is a living document with notes on using biases or other problems associated with explaination tools for AI/ML model.s
 
 Launch on:
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_notes%2Fexplanation_biases%2Fexplanation_biases_notes.ipynb)
