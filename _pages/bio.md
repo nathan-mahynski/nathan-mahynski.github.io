@@ -13,7 +13,7 @@ classes:
 
 <!--{% include toc icon="gears" title="Table of Contents" %}-->
 
-Nathan A. Mahynski received his Ph.D. in Chemical Engineering from Princeton Univ. in 2015, then started his career developing thermodynamic models and simulation algorithms for complex fluids and soft matter systems. His current research focuses on creating computational tools, including molecular simulation packages and machine learning pipelines, to understand chemometric patterns in inorganic and biological systems to improve the quality of human(oid and coexisting) life(forms). 
+My name is Nathan A. Mahynski; I received my Ph.D. in Chemical Engineering from Princeton Univ. in 2015, then started my career developing thermodynamic models and simulation algorithms for complex fluids and soft matter systems. My current research focuses on creating predictive models and computational tools, including molecular simulation packages and machine learning pipelines, to understand chemometric patterns in inorganic and biological systems.
 
 For a complete list of (hyperlinked) publications, refer to the CV below.  PDFs of all peer-reviewed work are available upon [request](mailto: nathan.mahynski@gmail.com), most of which can also be found on [ResearchGate](https://www.researchgate.net/profile/Nathan_Mahynski).
 

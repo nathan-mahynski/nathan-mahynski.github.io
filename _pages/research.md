@@ -12,6 +12,6 @@ header:
   overlay_filter: 0.35 # same as adding an opacity of 0.5 to a black background
 ---
 
-Here you can find full length discussions accompanying ongoing and previous research projects which tie together multiple peer-reviewed publications into a (hopefully) more coherent description of my long-term research objectives. These are written for the scientifically minded, but do not require subject matter expertise. If you find a project or paper interesting, or if you are interested in a collaboration or research opportunities, feel free to send me an <a href="mailto:nathan.mahynski@gmail.com">email</a>.
+Here you can find full length discussions accompanying ongoing and previous research projects which tie together multiple peer-reviewed publications into a longer and more coherent description of my programmatic research objectives. These are written for the scientifically minded, but do not require subject matter expertise. If you find a project interesting, or if you are interested in a collaboration, please feel free to send me an <a href="mailto:nathan.mahynski@gmail.com">email</a>.
 
 ---
