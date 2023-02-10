@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-title: "Publications & Bio"
+title: "Bio"
 permalink: /bio/
 header:
   image_description: ""
