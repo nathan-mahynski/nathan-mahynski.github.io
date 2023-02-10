@@ -56,6 +56,7 @@ row2:
 
 {% include feature_row id="row2" %}
 
+<!--
 <p style="text-align: center;">"All truths are easy to understand once they are discovered; the point is to discover them." - Galileo Galilei </p>
 
 CHIMERa is a website, blog, and repository for my chemical informatics and engineering research broadly incorporating, but not limited to: computational soft matter physics, topology, machine learning, thermodynamics, and molecular simulation methods.  This is meant to accompany formal, peer-reviewed [publications](/bio/) with additional thoughts, examples, and animations.  All thoughts and opinions expressed here are solely that of the author, as well as any errors, and should not be construed to reflect on my collaborators or employer.
@@ -68,7 +69,7 @@ CHIMERa is a website, blog, and repository for my chemical informatics and engin
 * using explainable AI methods to understand patterns in macroscopic ecological systems 
 * developing code (e.g., python, jupyter, c++ ) to standardize these tasks
 
-<!--
+
 Details can be found throughout this site, and you can <a href="https://twitter.com/mahynski?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mahynski</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The background above was generated using [wombo.art](https://www.wombo.art/). Some current and former collaborators include:
