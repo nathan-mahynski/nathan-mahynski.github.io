@@ -17,7 +17,7 @@ My name is Nathan A. Mahynski; I received my Ph.D. in Chemical Engineering from 
 
 For a complete list of (hyperlinked) publications, refer to the CV below.  PDFs of all peer-reviewed work are available upon [request](mailto: nathan.mahynski@gmail.com), most of which can also be found on [ResearchGate](https://www.researchgate.net/profile/Nathan_Mahynski).
 
-[Curriculum Vitae](/assets/docs/Curriculum_Vitae.pdf){: .btn .btn--success} [NIST Profile](https://www.nist.gov/people/nathan-mahynski){: .btn .btn--danger}
+[Curriculum Vitae](/assets/docs/Curriculum_Vitae.pdf){: .btn .btn--success} <!-- [NIST Profile](https://www.nist.gov/people/nathan-mahynski){: .btn .btn--danger}-->
 
 # Current Position 
 ---
