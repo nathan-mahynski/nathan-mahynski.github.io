@@ -12,8 +12,6 @@ main:
     url: /examples/
   - title: "Publications & Bio"
     url: /bio/
-  - title: "Sitemap"
-    url: /sitemap/
 
 resources:
 #  - title: Open Source Code
