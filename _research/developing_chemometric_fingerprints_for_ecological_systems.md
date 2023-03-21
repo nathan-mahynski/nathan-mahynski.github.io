@@ -163,13 +163,13 @@ This approach has been shown to unite many other types of model explanation meth
 -->
 
 <!--
-## Stable Isotope and Trace Element (SITE) analysis for Food Authentication
-C,H,N,S,O cycles
-Other trace elements assist
+# IAEA / Stable Isotope and Trace Element (SITE) Database
 
-IAEA Beef
+# Slovenian Strawberries, etc. with Nives
 
-Slovenian Strawberries - FTIR instead?
+# Colaboration with Chile
+
+# Oysters with Steve Christopher & Elizabeth Crowther
 -->
 
 # Recirculating Aquaculture Systems (RAS)
