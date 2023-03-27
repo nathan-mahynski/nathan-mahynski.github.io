@@ -13,7 +13,7 @@ tags:
 
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
-This is a living document with notes on using [explainable boosting machines](https://interpret.ml/docs/ebm.html).  
+This is a living document with notes on using [explainable boosting machines](https://interpret.ml/docs/ebm.html).  [Explainable boosting machines](https://interpret.ml/docs/ebm.html) are designed to be as accurate as state-of-the-art tree ensemble methods (random forests, gradient boosted trees) while remaining very [interpretable](/notes/interpretable_machine_learning) (as a GAM).
 
 Launch on:
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_notes%2Febm%2Febm_notes.ipynb)
