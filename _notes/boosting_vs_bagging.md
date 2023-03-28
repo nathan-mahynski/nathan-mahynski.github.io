@@ -39,7 +39,7 @@ scikit-learn provides more discussion in their [documentation](https://scikit-le
 
 # Bagging
 
-["Bagging"](https://en.wikipedia.org/wiki/Bootstrap_aggregating) is an acronym for (B)oostrap (Agg)regat(ing); the idea is to average many simple models each trained on randomly drawn subsamples of the data (with replacement, hence bootstrap sample).  This averaging, or aggregating, reduces the variance and model overfitting tendencies.  Bagging is a "parallel" operation is the sense that each model in the ensemble is indendent and can therefore be trained separately.  [Bagging works best when you employ strong, complex models](https://scikit-learn.org/stable/modules/ensemble.html) that essentially overfit a boostrapped sample; when averaged over many different bootstraps, the error rate averages to zero (if fully independent).
+["Bagging"](https://en.wikipedia.org/wiki/Bootstrap_aggregating) is an acronym for (B)oostrap (Agg)regat(ing); the idea is to average many simple models each trained on randomly drawn subsamples of the data (with replacement, hence bootstrap sample).  This averaging, or aggregating, reduces the variance and model overfitting tendencies.  Bagging is a "parallel" operation is the sense that each model in the ensemble is indendent and can therefore be trained separately.  [Bagging works best when you employ strong, complex models](https://scikit-learn.org/stable/modules/ensemble.html) that essentially overfit a boostrapped sample; when averaged over many different bootstraps, the error rate averages to zero (if fully independent).  When averaged, these models tend not to overfit and are fairly insensitive to specific hyperparameter choices - the same is not true for boosting.
 
 <a href="https://raw.githubusercontent.com/PacktPublishing/Python-Machine-Learning-Second-Edition/master/Chapter07/images/07_06.png"><img style="float: center" src="raschka_07_06.png" width=600px></a>
 
@@ -73,7 +73,7 @@ Unlike bagging, boosting uses samples drawn without replacement.  The original b
 3. Find the samples in the original training set with $C_1$ and $C_2$ disragree on, and train a third classifier, $C_3$, using that data.
 4. Combine all classifiers into a majority vote.
 
-While it is possible for boosting to reduce bias and variance (not just variance) relative to bagging models, they are known for having high variance themselves.
+While it is possible for boosting to reduce bias and variance (not just variance) relative to bagging models, they are known for having high variance themselves and can overfit the data so proper tuning is important.
 
 ## AdaBoost
 
