@@ -42,6 +42,7 @@ Other notes
 
 General resources
 ---
+* Google's [Machine Learning Courses](https://developers.google.com/machine-learning)
 * [Tensorflow tutorials](https://www.tensorflow.org/tutorials)
 * [Keras examples](https://keras.io/examples/)
 * [PyTorch tutorials](https://pytorch.org/tutorials/beginner/basics/intro.html)
