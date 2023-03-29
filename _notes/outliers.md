@@ -35,10 +35,10 @@ In the broader AI realm, "distributional shifts" refer to when test data starts 
 * Closed-world assumption - where the test data is assumed to be drawn IID from the same distribution as the training data. This occurs when all the known classes can be sampled from during training, so that all samples in the test phase are from the same set of classes (with no covariate shift).
 * Open set recognition (OSR) - model needs to be able to classify all classes from what is known, and be able to identify if something is "none of the above"
 
-Resources
----
-A centralized repo summarizing many resources. [anomaly-detection-resources](https://github.com/yzhao062/anomaly-detection-resources)
-
 Notes
 ---
 This is a living document with examples and implementations of OOD detection tools. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/outliers/ood.ipynb)
+
+Other Resources
+---
+A centralized repo summarizing many resources. [anomaly-detection-resources](https://github.com/yzhao062/anomaly-detection-resources)
