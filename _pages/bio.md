@@ -19,18 +19,17 @@ My name is Nathan A. Mahynski; I received my Ph.D. in Chemical Engineering from 
 For a complete list of (hyperlinked) publications, refer to the CV below.  PDFs of all peer-reviewed work are available upon [request](mailto: nathan.mahynski@gmail.com), most of which can also be found on [ResearchGate](https://www.researchgate.net/profile/Nathan_Mahynski).
 -->
 
-
-I am an engineer :gear: who specializes in designing, developing, and deploying computational tools to solve problems in chemistry and related scientific disciplines. I help researchers in fields like nuclear chemistry, food science, and ecology use machine learning, molecular simulations, and advanced modeling tools to make data-driven discoveries. I also have a long-standing interest in designing self-assembling functional materials. My own research involves using tools from art and architecture in novel ways to program colloidal crystal assembly. I have a PhD in computational Chemical Engineering with a concentration in computational thermodynamics and a certificate in Computational and Information Science. 
+I am an engineer who specializes in designing, developing, and deploying computational tools to solve problems in chemistry and related scientific disciplines. I help researchers in fields like nuclear chemistry, food science, and ecology use machine learning, molecular simulations, and advanced modeling tools to make data-driven discoveries. I also have a long-standing interest in designing self-assembling functional materials. My own research involves using tools from art and architecture in novel ways to program colloidal crystal assembly. I have a PhD in computational Chemical Engineering with a concentration in computational thermodynamics and a certificate in Computational and Information Science. 
 
 Broad research areas include: 
-:fire: [Thermodynamics](https://nathan-mahynski.github.io/research/using_thermodynamic_extrapolation_to_predict_fluid_properties/), :diamond_shape_with_a_dot_inside: [Material science](https://nathan-mahynski.github.io/research/counting_crystals_in_two_dimensions/), :sushi: [Food authenticity](https://nathan-mahynski.github.io/research/developing_chemometric_fingerprints_for_ecological_systems/), :computer: Machine Learning
+[Thermodynamics](https://nathan-mahynski.github.io/research/using_thermodynamic_extrapolation_to_predict_fluid_properties/), [Material science](https://nathan-mahynski.github.io/research/counting_crystals_in_two_dimensions/), [Food authenticity](https://nathan-mahynski.github.io/research/developing_chemometric_fingerprints_for_ecological_systems/), Machine Learning
 
 Some recent projects include:
-* :atom: Developing tools for advanced isotope metrology
-* :droplet: Predicting fluid phase thermodynamic properties with deep learning
-* :strawberry: Authenticating food labeling claims with chemometric tools 
-* :bird: Analyzing trends in biorepositories using explainable machine learning
-* :radioactive: Identifying materials using nuclear spectroscopy methods
+* eveloping tools for advanced isotope metrology
+* Predicting fluid phase thermodynamic properties with deep learning
+* Authenticating food labeling claims with chemometric tools 
+* Analyzing trends in biorepositories using explainable machine learning
+* Identifying materials using nuclear spectroscopy methods
 
 Have an interesting problem? Need help or advice? Contact me at nathan.mahynski@nist.gov
 
