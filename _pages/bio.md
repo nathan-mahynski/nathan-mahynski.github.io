@@ -25,7 +25,7 @@ Broad research areas include:
 [Thermodynamics](https://nathan-mahynski.github.io/research/using_thermodynamic_extrapolation_to_predict_fluid_properties/), [Material science](https://nathan-mahynski.github.io/research/counting_crystals_in_two_dimensions/), [Food authenticity](https://nathan-mahynski.github.io/research/developing_chemometric_fingerprints_for_ecological_systems/), Machine Learning
 
 Some recent projects include:
-* eveloping tools for advanced isotope metrology
+* Developing tools for advanced isotope metrology
 * Predicting fluid phase thermodynamic properties with deep learning
 * Authenticating food labeling claims with chemometric tools 
 * Analyzing trends in biorepositories using explainable machine learning
