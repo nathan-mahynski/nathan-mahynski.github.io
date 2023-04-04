@@ -42,7 +42,9 @@ I am currently accepting postdoctoral applications for those interested in worki
 Open source codes used in my research can be found on [GitHub](https://www.github.com/mahynski) and major packages are summarized below.
 <br/>
 
+<!--
 [![mahynski's github stats](https://github-readme-stats.vercel.app/api?username=mahynski&show_icons=true&theme=tokyonight&hide_border=true)](https://github.com/mahynski)
+-->
 <!-- ![1](https://github-readme-stats.vercel.app/api/top-langs/?username=mahynski&theme=tokyonight&hide_border=true) -->
 
 <a href="https://pages.nist.gov/feasst/"><img style="float: right;" src="/assets/img/feasst_logo.png"></a>
