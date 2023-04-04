@@ -20,6 +20,32 @@ resources:
 #        url: https://github.com/usnistgov/feasst
 #      - title: PACCS
 #        url: https://github.com/usnistgov/PACCS
+  - title: Data Science / Machine Learning
+    children: 
+      - title: Jupyter Notebooks
+        url: https://jupyter-notebook.readthedocs.io/en/stable/
+      - title: Google Colab
+        url: https://colab.research.google.com
+      - title: Keras
+        url: https://keras.io/
+      - title: PyTorch
+        url: https://pytorch.org/
+      - title: fast.ai
+        url: https://www.fast.ai/
+      - title: scikit-learn
+        url: https://scikit-learn.org/stable/
+      - title: Pandas
+        url: https://pandas.pydata.org/
+      - title: Bokeh
+        url: https://bokeh.org/
+      - title: hyperopt-sklearn
+        url: https://github.com/hyperopt/hyperopt-sklearn
+      - title: AutoML
+        url: https://www.ml4aad.org/automl/
+      - title: auto-sklearn
+        url: https://automl.github.io/auto-sklearn/master/index.html
+      - title: AutoGluon
+        url: https://auto.gluon.ai/stable/index.html
   - title: Programming
     children:
       - title: C++ Programming
@@ -46,30 +72,6 @@ resources:
         url: https://slurm.schedmd.com/tutorials.html
       - title: Torque
         url: https://wvuhpc.github.io/2019-Intro-HPC/07-jobs/index.html
-  - title: Data Science / Machine Learning
-    children: 
-      - title: Jupyter Notebooks
-        url: https://jupyter-notebook.readthedocs.io/en/stable/
-      - title: Google Colab
-        url: https://colab.research.google.com
-      - title: fast.ai
-        url: https://www.fast.ai/
-      - title: Pandas
-        url: https://pandas.pydata.org/
-      - title: scikit-learn
-        url: https://scikit-learn.org/stable/
-      - title: Keras
-        url: https://keras.io/
-      - title: PyTorch
-        url: https://pytorch.org/
-      - title: AutoML
-        url: https://www.ml4aad.org/automl/
-      - title: auto-sklearn
-        url: https://automl.github.io/auto-sklearn/master/index.html
-      - title: hyperopt-sklearn
-        url: https://github.com/hyperopt/hyperopt-sklearn
-      - title: AutoGluon
-        url: https://auto.gluon.ai/stable/index.html
   - title: General Research Tools
     children:
       - title: Mendeley
