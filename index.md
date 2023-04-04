@@ -32,7 +32,7 @@ row1:
     btn_label: "Read More"
     btn_class: "btn--inverse"
 row2:
-  - image_path: /assets/img/splash/seabirds_geo.png
+  - image_path: /assets/img/splash/seabirds.jpeg
     title: "Chemometric Authentication"
     url: "/research/developing_chemometric_fingerprints_for_ecological_systems"
     excerpt: ""
