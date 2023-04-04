@@ -49,9 +49,11 @@ Open source codes used in my research can be found on [GitHub](https://www.githu
 
 <a href="https://pages.nist.gov/feasst/"><img style="float: right;" src="/assets/img/feasst_logo.png"></a>
 
-* The [Free Energy and Advanced Sampling Simulation Toolkit (FEASST)](https://pages.nist.gov/feasst/) is a free, open-source, modular program to conduct molecular and particle-based simulations with flat-histogram Monte Carlo methods, primarily developed by Wick Hatch at NIST.
+* [pychemauth](https://github.com/mahynski/pychemauth) is a toolkit, implemented in python, to perform chemometric authentication using various types of data. These methods are designed to be compatible with [scikit-learn's](https://scikit-learn.org/stable/index.html) estimator API so that they can be deployed in pipelines and used with GridSearchCV, etc. These tools may be applied more generally, but this implementation is tailored to the needs of the chemometric authentication community.
 
 * [PACCS](https://github.com/usnistgov/paccs) is primarily a colloidal crystal structure generation and optimization library written in Python. It supports stochastic optimization of periodic multicomponent systems in two and three dimensions, as well as the generation of candidate structures in two dimensions using wallpaper groups.  It was initially developed by Evan Pretti as his SURF project in 2018.
+
+* The [Free Energy and Advanced Sampling Simulation Toolkit (FEASST)](https://pages.nist.gov/feasst/) is a free, open-source, modular program to conduct molecular and particle-based simulations with flat-histogram Monte Carlo methods, primarily developed by Wick Hatch at NIST.
 
 # An Interactive Periodic Table
 ---
