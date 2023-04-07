@@ -31,7 +31,7 @@ Some recent projects include:
 * Analyzing trends in biorepositories using explainable machine learning
 * Identifying materials using nuclear spectroscopy methods
 
-Have an interesting problem? Need help or advice? Contact me at nathan.mahynski@nist.gov
+Have an interesting problem? Need help or advice? Contact me via [email](mailto: nathan.mahynski@gmail.com).
 
 PDFs of all peer-reviewed work are available upon [request](mailto: nathan.mahynski@gmail.com), most of which can also be found on [ResearchGate](https://www.researchgate.net/profile/Nathan_Mahynski).
 
