@@ -28,21 +28,26 @@ Graph neural networks are unique enough to warrant their own set of notes.  Thes
 
 Embeddings and Collaborative Filtering
 ---
-Embeddings are a way to perform sensible dimensionality reduction for neural networks.  There are a number of interpretations and explanations - the notebooks below goes through several of them.  Embeddings are critical to represeting categorical variables as continuous ones in an efficient manner.  Usually tabular data is best modeled with conventional machine learning tools like tree ensembles, but if the data includes high cardinality categorical variables or raw data (e.g., text or images) neural networks are usually a better choice.  Also, embeddings are the basis of collaborative filtering (recommendation systems) which is helpful to discover latent factors underlying similarity between categories. 
+Embeddings are a way to perform sensible dimensionality reduction for neural networks.  There are a number of interpretations and explanations - the notebooks below goes through several of them.  Embeddings are critical to represeting categorical variables as continuous ones in an efficient manner.  For example, they can be used to [represent a node in a graph](https://keras.io/examples/graph/node2vec_movielens) with a vector of floats. Usually tabular data is best modeled with conventional machine learning tools like tree ensembles, but if the data includes high cardinality categorical variables or raw data (e.g., text or images) neural networks are usually a better choice.  Also, embeddings are the basis of collaborative filtering (recommendation systems) which is helpful to discover latent factors underlying similarity between categories. 
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/deep_learning/embeddings.ipynb)
 
-Other Key Concepts
+Attention and Transformers
 ---
-1. Attention 
- * Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks.
- * [Self-attention]((https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a)) is slightly different from attention, but [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)#:~:text=Bidirectional%20Encoder%20Representations%20from%20Transformers,2018%20by%20researchers%20at%20Google.) and other transformers all use self-attention.
- * [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
+ The concept of attention was introduced alongside transformer architectures in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks.
+ [![Attention Is All You Need](https://img.youtube.com/vi/iDulhoQ2pro/0.jpg)](https://www.youtube.com/watch?v=iDulhoQ2pro)
 
-2. Transformers 
- * The concept of attention was introduced alongside transformer architectures in the original [``Attention is all you need'' paper](https://arxiv.org/abs/1706.03762).
+Attention makes a direct connection between points in the input (e.g, sequence); as a result you can [view attention essentially like a graph](https://graphdeeplearning.github.io/post/transformers-are-gnns/) where each part of the input is connected to all others and the weight of each edge determines the "strength" (how much attention to pay) of the interaction. **Thus, transformers are a special case of graph neural networks!**
+
+[![What are Transformer Neural Networks](https://img.youtube.com/vi/XSSTuhyAmnI/0.jpg)](https://www.youtube.com/watch?v=XSSTuhyAmnI)
+
+ * [Self-attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a) is slightly different from attention, but [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)#:~:text=Bidirectional%20Encoder%20Representations%20from%20Transformers,2018%20by%20researchers%20at%20Google.) and other transformers all have a component of self-attention.
+ * [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
+ * [Harvard's Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/)
  * [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) 
 [![The Narrated Transformer](https://img.youtube.com/vi/-QH8fRhqFHM/0.jpg)](https://www.youtube.com/watch?v=-QH8fRhqFHM)
- * [Harvard's Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/)
+
+
+
 
 General resources
 ---
