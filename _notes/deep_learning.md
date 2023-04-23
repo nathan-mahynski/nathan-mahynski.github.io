@@ -46,7 +46,25 @@ Attention makes a direct connection between points in the input (e.g, sequence);
  * [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) 
 [![The Narrated Transformer](https://img.youtube.com/vi/-QH8fRhqFHM/0.jpg)](https://www.youtube.com/watch?v=-QH8fRhqFHM)
 
+Learning Rate Finder
+---
+A good learning rate can be critical to fitting models in a reasonable amount of time; this is especially true as the networks become more complicated, and transformers are particularly susceptible to poor fitting if they have a bad rate.  [fastai](https://fastai1.fast.ai/callbacks.lr_finder.html) has a nice learning rate finder, but others have built equivalents for [keras](https://pyimagesearch.com/2019/08/05/keras-learning-rate-finder/).
 
+[![](https://b2633864.smushcdn.com/2633864/wp-content/uploads/2019/08/keras_learning_rate_finder_header.png?lossy=1&strip=1&webp=1)]
+
+One other best practice is to use [cyclical learning rates (CLR)](https://pyimagesearch.com/2019/07/29/cyclical-learning-rates-with-keras-and-deep-learning/), oscillating between a minimum and maximum rate several times, essentially to do better annealing. There are different types of schedules - a few are discussed in the linked blog post. The LR finder algorithm essentially trains the model for 1 epoch and looks at the loss - this is repeated for many rates to produce a plot which looks like the figure above (which is smoothed to give a better plot).  
+* The minimum is starting to quickly decline
+* The maximum is one order of magnitude less than the minimum
+
+If not doing CLR, then the best guess is usually between these limits around where where the loss is decreasing the fastest (largest negative slope).
+
+Some other feedback and thoughts on the subject:
+* [How reliable is the learning rate finder method?](https://blog.dataiku.com/the-learning-rate-finder-technique-how-reliable-is-it)
+* [An implementation in tensorflow](https://towardsdatascience.com/the-learning-rate-finder-6618dfcb2025)
+* [PyTorch-lightning](https://pytorch-lightning.readthedocs.io/en/1.4.9/advanced/lr_finder.html) has a built-in method for this.
+
+Invariance and Equivariance
+---
 
 
 General resources
