@@ -16,7 +16,7 @@ tags:
 
 Deep Learning Basics
 ---
-These notes come from F. Chollet's [Deep Learning with Python](https://www.amazon.com/Learning-Python-Second-Fran%C3%A7ois-Chollet/dp/1617296864) book.  You can launch this on different platforms, but Colab's access to GPUs will likely make this more convenient:
+These notes are based on F. Chollet's [Deep Learning with Python](https://www.amazon.com/Learning-Python-Second-Fran%C3%A7ois-Chollet/dp/1617296864) book, but have been expanded to include updates, YouTube lectures, etc.  You can launch this on different platforms, but Colab's access to GPUs will likely make this more convenient:
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_notes%2Fdeep_learning%2Fdeep_learning_notes.ipynb)
 
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/deep_learning/deep_learning_notes.ipynb)
@@ -45,6 +45,7 @@ Attention makes a direct connection between points in the input (e.g, sequence);
 [![What are Transformer Neural Networks](https://img.youtube.com/vi/XSSTuhyAmnI/0.jpg)](https://www.youtube.com/watch?v=XSSTuhyAmnI)
 
  * [Self-attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a) is slightly different from attention, but [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)#:~:text=Bidirectional%20Encoder%20Representations%20from%20Transformers,2018%20by%20researchers%20at%20Google.) and other transformers all have a component of self-attention.
+[![BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://img.youtube.com/vi/-9evrZnBorM/0.jpg)](https://www.youtube.com/watch?v=-9evrZnBorM&list=WL&index=5)
  * [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
  * [Harvard's Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/)
  * [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) 
