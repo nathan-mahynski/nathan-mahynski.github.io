@@ -30,10 +30,14 @@ Embeddings and Collaborative Filtering
 ---
 Embeddings are a way to perform sensible dimensionality reduction for neural networks.  There are a number of interpretations and explanations - the notebooks below goes through several of them.  Embeddings are critical to represeting categorical variables as continuous ones in an efficient manner.  For example, they can be used to [represent a node in a graph](https://keras.io/examples/graph/node2vec_movielens) with a vector of floats. Usually tabular data is best modeled with conventional machine learning tools like tree ensembles, but if the data includes high cardinality categorical variables or raw data (e.g., text or images) neural networks are usually a better choice.  Also, embeddings are the basis of collaborative filtering (recommendation systems) which is helpful to discover latent factors underlying similarity between categories. 
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/deep_learning/embeddings.ipynb)
+* [fast.ai lesson](https://course.fast.ai/Lessons/lesson7.html)
 
 Attention and Transformers
 ---
  The concept of attention was introduced alongside transformer architectures in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks.
+
+ * [fast.ai lesson](https://course.fast.ai/Lessons/lesson24.html)
+
  [![Attention Is All You Need](https://img.youtube.com/vi/iDulhoQ2pro/0.jpg)](https://www.youtube.com/watch?v=iDulhoQ2pro)
 
 Attention makes a direct connection between points in the input (e.g, sequence); as a result you can [view attention essentially like a graph](https://graphdeeplearning.github.io/post/transformers-are-gnns/) where each part of the input is connected to all others and the weight of each edge determines the "strength" (how much attention to pay) of the interaction. **Thus, transformers are a special case of graph neural networks!**
