@@ -70,9 +70,37 @@ Some other feedback and thoughts on the subject:
 * [An implementation in tensorflow](https://towardsdatascience.com/the-learning-rate-finder-6618dfcb2025)
 * [PyTorch-lightning](https://pytorch-lightning.readthedocs.io/en/1.4.9/advanced/lr_finder.html) has a built-in method for this.
 
+Physically Informed Neural Nets
+---
+Sometimes also referred to as "physics-guided", these are NN that are designed to reflect natural laws, or other constraints, known from a certain scientific domain.  There are a number of ways to "inform" a network, but the most common ways seem to be by (1) adding terms to the loss function to reflect divergence from conservation laws, or (2) designing the topology to reflect known interactions.
+
+A nice review of PINNs is given in ["Physics-informed machine learning" by Karniadakis et al.](https://www.nature.com/articles/s42254-021-00314-5). 
+
+1. There is an especially nice blog post by [Maziar Raissi](https://maziarraissi.github.io/research/1_physics_informed_neural_networks/) which gives examples and some links to several PINN libraries (there are many of these emerging and being standardized).
+
+2. Non-linear topologies in Keras are easy. Here is [Keras' documentation](https://keras.io/guides/functional_api/#manipulate-complex-graph-topologies) and a nice [example from pyimagesearch](https://pyimagesearch.com/2019/02/04/keras-multiple-inputs-and-mixed-data/). 
+
+[![](https://img.youtube.com/vi/POsGBquHFaY/0.jpg)](https://www.youtube.com/watch?v=POsGBquHFaY&list=WL&index=14)
+
+[![](https://img.youtube.com/vi/ZuSx0pYAZ_I/0.jpg)](https://www.youtube.com/watch?v=ZuSx0pYAZ_I&list=WL&index=1)
+
+[![](https://img.youtube.com/vi/AU_ewEJMaLc/0.jpg)](https://www.youtube.com/watch?v=AU_ewEJMaLc&list=WL&index=10)
+
 Invariance and Equivariance
 ---
+PINNs sometimes rely on encoding invariance that is present in the natural world.  Invariance and Equivariance are related concepts that are very important for scientific / physics-based NNs, but are are also highly relevant in areas such as computer vision.  The videos below do a nice job introducing various aspects of this concept and where it is relevant, especially as it extends to group convolutions.
 
+Andrew White's [book](https://dmol.pub/) also contains 2 nice chapters on the subject:
+* [Ch. 9 Input Data & Equivariances](https://dmol.pub/dl/data.html)
+* [Ch. 10 Equivariant Neural Networks](https://dmol.pub/dl/Equivariant.html)
+
+[![](https://img.youtube.com/vi/a4Quhf9NhMY/0.jpg)](https://www.youtube.com/watch?v=a4Quhf9NhMY&list=WL&index=17)
+
+[![](https://img.youtube.com/vi/2bP_KuBrXSc/0.jpg)](https://www.youtube.com/watch?v=2bP_KuBrXSc&list=WL&index=19)
+
+[![](https://img.youtube.com/vi/z2OEyUgSH2c/0.jpg)](https://www.youtube.com/watch?v=z2OEyUgSH2c&list=WL&index=11)
+
+[![](https://img.youtube.com/vi/0_O8PdZBc5s/0.jpg)](https://www.youtube.com/watch?v=0_O8PdZBc5s&list=WL&index=12)
 
 General resources
 ---
