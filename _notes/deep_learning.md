@@ -55,9 +55,9 @@ Attention makes a direct connection between points in the input (e.g, sequence);
 
 Learning Rate Finder
 ---
-A good learning rate can be critical to fitting models in a reasonable amount of time; this is especially true as the networks become more complicated, and transformers are particularly susceptible to poor fitting if they have a bad rate.  [fastai](https://fastai1.fast.ai/callbacks.lr_finder.html) has a nice learning rate finder, but others have built equivalents for [keras](https://pyimagesearch.com/2019/08/05/keras-learning-rate-finder/).
+A good learning rate can be critical to fitting models in a reasonable amount of time; this is especially true as the networks become more complicated, and transformers are particularly susceptible to poor fitting if they have a bad rate.  [fastai](https://fastai1.fast.ai/callbacks.lr_finder.html) has a nice learning rate finder, but others have built equivalents for [Keras](https://pyimagesearch.com/2019/08/05/keras-learning-rate-finder/).
 
-[![](https://b2633864.smushcdn.com/2633864/wp-content/uploads/2019/08/keras_learning_rate_finder_header.png?lossy=1&strip=1&webp=1)]
+![](https://b2633864.smushcdn.com/2633864/wp-content/uploads/2019/08/keras_learning_rate_finder_header.png?lossy=1&strip=1&webp=1)
 
 One other best practice is to use [cyclical learning rates (CLR)](https://pyimagesearch.com/2019/07/29/cyclical-learning-rates-with-keras-and-deep-learning/), oscillating between a minimum and maximum rate several times, essentially to do better annealing. There are different types of schedules - a few are discussed in the linked blog post. The LR finder algorithm essentially trains the model for 1 epoch and looks at the loss - this is repeated for many rates to produce a plot which looks like the figure above (which is smoothed to give a better plot).  
 * The minimum is starting to quickly decline
