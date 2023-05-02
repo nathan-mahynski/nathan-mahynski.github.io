@@ -1,12 +1,13 @@
 ---
-title: "Using Numba to Accelerate Python Code"
-excerpt: "Fast scientific python code using numba."
+title: "Using Numba and JAX to Accelerate Python Code"
+excerpt: "Fast scientific python code."
 header:
   teaser: /assets/img/numba_logo.png
   image: /assets/img/using_numba_header.png
 tags:
   - python
   - numba
+  - jax
   - high performance programming
 classes:
   - wide
@@ -30,6 +31,13 @@ def dotproduct(v1, v2):
 ~~~
 
 Numba provides a quick, [5 minute overview](https://numba.readthedocs.io/en/stable/user/5minguide.html) of the basic functionality which I highly recommend reading.  Here, I will summarize and add elements from their documentation most relevant to writing functions and classes in [packages](/tutorials/git_python_workflow/).
+
+[JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html) is a similar tool that "is NumPy on the CPU, GPU, and TPU, with great automatic differentiation for high-performance machine learning research."  This includes a jit compiler, and other features, but the main features are that:
+1. Code can be easily offloaded to accelerators
+2. Code can be automatically differentiated
+JAX is mostly aimed at machine learning applications, but these features are widely applicable to many scientific domains and problems.
+
+The tutorial below focuses just on numba - JAX is easy to use if you understand this, and there are important caveats the documentation discusses in detail which is better covered therein.
 
 # Overview
 
