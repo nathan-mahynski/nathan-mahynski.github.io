@@ -44,14 +44,16 @@ Attention makes a direct connection between points in the input (e.g, sequence);
 
 [![What are Transformer Neural Networks](https://img.youtube.com/vi/XSSTuhyAmnI/0.jpg)](https://www.youtube.com/watch?v=XSSTuhyAmnI)
 
- * [Self-attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a) is slightly different from attention, but [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)#:~:text=Bidirectional%20Encoder%20Representations%20from%20Transformers,2018%20by%20researchers%20at%20Google.) and other transformers all have a component of self-attention.
-
-[![BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://img.youtube.com/vi/-9evrZnBorM/0.jpg)](https://www.youtube.com/watch?v=-9evrZnBorM&list=WL&index=5)
-
+ * [Self-attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a) is slightly different from attention, but [BERT](https://www.youtube.com/watch?v=-9evrZnBorM&list=WL&index=5) and other transformers all have a component of self-attention.
  * [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
  * [Harvard's Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/)
- * [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) 
-[![The Narrated Transformer](https://img.youtube.com/vi/-QH8fRhqFHM/0.jpg)](https://www.youtube.com/watch?v=-QH8fRhqFHM)
+ * [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) and [video](https://www.youtube.com/watch?v=-QH8fRhqFHM)
+
+There is a nice series by Rasa Algorithm Whiteboard here:
+* [Transformers & Attention 1: Self Attention](https://www.youtube.com/watch?v=yGTUuEx3GkA&list=WL&index=1)
+* [Transformers & Attention 2: Keys, Values, Queries](https://www.youtube.com/watch?v=tIvKXrEDMhk&list=WL&index=3)
+* [Transformers & Attention 3: Multi Head Attention](https://www.youtube.com/watch?v=23XUv0T9L5c&list=WL&index=4)
+* [Transformers & Attention 4: Transformers](https://www.youtube.com/watch?v=EXNBy8G43MM&list=WL&index=2)
 
 Learning Rate Finder
 ---
