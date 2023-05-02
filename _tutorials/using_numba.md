@@ -35,6 +35,7 @@ Numba provides a quick, [5 minute overview](https://numba.readthedocs.io/en/stab
 [JAX](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html) is a similar tool that "is NumPy on the CPU, GPU, and TPU, with great automatic differentiation for high-performance machine learning research."  This includes a jit compiler, and other features, but the main features are that:
 1. Code can be easily offloaded to accelerators
 2. Code can be automatically differentiated
+
 JAX is mostly aimed at machine learning applications, but these features are widely applicable to many scientific domains and problems.
 
 The tutorial below focuses just on numba - JAX is easy to use if you understand this, and there are important caveats the documentation discusses in detail which is better covered therein.
