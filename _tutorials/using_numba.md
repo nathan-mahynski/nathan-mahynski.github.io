@@ -1,6 +1,6 @@
 ---
 title: "Using Numba and JAX to Accelerate Python Code"
-excerpt: "Fast scientific python code."
+excerpt: "Fast scientific code wihtout leaving python."
 header:
   teaser: /assets/img/numba_logo.png
   image: /assets/img/using_numba_header.png
