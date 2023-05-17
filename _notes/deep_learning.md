@@ -39,7 +39,8 @@ Here is an [example of using BERT embeddings](https://keras.io/examples/nlp/text
 
 Attention and Transformers
 ---
- The transformer architecture was introduced in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks.
+ The transformer architecture was introduced in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks. 
+This is largely due to the fact that transformers can be trained in parallel allowing them to use much larger training datasets than other recurrent models.
 
  * [fast.ai lesson](https://course.fast.ai/Lessons/lesson24.html)
 
