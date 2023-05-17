@@ -34,7 +34,7 @@ Embeddings are a way to perform sensible dimensionality reduction for neural net
 
 Attention and Transformers
 ---
- The concept of attention was introduced alongside transformer architectures in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks.
+ The transformer architecture was introduced in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks.
 
  * [fast.ai lesson](https://course.fast.ai/Lessons/lesson24.html)
 
