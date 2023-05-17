@@ -35,6 +35,8 @@ Embeddings are a way to perform sensible dimensionality reduction for neural net
 Useful embeddings are often a result of [pretraining](https://www.baeldung.com/cs/neural-network-pre-training) a network - transformers like BERT are often used to provide embeddings that are fine tuned to do other tasks.
 These embeddings can be ["foundational"](https://arxiv.org/pdf/2209.01712v1.pdf) in that they provide a useful starting point for all tasks within a domain, such as predicting propeties of chemical compounds.
 
+Here is an [example of using BERT embeddings](https://keras.io/examples/nlp/text_extraction_with_bert/) implemented in Keras.
+
 Attention and Transformers
 ---
  The transformer architecture was introduced in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks.
