@@ -30,6 +30,7 @@ Some recent projects include:
 * Authenticating food labeling claims with chemometric tools 
 * Analyzing trends in biorepositories using explainable machine learning
 * Identifying materials using nuclear spectroscopy methods
+* Designing colloidal self-assembly by tiling Escher-like patterns
 
 Have an interesting problem? Need help or advice? Contact me via [email](mailto: nathan.mahynski@gmail.com).
 
