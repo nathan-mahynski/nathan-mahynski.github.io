@@ -10,8 +10,6 @@ main:
     url: /tutorials/
   - title: "Examples"
     url: /examples/
-  - title: "Bio"
-    url: /bio/
 
 resources:
 #  - title: Open Source Code
@@ -26,12 +24,14 @@ resources:
         url: https://jupyter-notebook.readthedocs.io/en/stable/
       - title: Google Colab
         url: https://colab.research.google.com
+      - title: UVA Deep Learning Course
+        url: https://uvadlc-notebooks.readthedocs.io/en/latest/
+      - title: fast.ai
+        url: https://www.fast.ai/
       - title: Keras
         url: https://keras.io/
       - title: PyTorch
         url: https://pytorch.org/
-      - title: fast.ai
-        url: https://www.fast.ai/
       - title: scikit-learn
         url: https://scikit-learn.org/stable/
       - title: Pandas
@@ -46,6 +46,12 @@ resources:
         url: https://automl.github.io/auto-sklearn/master/index.html
       - title: AutoGluon
         url: https://auto.gluon.ai/stable/index.html
+  - title: AI/ML in Science
+    children
+      - title: DeepChem
+        url: https://deepchem.io
+      - title: Deep Learning for Molecules and Materials
+        url: https://dmol.pub
   - title: Programming
     children:
       - title: C++ Programming
