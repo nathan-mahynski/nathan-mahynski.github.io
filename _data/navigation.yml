@@ -47,7 +47,7 @@ resources:
       - title: AutoGluon
         url: https://auto.gluon.ai/stable/index.html
   - title: AI/ML in Science
-    children
+    children:
       - title: DeepChem
         url: https://deepchem.io
       - title: Deep Learning for Molecules and Materials
