@@ -28,6 +28,8 @@ resources:
         url: https://uvadlc-notebooks.readthedocs.io/en/latest/
       - title: fast.ai
         url: https://www.fast.ai/
+      - title: Hugging Face
+        url: https://huggingface.co/docs
       - title: Keras
         url: https://keras.io/
       - title: PyTorch
