@@ -41,28 +41,11 @@ Here is an [example using ChemBERTa](https://dmol.pub/dl/pretraining.html) for t
 
 Attention and Transformers
 ---
- The transformer architecture was introduced in the original ["Attention is all you need" paper](https://arxiv.org/abs/1706.03762). Attention is a method that allows the model to focus on relevant parts of the input (context) in arbitrary (non-local) ways; high capacity models using attention mechanisms, trained with sufficient data, have surpassed recurrent neural network architectures as state-of-the-art (LSTM, etc. and even convolutions, too) on many tasks. This is largely due to the fact that transformers [can be trained in parallel](https://en.m.wikipedia.org/wiki/Transformer_(machine_learning_model)) allowing them to use much larger training datasets than other recurrent models.
 
- * [fast.ai lesson](https://course.fast.ai/Lessons/lesson24.html)
+[Hugging Face](https://huggingface.co/) provides a lot of open source, pretrained models such as transformers making them easy to use.
 
- [![Attention Is All You Need](https://img.youtube.com/vi/iDulhoQ2pro/0.jpg)](https://www.youtube.com/watch?v=iDulhoQ2pro)
+* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/deep_learning/transformers.ipynb)
 
-Attention makes a direct connection between points in the input (e.g, sequence); as a result you can [view attention essentially like a graph](https://graphdeeplearning.github.io/post/transformers-are-gnns/) where each part of the input is connected to all others and the weight of each edge determines the "strength" (how much attention to pay) of the interaction. **Thus, transformers are a special case of graph neural networks!**
-
-[![What are Transformer Neural Networks](https://img.youtube.com/vi/XSSTuhyAmnI/0.jpg)](https://www.youtube.com/watch?v=XSSTuhyAmnI)
-
- * [Self-attention](https://towardsdatascience.com/illustrated-self-attention-2d627e33b20a) is slightly different from attention, but [BERT](https://www.youtube.com/watch?v=-9evrZnBorM&list=WL&index=5) uses self-attention.
- * [Visualizing A Neural Machine Translation Model](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
- * [Harvard's Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/)
- * [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) and [video](https://www.youtube.com/watch?v=-QH8fRhqFHM)
-
-There is a nice series by Rasa Algorithm Whiteboard here:
-* [Transformers & Attention 1: Self Attention](https://www.youtube.com/watch?v=yGTUuEx3GkA&list=WL&index=1)
-* [Transformers & Attention 2: Keys, Values, Queries](https://www.youtube.com/watch?v=tIvKXrEDMhk&list=WL&index=3)
-* [Transformers & Attention 3: Multi Head Attention](https://www.youtube.com/watch?v=23XUv0T9L5c&list=WL&index=4)
-* [Transformers & Attention 4: Transformers](https://www.youtube.com/watch?v=EXNBy8G43MM&list=WL&index=2)
-
-[Huggingface](https://huggingface.co/) provides a lot of open source, pretrained models such as transformers making them easy to use.
 
 Learning Rate Finder
 ---
