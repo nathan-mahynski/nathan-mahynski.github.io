@@ -24,7 +24,7 @@ resources:
         url: https://jupyter-notebook.readthedocs.io/en/stable/
       - title: Google Colab
         url: https://colab.research.google.com
-      - title: UVA Deep Learning Course
+      - title: UvA Deep Learning Course
         url: https://uvadlc-notebooks.readthedocs.io/en/latest/
       - title: fast.ai
         url: https://www.fast.ai/
