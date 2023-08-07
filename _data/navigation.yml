@@ -52,6 +52,8 @@ resources:
     children:
       - title: DeepChem
         url: https://deepchem.io
+      - title: Chemprop
+        url: https://chemprop.readthedocs.io/
       - title: Deep Learning for Molecules and Materials
         url: https://dmol.pub
   - title: Programming
