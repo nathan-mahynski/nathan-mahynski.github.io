@@ -17,7 +17,7 @@ tags:
 Deep Learning Basics
 ---
 These notes are based on F. Chollet's [Deep Learning with Python](https://www.amazon.com/Learning-Python-Second-Fran%C3%A7ois-Chollet/dp/1617296864) book, but have been expanded to include updates, YouTube lectures, etc.  You can launch this on different platforms, but Colab's access to GPUs will likely make this more convenient:
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_notes%2Fdeep_learning%2Fdeep_learning_notes.ipynb)
+<!-- * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_notes%2Fdeep_learning%2Fdeep_learning_notes.ipynb) -->
 
 * [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/deep_learning/deep_learning_notes.ipynb)
 
@@ -35,17 +35,16 @@ Embeddings are a way to perform sensible dimensionality reduction for neural net
 Useful embeddings are often a result of [pretraining](https://www.baeldung.com/cs/neural-network-pre-training) a network - transformers like BERT are often used to provide embeddings that are fine tuned to do other tasks.
 These embeddings can be ["foundational"](https://arxiv.org/pdf/2209.01712v1.pdf) in that they provide a useful starting point for all tasks within a domain, such as predicting propeties of chemical compounds.
 
-Here is an [example of using BERT embeddings](https://keras.io/examples/nlp/text_extraction_with_bert/) implemented in Keras.
-
-Here is an [example using ChemBERTa](https://dmol.pub/dl/pretraining.html) for transfer learning.
-
 Attention and Transformers
 ---
 
 [Hugging Face](https://huggingface.co/) provides a lot of open source, pretrained models such as transformers making them easy to use.
 
-* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/deep_learning/transformers.ipynb)
+Here is an [example of using BERT embeddings](https://keras.io/examples/nlp/text_extraction_with_bert/) implemented in Keras.
 
+Here is an [example using ChemBERTa](https://dmol.pub/dl/pretraining.html) for transfer learning.
+
+* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_notes/deep_learning/transformers.ipynb)
 
 Learning Rate Finder
 ---
