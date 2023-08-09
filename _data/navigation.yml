@@ -48,6 +48,8 @@ resources:
         url: https://automl.github.io/auto-sklearn/master/index.html
       - title: AutoGluon
         url: https://auto.gluon.ai/stable/index.html
+      - title: WandB.ai
+        url: https://wandb.ai
   - title: AI/ML in Science
     children:
       - title: DeepChem
