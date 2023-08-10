@@ -12,8 +12,6 @@ header:
   caption: ""
   cta_label: "Bio"
   cta_url: https://github.com/mahynski
-  cta_label: "Bio2"
-  cta_url: https://wandb.ai/nathan-mahynski
 row1:
   - image_path: /assets/img/splash/soft_matter_cover_2020.png
     title: "Multicomponent Colloidal Self-Assembly"
