@@ -138,7 +138,11 @@ Two particularly salient trends were noted: (1) total mercury concentration seem
 <img style="float: center" src="total_hg.png" width=1000px>
  -->
 
-# Predicting Food Provenance
+# Oyster Provenance
+
+Coming Soon!
+
+# On the Origin of Strawberries
 
 Coming Soon!
 
@@ -168,8 +172,6 @@ This approach has been shown to unite many other types of model explanation meth
 # Slovenian Strawberries, etc. with Nives
 
 # Colaboration with Chile
-
-# Oysters with Steve Christopher & Elizabeth Crowther
 -->
 
 # Recirculating Aquaculture Systems (RAS)
