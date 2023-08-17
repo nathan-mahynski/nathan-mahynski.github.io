@@ -2,7 +2,7 @@
 title: "Using Bokeh"
 excerpt: "Notes on using Bokeh to make Interactive Tools."
 header:
-  teaser: /assets/img/bokeh_logo.png
+  teaser: /assets/img/jupyter_logo.png
 tags:
   - python
   - data science
