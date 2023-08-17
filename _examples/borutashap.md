@@ -23,5 +23,7 @@ Some examples of how to use [BorutaSHAP](https://github.com/Ekeany/Boruta-Shap) 
 
 Note that if you are dealing with imbalanced datasets for classification tasks, see [this example](/examples/imbalanced_datasets/) for how to incorporate BorutaSHAP into pipelines which balance the data as part of their pipeline.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fborutashap%2Fexample.ipynb)
+<!-- * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fborutashap%2Fexample.ipynb) -->
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_examples/borutashap/example.ipynb)
 

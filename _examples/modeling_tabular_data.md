@@ -23,5 +23,5 @@ Some examples of how to initially analyze (EDA, etc.) tabular data, create pipel
 
 A longer discussion of the qualitative features and steps taken in these examples can be found [here](/tutorials/tabular_data_ml_workflow).
 
-* Classification / authentication : [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Ftabular_data%2Fclassification%2Fexample.ipynb)
+* Classification / authentication : <!-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Ftabular_data%2Fclassification%2Fexample.ipynb) --> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_examples/tabular_data/classification/example.ipynb)
 

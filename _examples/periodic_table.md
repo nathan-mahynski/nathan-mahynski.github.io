@@ -21,6 +21,6 @@ sidebar:
 
 [Bokeh](https://docs.bokeh.org/en/latest/index.html) is a python library for making interactive graphics and tools that can be displayed as web pages.  Here is an expanded version of one example from the developers' [gallery](https://docs.bokeh.org/en/latest/docs/examples/topics/categorical/periodic.html) which illustrates how to create an interactive periodic table.
 
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fperiodic_table%2Fperiodic_table.ipynb)
+<!-- * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fperiodic_table%2Fperiodic_table.ipynb) -->
 
-* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_examples/periodic_table/periodic_table.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_examples/periodic_table/periodic_table.ipynb)

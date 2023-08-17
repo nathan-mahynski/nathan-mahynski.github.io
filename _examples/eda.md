@@ -21,10 +21,14 @@ sidebar:
 
 This first notebook accompanies the tutorial on [EDA](/tutorials/eda/) to get started understanding your data, generate hypotheses, and understand what can be tested.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Feda_starting_point.ipynb)
+<!-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Feda_starting_point.ipynb) -->
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_examples/eda/eda_starting_point.ipynb)
 
 This second notebook gives a brief introduction and some links to [D-Tale](https://github.com/man-group/dtale) and [Lux](https://github.com/lux-org/lux) which greatly simplify and accelerate this process!
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Finteractive-eda.ipynb)
+<!-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Finteractive-eda.ipynb) -->
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_examples/eda/interactive-eda.ipynb)
 
 

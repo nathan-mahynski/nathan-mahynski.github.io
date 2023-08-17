@@ -25,5 +25,6 @@ An introduction with some notes and very simple examples of how common chemometr
 
 A nice review by [Frank and Friedman](frank_friedman.pdf) provides more detailed reading.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fcommon_chemometrics%2Fexample.ipynb)
+<!-- [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Fcommon_chemometrics%2Fexample.ipynb) -->
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/_examples/common_chemometrics/example.ipynb)
