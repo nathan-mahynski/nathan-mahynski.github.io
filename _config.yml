@@ -279,7 +279,7 @@ defaults:
       read_time: true
       comments: true
       # share: true
-      related: true
+      # related: true
   # _research
   - scope:
       path: ""
@@ -290,7 +290,7 @@ defaults:
       read_time: true
       comments: true
       # share: true
-      related: true
+      # related: true
   # _notes
   - scope:
       path: ""
@@ -301,7 +301,7 @@ defaults:
       read_time: true
       comments: false
       # share: false
-      related: true
+      # related: true
   # _tutorials
   - scope:
       path: ""
@@ -312,7 +312,7 @@ defaults:
       read_time: true
       comments: true
       # share: true
-      related: true
+      # related: true
   # _examples
   - scope:
       path: ""
@@ -323,4 +323,4 @@ defaults:
       read_time: true
       comments: true
       # share: false
-      related: true
+      # related: true
