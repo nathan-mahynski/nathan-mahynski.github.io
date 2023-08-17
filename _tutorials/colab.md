@@ -100,6 +100,8 @@ $ bash Miniconda3-latest-Linux-x86_64.sh
 
 > ["When installing Anaconda, you have the option to 'Add Anaconda to my PATH environment variable.' This is not recommended because the add to PATH option appends Anaconda to PATH. When the installer appends to PATH, it does not call the activation scripts."](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
+Conda creates stand-alone environments and needs to solve the interdependencies of packages installed when adding or removing them.  For environments with many packages installed this creates a complex boolean satisfiability problem which [mamba](https://mamba.readthedocs.io/en/latest/index.html) has been developed to solve more quickly.  In short, you can [install mamba](https://anaconda.org/conda-forge/mamba) in a conda environment and then just replace all the `conda install` terms below with `mamba install` for a nice speed boost!
+
 ## Environments
 
 Conda lets you create different environments (like different versions python or packages) so you can easily switch between different ones.  This lets you easily try new things our, maintain reverse compatibility, and stay-up-to-date without breaking your stride.  After installing, here is the basic way to create an environment:
