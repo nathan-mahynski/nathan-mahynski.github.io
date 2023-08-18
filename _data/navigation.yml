@@ -52,6 +52,12 @@ resources:
         url: https://wandb.ai
   - title: AI/ML in Science
     children:
+      - title: Data Carpentry
+        url: https://datacarpentry.org/lessons/
+      - title: Pandas Cookbook
+        url: https://github.com/jvns/pandas-cookbook
+      - title: Pandas Tutorials
+        url: https://pandas.pydata.org/docs/getting_started/tutorials.html
       - title: DeepChem
         url: https://deepchem.io
       - title: Chemprop
