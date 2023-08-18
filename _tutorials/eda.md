@@ -30,6 +30,8 @@ An example Jupyter notebook is available here which can be modified to your need
 
 EDA tools are constantly evolving and improving.  While the tools described below are good ways to get started, tools like [D-Tale](https://github.com/man-group/dtale) and [Lux](https://github.com/lux-org/lux) really make things very easy and fast.  Here is an example notebook: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nathan-mahynski/nathan-mahynski.github.io/public?filepath=%2F_examples%2Feda%2Finteractive-eda.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathan-mahynski/nathan-mahynski.github.io/blob/public/examples/eda/interactive-eda.ipynb)
 
+Figuring out where NaN, or missing values is also a very important step. Pandas has nice built-in tools, but [missingno](https://github.com/ResidentMario/missingno) has some wonderful visualization tools that help point out correlations between where data is missing.
+
 # Some Ideas
 
 There are many EDA approaches so this will not be exhaustive.  If you are doing "simple" statistical modeling, checking model assumptions (normality, etc.), looking for outliers, etc. are probably the most important place to begin.  NIST's [engineering statistics handbook](https://www.itl.nist.gov/div898/handbook/eda/eda.htm) is a great reference and a good place to start; specifically, consider the [graphical techniques alphabet](https://www.itl.nist.gov/div898/handbook/eda/section3/eda33.htm) for different enlightening plots to make.
