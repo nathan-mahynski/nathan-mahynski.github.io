@@ -10,6 +10,8 @@ main:
     url: /tutorials/
   - title: "Examples"
     url: /examples/
+  - title: "JupyterLite"
+    url: https://nathan-mahynski.github.io/jupyterlite
 
 resources:
 #  - title: Open Source Code
