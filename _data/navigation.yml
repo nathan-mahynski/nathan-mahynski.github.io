@@ -86,6 +86,8 @@ resources:
         url: https://www.doxygen.nl/index.html
       - title: Documenting Python Code
         url: https://www.datacamp.com/community/tutorials/documenting-python-code
+      - title: Read the Docs
+        url: https://readthedocs.org/dashboard/
       - title: Semantic code versioning
         url: https://semver.org/
   - title: Using a cluster
