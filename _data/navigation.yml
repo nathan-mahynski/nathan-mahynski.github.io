@@ -10,10 +10,6 @@ main:
     url: /tutorials/
   - title: "Examples"
     url: /examples/
-  - title: "JupyterLite"
-    url: https://nathan-mahynski.github.io/jupyterlite
-  - title: "WandB"
-    url: https://wandb.ai/nathan-mahynski
 
 resources:
 #  - title: Open Source Code
