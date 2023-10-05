@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Resources"
-    url: /resources/
+  # - title: "Resources"
+  #   url: /resources/
   - title: "Research"
     url: /research/
   - title: "Notes"
