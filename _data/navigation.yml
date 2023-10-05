@@ -8,8 +8,8 @@ main:
     url: /notes/
   # - title: "Tutorials"
   #   url: /tutorials/
-  - title: "Examples"
-    url: /examples/
+  # - title: "Examples"
+  #   url: /examples/
 
 resources:
 #  - title: Open Source Code
