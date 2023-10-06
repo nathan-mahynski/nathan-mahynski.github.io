@@ -10,8 +10,8 @@ header:
   overlay_image: /assets/img/logo/wombo_splash.JPG
   overlay_filter: 0.4 # same as adding an opacity of 0.5 to a black background
   caption: ""
-  cta_label: "github/bio"
-  cta_url: https://github.com/mahynski
+#  cta_label: "github/bio"
+#  cta_url: https://github.com/mahynski
 row1:
   - image_path: /assets/img/splash/soft_matter_cover_2020.png
     title: "Multicomponent Colloidal Self-Assembly"
